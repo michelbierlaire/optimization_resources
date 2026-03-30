@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 20:56:16. -->
+<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
 
 # Exercise: Vertices and active constraints — Exercise 1
 
@@ -6,13 +6,13 @@
 
 - Online Course
 
-<iframe src="/assets/exercises/objective/constraints-vertices-exercise-01-question.pdf" title="Vertices and active constraints — Exercise 1" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../../../assets/exercises/objective/constraints-vertices-exercise-01-question.pdf" title="Vertices and active constraints — Exercise 1" style="width: 100%; height: 80vh; border: none;"></iframe>
 
 Exercise on vertices and active constraints.
 
 ## Solution
 
-- [Open solution](/assets/exercises/objective/constraints-vertices-exercise-01-solution.pdf)
+- [Open solution](../../../assets/exercises/objective/constraints-vertices-exercise-01-solution.pdf)
 
 ## Related resources
 

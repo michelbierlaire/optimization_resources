@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 20:56:16. -->
+<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
 
 # Exercise: Feasible directions — Exercise 2
 
@@ -6,13 +6,13 @@
 
 - Online Course
 
-<iframe src="/assets/exercises/objective/constraints-feasible-directions-exercise-02-question.pdf" title="Feasible directions — Exercise 2" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../../../assets/exercises/objective/constraints-feasible-directions-exercise-02-question.pdf" title="Feasible directions — Exercise 2" style="width: 100%; height: 80vh; border: none;"></iframe>
 
 Exercise on feasible directions.
 
 ## Solution
 
-- [Open solution](/assets/exercises/objective/constraints-feasible-directions-exercise-02-solution.pdf)
+- [Open solution](../../../assets/exercises/objective/constraints-feasible-directions-exercise-02-solution.pdf)
 
 ## Related resources
 

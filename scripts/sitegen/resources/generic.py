@@ -45,9 +45,12 @@ def build_generic_page(
     lines.append("## Access\n\n")
     if resource_type == "textbook" and is_defined(resource.get("path")):
         path = str(resource["path"]).strip()
-        lines.append(pdf_embed_html(path, resource["title"], asset_link))
+        textbook_asset_link = lambda asset_path: asset_link(
+            asset_path, from_section="textbook"
+        )
+        lines.append(pdf_embed_html(path, resource["title"], textbook_asset_link))
         lines.append("\n\n")
-        published_asset_link = asset_link(path)
+        published_asset_link = asset_link(path, from_section="textbook")
         lines.append(
             f'- <a href="{published_asset_link}" target="_blank" rel="noopener noreferrer">Open textbook PDF</a>\n'
         )

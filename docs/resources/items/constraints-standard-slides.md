@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 20:56:16. -->
+<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
 
 # Slides: Linear constraints: standard form — video slides
 
@@ -6,7 +6,7 @@
 
 - Online Course
 
-<iframe src="/assets/slides/v03040_h.pdf" title="Linear constraints: standard form — video slides" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../../../assets/slides/v03040_h.pdf" title="Linear constraints: standard form — video slides" style="width: 100%; height: 80vh; border: none;"></iframe>
 
 Slides of the video on polyhedron in standard form.
 

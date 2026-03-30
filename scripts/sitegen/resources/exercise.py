@@ -15,7 +15,7 @@ def exercise_asset_paths(resource: dict[str, Any]) -> tuple[str, str]:
     topics = resource.get("topics") or []
     topic_dir = str(topics[0]) if topics else "misc"
     base = f"assets/exercises/{topic_dir}/{resource['id']}"
-    return f"/{base}-question.pdf", f"/{base}-solution.pdf"
+    return f"{base}-question.pdf", f"{base}-solution.pdf"
 
 
 def build_exercise_page(
@@ -41,7 +41,8 @@ def build_exercise_page(
     lines.append(f"{resource['summary']}\n\n")
 
     lines.append("## Solution\n\n")
-    lines.append(f"- [Open solution]({solution_pdf})\n\n")
+    solution_link = asset_link_fn(solution_pdf)
+    lines.append(f"- [Open solution]({solution_link})\n\n")
 
     if resource.get("slides_ref"):
         ref = resources[resource["slides_ref"]]

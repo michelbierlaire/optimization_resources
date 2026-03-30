@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 20:56:16. -->
+<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
 
 # Optimization textbook
 
@@ -13,9 +13,9 @@ Main textbook for the optimization course, containing the theoretical foundation
 
 ## Access
 
-<iframe src="/assets/textbook/OptimizationPrinciplesAlgorithms2018.pdf" title="Optimization textbook" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../assets/textbook/OptimizationPrinciplesAlgorithms2018.pdf" title="Optimization textbook" style="width: 100%; height: 80vh; border: none;"></iframe>
 
-- <a href="/assets/textbook/OptimizationPrinciplesAlgorithms2018.pdf" target="_blank" rel="noopener noreferrer">Open textbook PDF</a>
+- <a href="../assets/textbook/OptimizationPrinciplesAlgorithms2018.pdf" target="_blank" rel="noopener noreferrer">Open textbook PDF</a>
 
 <details class="resource-metadata">
 <summary title="Show raw metadata">ⓘ Metadata</summary>
