@@ -1,5 +1,6 @@
 site_name: Teaching Optimization
-site_description: Pedagogical portal for optimization material
+site_description: Teaching material for optimization
+site_url: https://michelbierlaire.github.io/optimization_resources/
 theme:
   name: material
   font:
