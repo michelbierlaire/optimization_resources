@@ -1,6 +1,6 @@
 # Teaching Optimization
 
-This website gathers teaching resources on optimization developed by [Prof. Michel Bierlaire](https://people.epfl.ch/michel.bierlaire){target="_blank"} at EPFL. It provides access to slides, videos, exercises, notebooks, and reference material covering several areas of optimization.
+This website gathers teaching resources on optimization developed by <a href="https://people.epfl.ch/michel.bierlaire" target="_blank" rel="noopener noreferrer">Prof. Michel Bierlaire</a> at EPFL. It provides access to slides, videos, exercises, notebooks, and reference material covering several areas of optimization.
 
 ## About Prof. Michel Bierlaire
 
@@ -12,9 +12,10 @@ The material currently available on this website originates mainly from two sour
 
 - the EPFL bachelor course *Introduction to Optimization and Operations Research*, taught by Prof. Michel Bierlaire
 - a set of online courses:
-  - [Optimization Principles and Algorithms: Linear Optimization](https://www.edx.org/learn/math/ecole-polytechnique-federale-de-lausanne-optimization-principles-and-algorithms-linear-optimization){target="_blank"}
-  - [Optimization Principles and Algorithms: Network and Discrete Optimization](https://www.edx.org/learn/math/ecole-polytechnique-federale-de-lausanne-optimization-principles-and-algorithms-network-and-discrete-optimization){target="_blank"}
-  - [Optimization Principles and Algorithms: Unconstrained Nonlinear Optimization](https://www.edx.org/learn/algorithms/ecole-polytechnique-federale-de-lausanne-optimization-principles-and-algorithms-unconstrained-nonlinear-optimization){target="_blank"}
+
+    - <a href="https://www.edx.org/learn/math/ecole-polytechnique-federale-de-lausanne-optimization-principles-and-algorithms-linear-optimization" target="_blank" rel="noopener noreferrer">Optimization Principles and Algorithms: Linear Optimization</a>
+    - <a href="https://www.edx.org/learn/math/ecole-polytechnique-federale-de-lausanne-optimization-principles-and-algorithms-network-and-discrete-optimization" target="_blank" rel="noopener noreferrer">Optimization Principles and Algorithms: Network and Discrete Optimization</a>
+    - <a href="https://www.edx.org/learn/algorithms/ecole-polytechnique-federale-de-lausanne-optimization-principles-and-algorithms-unconstrained-nonlinear-optimization" target="_blank" rel="noopener noreferrer">Optimization Principles and Algorithms: Unconstrained Nonlinear Optimization</a>
 
 ## Organization of the website
 
@@ -22,8 +23,10 @@ The content is organized along three complementary dimensions:
 
 - **Topics**: the conceptual structure of optimization, such as formulation, simplex, duality, networks, discrete optimization, or nonlinear optimization
 - **Tracks**: the teaching context in which the material is used
-  - *Online course*: video-based material and supporting resources
-  - *EPFL course*: lecture slides, exercises, and notebooks used in class
+
+    - *Online course*: video-based material and supporting resources
+    - *EPFL course*: lecture slides, exercises, and notebooks used in class
+  
 - **Resource types**: textbook, slides, videos, exercises, and notebooks
 
 This organization makes it possible to browse the material in different ways, depending on your needs:
@@ -46,7 +49,7 @@ This organization makes it possible to browse the material in different ways, de
 
 The source files for this website are available on GitHub:
 
-- [optimization_resources repository](https://github.com/michelbierlaire/optimization_resources){target="_blank"}
+- <a href="https://github.com/michelbierlaire/optimization_resources" target="_blank" rel="noopener noreferrer">optimization_resources repository</a>
 
 ## Disclaimer
 
