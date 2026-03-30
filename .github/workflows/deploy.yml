@@ -32,6 +32,7 @@ jobs:
 
       - name: Build site
         run: |
+          python scripts/generate_site.py
           mkdocs build
 
       - name: Configure Pages
