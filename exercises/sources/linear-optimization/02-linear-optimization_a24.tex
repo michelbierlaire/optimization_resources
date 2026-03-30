@@ -1,0 +1,62 @@
+First, we note that the reduced costs corresponding to the basic
+variables are zero. Therefore, $\bar{c}_1 = \bar{c}_2=0$.
+
+The reduced cost for the non basic variable $x_3$ is defined as
+\[
+\bar{c}_3 = c_3 - c_B^TB^{-1}A_3 = c_3 + c_B^T (d_3)_B,
+\]
+where $c_3$ is the coefficient of $x_3$ in the objective function
+($c_3=0$), $c_B$ are the entries of the cost vector corresponding
+to the basic variables:
+\[
+c_B = \cvect{1 \\ 0},
+\]
+and $(d_3)_B$ are the basic entries of the basic direction $d_3$:
+\[
+(d_3)_B = -B^{-1} A_3 = -\begin{pmatrix*}[r]
+\frac{2}{3}&-\frac{1}{3}\\
+\frac{1}{3} & \frac{1}{3}
+\end{pmatrix*} \cvect{1 \\ 0} = \cvect{-\frac{2}{3} \\ -\frac{1}{3}}.
+\]
+Therefore,
+\[
+\bar{c}_3 = c_B^T (d_3)_B = -\frac{2}{3}.
+\]
+Note that it is negative. It means that the objective function is
+decreasing along that direction.  Each step of size 1 into this
+direction will decrease the value of the objective function by $2/3$.
+
+The reduced cost for the non basic variable $x_4$ is defined as
+\[
+\bar{c}_4 = c_4 - c_B^TB^{-1}A_4 = c_4 + c_B^T (d_4)_B,
+\]
+where $c_4$ is the coefficient of $x_4$ in the objective function
+($c_4=0$), $c_B$ are the entries of the cost vector corresponding
+to the basic variables:
+\[
+c_B = \cvect{1 \\ 0},
+\]
+and $(d_4)_B$ are the basic entries of the basic direction $d_4$:
+\[
+(d_4)_B = -B^{-1} A_4 = -\begin{pmatrix*}[r]
+\frac{2}{3}&-\frac{1}{3}\\
+\frac{1}{3} & \frac{1}{3}
+\end{pmatrix*} \cvect{0 \\ 1} = \cvect{\frac{1}{3} \\ -\frac{1}{3}}.
+\]
+Therefore,
+\[
+\bar{c}_4 = c_B^T (d_4)_B = \frac{1}{3}.
+\]
+Note that it is positive. It means that the objective function is
+increasing along that direction.   Each step of size 1 into this
+direction will increase the value of the objective function by $1/3$.
+
+As a final note, it happens that the point $(0,1,0,0)$ is an optimal
+solution of the problem. Indeed, it is feasible, and $x_1$ is at its
+minimum value. Still, not all reduced costs are non negative. But the
+direction $d_3$ corresponding to the negative reduced cost is
+infeasible (as seen in the previous exercise). It
+is an example that shows that the condition ``all reduced costs non
+negative'' is a sufficient condition for optimality, but not a
+necessary condition. In particular, Theorem 6.30 does not apply as the
+feasible basic solution is degenerate.

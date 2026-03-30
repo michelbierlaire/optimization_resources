@@ -1,0 +1,78 @@
+
+\[
+  f(x)=\frac{1}{2}x_1^2+\frac{9}{2}x_2^2.
+\]
+
+\begin{enumerate}
+\item The gradient is
+$$\nabla f(x_1,x_2) = \begin{pmatrix}
+    \frac{\partial f}{\partial x_1}\\*[1.2ex]
+    \frac{\partial f}{\partial x_2}
+\end{pmatrix} =
+\begin{pmatrix}
+    x_1 \\
+    9x_2 
+\end{pmatrix}.$$
+
+\item The Hessian is 
+$$\nabla^2 f(x_1,x_2) = \begin{pmatrix*}[r]
+    \frac{\partial^2 f}{\partial x_1^2} & \frac{\partial^2 f}{\partial x_1x_2} \\*[1.2ex]
+    \frac{\partial^2 f}{\partial x_2x_1} & \frac{\partial^2 f}{\partial x_2^2}
+\end{pmatrix*} =
+\begin{pmatrix}
+    1 & 0 \\
+    0 & 9 
+\end{pmatrix}.$$
+
+\item The Hessian is constant, and positive definite. Indeed, as it is
+  a diagonal matrix, its diagonal entries are also its eigenvalues. As
+  they are both positive, the matrix is positive definite. And,
+  consequently, the function $f$ is convex everywhere. 
+
+\item The curvature of the function in the direction $d=(1,1)^T$ at  $x^+=(0,0)^T$ is
+  obtained as
+$$\frac{d^T\nabla^2 f(x^+) d}{d^Td} = \frac{10}{2} = 5.$$
+\end{enumerate}
+
+\clearpage
+\[
+  g(x) =\frac{1}{3}x_1^3+x_2^3-x_1-x_2.
+\]
+
+\begin{enumerate}
+\item
+The gradient is
+$$\nabla f(x_1,x_2) = \begin{pmatrix}
+    \frac{\partial f}{\partial x_1}\\*[1.2ex]
+    \frac{\partial f}{\partial x_2}
+\end{pmatrix} =
+\begin{pmatrix}
+    x_1^2-1 \\
+    3x_2^2-1
+\end{pmatrix}.$$
+
+\item The Hessian is
+$$\nabla^2 f(x_1,x_2) = \begin{pmatrix*}[r]
+    \frac{\partial^2 f}{\partial x_1^2} & \frac{\partial^2 f}{\partial x_1x_2} \\*[1.2ex]
+    \frac{\partial^2 f}{\partial x_2x_1} & \frac{\partial^2 f}{\partial x_2^2}
+\end{pmatrix*} =
+\begin{pmatrix*}
+    2x_1 & 0 \\
+    0 & 6x_2
+\end{pmatrix*}.$$
+
+\item Consider the point $x_a=(1,1)^T$. At that point, the Hessian is
+  positive definite and, therefore, the function is convex. If you now
+  consider the point $x_b=(-1,-1)^T$, the Hessian is negative
+  definite, and the function is concave at $x_b$. Therefore, the
+  function itself is neither a convex function, nor a concave
+  function. 
+
+\item 
+The curvature of the function in the direction $d=(9,1)^T$ at the
+specified point $x^+=(9,1)^T$ is obtained as
+$$\frac{d^T\nabla^2 g(x^+) d} {d^T d} = \frac{1464}{82} = 17.85.$$
+
+\end{enumerate}
+
+

@@ -1,0 +1,109 @@
+
+The canonical form only includes ``lesser or equal''
+inequalities. Therefore, we can transform each equality constraint
+into two inequality constraints. 
+
+
+The first constraint is
+\begin{equation}
+  \label{eq:c1}
+  x_1 + x_2 + x_3 = 1.
+\end{equation}
+It can be written with two inequality constraints:
+\begin{align*}
+  x_1 + x_2 + x_3 &\leq 1, \\
+  x_1 + x_2 + x_3 &\geq 1, \\
+\end{align*}
+or, equivalently, 
+\begin{align*}
+  x_1 + x_2 + x_3 &\leq 1, \\
+  -x_1 - x_2 - x_3 &\leq -1. \\
+\end{align*}
+The second constraint is
+\begin{equation}
+  \label{eq:c2}
+x_1 - x_2 + x_4 = 1.
+\end{equation}
+It can be written with two inequality constraints:
+\begin{align*}
+x_1 - x_2 + x_4 &\leq 1, \\
+x_1 - x_2 + x_4 &\geq 1, \\
+\end{align*}
+or, equivalently, 
+\begin{align*}
+x_1 - x_2 + x_4 &\leq 1, \\
+-x_1 + x_2 - x_4 &\leq -1. \\
+\end{align*}
+
+Finally, the fact that  $x_i$ is non negative can be
+written as $-x_i \leq 0$, for $i=1,\ldots,4$.
+
+Putting everything together, we obtain
+\begin{align*}
+  x_1 + x_2 + x_3 &\leq 1, \\
+  -x_1 - x_2 - x_3 &\leq -1, \\
+x_1 - x_2 + x_4 &\leq 1, \\
+-x_1 + x_2 - x_4 &\leq -1, \\
+-x_1 & \leq 0,\\
+-x_2 & \leq 0,\\
+-x_3 & \leq 0,\\
+-x_4 & \leq 0.
+\end{align*}
+In matrix form, we have
+\[
+ \mathcal{P} = \{x \in \R^4 \mid Ax \leq b\},
+\]
+where
+\[
+A = \begin{pmatrix*}[r]
+  1 & 1 & 1 & 0 \\
+  -1 & -1 & -1 & 0  \\
+  1 & -1 & 0 & 1 \\
+  -1 & 1 & 0 & -1 \\
+  -1 & 0 & 0 & 0  \\
+  0 & -1 & 0 & 0  \\
+  0 & 0  & -1 & 0  \\
+  0 & 0  &  0 & -1  \\
+\end{pmatrix*}, \; b = \rvect{1 \\ -1 \\ 1 \\ -1 \\ 0 \\ 0 \\ 0 \\ 0  }
+\]
+
+\clearpage
+Note that there are other ways to write the polyhedron in canonical
+form. In particular, if we observe that $x_3$ and $x_4$ in the
+standard form are slack variables, we can eliminate them in the
+canonical form. Indeed, we can combine
+\req{eq:c1} with the non negativity constraint of $x_3$ to obtain:
+\[
+x_3 = 1 - x_1 - x_2 \geq 0,
+\]
+or, equivalently
+\[
+x_1 + x_2 \leq 1.
+\]
+And $x_3$ disappears from the formulation. 
+Similarly, \req{eq:c2} can be written
+\[
+x_4 = 1 - x_1 + x_2 \geq 0,
+\]
+or, equivalently
+\[
+x_1 - x_2 \leq 1.
+\]
+Putting everything together, we obtain:
+    \begin{align*}
+        x_1 + x_2 \leq 1, \\
+        x_1 - x_2 \leq 1, \\
+        - x_1 \leq 0, \\
+        - x_2 \leq 0. \\
+    \end{align*}
+
+In matrix form, it is:
+    \[
+    \mathcal{P} = \{x \in \R^2 \mid Ax \leq b\}
+    \]
+    with
+    \[
+    A = \begin{pmatrix*}[r] 1 & 1 \\  1 & -1 \\  -1 & 0 \\  0 & -1 \end{pmatrix*}, \qquad b = \begin{pmatrix*}[r] 1 \\ 1 \\ 0 \\ 0 \end{pmatrix*}. 
+    \]
+This is now a polyhedron in $\R^2$.
+

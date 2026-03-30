@@ -1,0 +1,22 @@
+id: constraints-polyhedron-exercise-02
+title: Polyhedron — Exercise 2
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/linear-constraints/v03011-q2.tex
+answer_source: exercises/sources/linear-constraints/v03011-a2.tex
+book_chapter: '3'
+book_section: '3.5.1'
+related:
+- optimization-textbook
+- constraints-polyhedron-video
+- constraints-polyhedron-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 30.11.2
+summary: Exercise on polyhedrons.
+tracks:
+- online-course

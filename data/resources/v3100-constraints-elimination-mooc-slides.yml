@@ -1,0 +1,26 @@
+id: constraints-elimination-slides
+title: 'Linear constraints: elimination of variables — video slides'
+type: slides
+topics:
+- objective
+format: pdf
+path: assets/slides/v03100_h.pdf
+url: null
+book_chapter: '3'
+book_section: '3.5.2'
+related:
+- optimization-textbook
+- constraints-elimination-video
+exercises_ref:
+- constraints-elimination-exercise-01
+- constraints-elimination-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '31.00'
+summary: Slides of the video on the elimination of variables.
+tracks:
+- online-course

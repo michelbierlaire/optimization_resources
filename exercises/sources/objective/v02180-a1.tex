@@ -1,0 +1,68 @@
+
+We consider
+\[
+f(x_1,x_2)=2x_1^2+9x_2^2.
+\]
+The second derivative matrix is
+\[
+   \nabla^2 f(x_1,x_2)
+=
+\begin{pmatrix}
+    4  & 0 \\
+    0 & 18
+\end{pmatrix}.
+\]
+\begin{enumerate}
+\item The matrix is diagonal. Therefore, its eigenvalues are obtained
+directly as the diagonal entries. Consequently, the condition number
+is
+\[
+\kappa_2(A) = \frac{18}{4} = \frac{9}{2},
+\]
+for any $x\in \R^2$.
+\item We now apply the change of variables
+\[
+   \begin{pmatrix}
+    x_1' \\
+    x_2'
+\end{pmatrix}
+=
+\begin{pmatrix}
+    2  & 0 \\
+    0 & 3 \sqrt{2}
+\end{pmatrix}
+\begin{pmatrix}
+    x_1 \\
+    x_2
+\end{pmatrix},
+\;
+   \begin{pmatrix}
+    x_1 \\
+    x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+    \frac{1}{2}  & 0 \\
+    0 & \frac{\sqrt{2}}{6}
+\end{pmatrix}
+\begin{pmatrix}
+    x_1' \\
+    x_2'
+\end{pmatrix}
+\]
+We obtain
+\begin{align*}
+  \tilde{f}(x_1',x_2')&= f(\frac{1}{2} x'_1,\frac{\sqrt{2}}{6} x_2') \\
+       &= 2 (\frac{1}{2} x'_1)^2 + 9 (\frac{\sqrt{2}}{6} x_2')^2 \\
+    &= \frac{1}{2}x_1'^2+\frac{1}{2}x_2'^2.
+\end{align*}
+The Hessian of $\tilde{f}$ is the identity matrix:
+\[
+\nabla^2 \tilde{f}(x') = \begin{pmatrix}
+  1 & 0 \\ 0 & 1
+\end{pmatrix}.
+\]
+Therefore, the two eigenvalues are equal to 1, and the condition number
+is 1, for any $x'\in\R^2$. 
+\end{enumerate}
+

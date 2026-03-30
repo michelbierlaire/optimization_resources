@@ -1,0 +1,27 @@
+id: constraints-basic-directions-video
+title: 'Linear constraints: basic directions'
+type: video
+topics:
+- linear-constraints
+format: video
+path:
+url: https://youtu.be/5QzXY9o7eTY?si=awmoQ4jDGJ_UM4xu
+book_chapter: '3'
+book_section: '3.5.3'
+related:
+- optimization-textbook
+slides_ref: constraints-basic-directions-slides
+exercises_ref:
+- constraints-basic-directions-exercise-01
+- constraints-basic-directions-exercise-02
+- constraints-basic-directions-exercise-03
+notebook_ref: null
+duration: '8:39'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '32.20'
+summary: Recorded lecture on basic directions.
+tracks:
+- online-course

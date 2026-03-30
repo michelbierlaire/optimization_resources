@@ -1,0 +1,215 @@
+\subsubsection*{Question 1}
+\begin{align*}
+x_1+2x_2+3x_3 & = 0,\\
+4x_1+5x_2+6x_3 & = 0,\\
+7x_1+8x_2& =0.
+\end{align*}
+We have 3 equations and 3 variables. In matrix form, we have
+\[
+Ax = b, \text{ with } A= \begin{pmatrix}
+1&2&3\\ 4&5&6\\ 7&8&0
+\end{pmatrix}, \qquad b = \begin{pmatrix}
+0\\0\\0
+\end{pmatrix}.
+\]
+We transform the matrix into a row echelon form to identify its rank
+\[
+A=
+\begin{pmatrix}
+  1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 0 
+\end{pmatrix}
+\stackrel{\mathclap{(1)}}{=}
+\begin{pmatrix}
+  1 & 2 & 3 \\ 0 & -3 & -6 \\ 0 & -6 & -21 
+\end{pmatrix}
+\stackrel{\mathclap{(2)}}{=}
+\begin{pmatrix}
+  1 & 2 & 3 \\ 0 & -3 & -6 \\ 0 & 0 & 9 
+\end{pmatrix}
+\]
+where the following elementary row operations have been applied:
+\begin{itemize}
+\item[(1)] $r_3 = r_3 - 7r_1$ and $r_2=r_2-4r_1$.
+\item[(2)] $r_3 = r_3 -2 r_2$.
+\end{itemize}
+Note that to obtain a true row echelon form, we would also need to normalize
+each row to obtain a one as the first leading element. However, it is
+not necessary in order to obtain the rank of the matrix, which is the number of
+non zero rows in this representation. As each row contains non
+zero elements, the rank is 3 here.
+
+The system is compatible, as the vector
+\[
+x=\cvect{0 \\ 0 \\ 0}
+\]
+is a solution of the system. As the matrix is of full rank, there is
+no redundant equation, and $x$ is the unique solution.
+
+
+\subsubsection*{Question 2}
+\begin{align*}
+x_1+2x_2+3x_3 & = 0,\\
+4x_1+5x_2+6x_3 & = 0,\\
+7x_1+8x_2+9x_3 & =0.
+\end{align*}
+We have 3 equations and 3 variables. In matrix form, we have
+\[
+Ax = b, \text{ with } A= \begin{pmatrix}
+1&2&3\\ 4&5&6\\ 7&8&9
+\end{pmatrix}, \qquad b = \begin{pmatrix}
+0\\0\\0
+\end{pmatrix}.
+\]
+We transform the matrix into a row echelon form to identify its rank
+\[
+A=
+\begin{pmatrix}
+  1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 
+\end{pmatrix}
+\stackrel{\mathclap{(1)}}{=}
+\begin{pmatrix}
+  1 & 2 & 3 \\ 0 & -3 & -6 \\ 0 & -6 & -12 
+\end{pmatrix}
+\stackrel{\mathclap{(2)}}{=}
+\begin{pmatrix}
+  1 & 2 & 3 \\ 0 & -3 & -6 \\ 0 & 0 & 0 
+\end{pmatrix}
+\]
+where the following row operations have been applied:
+\begin{itemize}
+\item[(1)] $r_3 = r_3 - 7r_1$ and $r_2=r_2-4r_1$.
+\item[(2)] $r_3 = r_3-2 r_2$.
+\end{itemize}
+As only two rows contain non zero elements, the rank of the matrix is 2. 
+The system is compatible, as the vector
+\[
+x=\cvect{0 \\ 0 \\ 0}
+\]
+is a solution of the system. Therefore, one of the constraints is
+redundant, and there is an infinite number of solutions.
+
+\subsubsection*{Question 3}
+\begin{align*}
+x_1+2x_2+3x_3 & = 0,\\
+2x_1+4x_2+6x_3 & =0,\\
+5x_1+10x_2+15x_3 & =0.
+\end{align*}
+
+We have 3 equations and 3 variables. In matrix form, we have
+\[
+Ax = b, \text{ with } A= \begin{pmatrix}
+1&2&3\\ 2&4&6\\ 5&10&15
+\end{pmatrix}, \qquad b = \begin{pmatrix}
+0\\0\\0
+\end{pmatrix}.
+\]
+We transform the matrix into a row echelon form to identify its rank
+\[
+A=
+\begin{pmatrix}
+  1 & 2 & 3 \\ 2 & 4 & 6 \\ 5 & 10 & 15 
+\end{pmatrix}
+\stackrel{\mathclap{(1)}}{=}
+\begin{pmatrix}
+  1 & 2 & 3 \\ 0 & 0 & 0 \\ 0 & 0 & 0 
+\end{pmatrix}
+\]
+where the following row operations have been applied:
+\begin{itemize}
+\item[(1)] $r_3 = r_3 - 5r_1$ and $r_2=r_2-2r_1$.
+\end{itemize}
+As only one row contains non zero elements, the rank of the matrix is 1. 
+The system is compatible, as the vector
+\[
+x=\cvect{0 \\ 0 \\ 0}
+\]
+is a solution of the system. Therefore, two of the constraints are
+redundant, and there is an infinite number of solutions.
+
+\subsubsection*{Question 4}
+\begin{align*}
+x_1 + x_2 + x_3 &= 1,\\
+x_1 - x_2 + x_4 &= 1, \\
+x_1 -5x_2 -2x_3 +3x_4 &= 1.
+\end{align*}
+
+We have 3 equations and 4 variables. In matrix form, we have
+\[
+Ax = b, \text{ with } A= \begin{pmatrix}
+1&1&1&0\\ 1&-1&0&1\\ 1&-5&-2&3
+\end{pmatrix}, \qquad b = \begin{pmatrix}
+1\\1\\1
+\end{pmatrix}.
+\]
+We transform the matrix into a row echelon form to identify its rank
+\[
+A=
+\begin{pmatrix}
+  1 & 1 & 1 & 0 \\ 1  & -1 & 0 & 1 \\ 1  & -5 & -2 & 3  
+\end{pmatrix}
+\stackrel{\mathclap{(1)}}{=}
+\begin{pmatrix}
+  1 & 1 & 1 & 0 \\ 0 & -2 & -1 & 1 \\ 0 & -6 & -3 & 3
+\end{pmatrix}
+\stackrel{\mathclap{(2)}}{=}
+\begin{pmatrix}
+  1 & 1 & 1 & 0 \\ 0 & -2 & -1 & 1 \\ 0 & 0 & 0 & 0 
+\end{pmatrix}
+\]
+where the following row operations have been applied:
+\begin{itemize}
+\item[(1)] $r_3 = r_3 - r_1$ and $r_2=r_2-r_1$.
+\item[(2)] $r_3 = r_3 -3 r_2$.
+\end{itemize}
+As only two rows contain non zero elements, the rank of the matrix is 2. 
+The system is compatible, as the vector
+\[
+x=\cvect{1 \\ 0 \\ 0 \\ 0}
+\]
+is a solution of the system. Therefore, one of the constraints is
+redundant, and there is an infinite number of solutions.
+
+\subsubsection*{Question 5}
+
+\begin{align*}
+x_1+x_2&=0,\\
+x_1+2x_2+2x_3&=0,\\
+3x_2+3x_3&=0.
+\end{align*}
+
+We have 3 equations and 3 variables. In matrix form, we have
+\[
+Ax = b, \text{ with } A= \begin{pmatrix}
+1&1&0\\ 1&2&2\\ 0&3&3
+\end{pmatrix}, \qquad b = \begin{pmatrix}
+0\\0\\0
+\end{pmatrix}.
+\]
+We transform the matrix into a row echelon form to identify its rank
+\[
+A=
+\begin{pmatrix}
+  1 & 1 & 0 \\ 1  & 2 & 2 \\ 0  & 3 & 3  
+\end{pmatrix}
+\stackrel{\mathclap{(1)}}{=}
+\begin{pmatrix}
+  1 & 1 & 0 \\ 0 & 1 & 2  \\ 0 & 3 & 3
+\end{pmatrix}
+\stackrel{\mathclap{(2)}}{=}
+\begin{pmatrix}
+  1 & 1  & 0 \\ 0 & 1 & 2  \\ 0 & 0 & -3
+\end{pmatrix}
+\]
+where the following row operations have been applied:
+\begin{itemize}
+\item[(1)] $r_2=r_2-r_1$.
+\item[(2)] $r_3 = r_3 -3 r_2$.
+\end{itemize}
+As each row contains non
+zero elements, the rank of the matrix is 3. 
+The system is compatible, as the vector
+\[
+x=\cvect{0 \\ 0 \\ 0}
+\]
+is a solution of the system. Therefore, no constraint is
+redundant, and $x$ is a unique solution. 

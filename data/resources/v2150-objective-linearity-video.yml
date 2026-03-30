@@ -1,0 +1,25 @@
+id: objective-linearity-video
+title: 'Objective function: linearity and nonlinearity'
+type: video
+topics:
+- objective
+format: video
+path: null
+url: https://youtu.be/anhCNwV7ky4?si=ktzuYBALboxX7RfU
+book_chapter: '2'
+book_section: '2.4'
+related:
+- optimization-textbook
+slides_ref: objective-linearity-slides
+notebook_ref: null
+exercises_ref:
+- objective-linearity-exercise-01
+duration: '6:33'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '21.50'
+summary: Recorded lecture introducing linearity and nonlinearity.
+tracks:
+- online-course

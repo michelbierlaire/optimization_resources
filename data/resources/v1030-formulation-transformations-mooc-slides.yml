@@ -1,0 +1,26 @@
+id: formulation-transformations-slides
+title: 'Formulation: problem transformations — video slides'
+type: slides
+topics:
+- formulation
+format: pdf
+path: assets/slides/v01030_h.pdf
+url: null
+book_chapter: '1'
+book_section: '1.2'
+related:
+- optimization-textbook
+- formulation-transformations-video
+exercises_ref:
+- formulation-transformations-exercise-01
+- formulation-transformations-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '10.30'
+summary: 'Slides of the video Formulation: problem transformation.'
+tracks:
+- online-course

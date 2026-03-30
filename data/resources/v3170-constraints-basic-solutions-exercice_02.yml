@@ -1,0 +1,22 @@
+id: constraints-basic-solutions-exercise-02
+title: Basic solutions — Exercise 2
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/linear-constraints/v03170-q2.tex
+answer_source: exercises/sources/linear-constraints/v03170-a2.tex
+book_chapter: '3'
+book_section: '3.5.2'
+related:
+- optimization-textbook
+- constraints-basic-solutions-video
+- constraints-basic-solutions-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 31.70.2
+summary: Exercise on basic solutions.
+tracks:
+- online-course

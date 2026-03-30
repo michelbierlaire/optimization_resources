@@ -1,0 +1,22 @@
+id: constraints-vertices-exercise-01
+title: Vertices and active constraints — Exercise 1
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/linear-constraints/v03130-q1.tex
+answer_source: exercises/sources/linear-constraints/v03130-a1.tex
+book_chapter: '3'
+book_section: '3.5.2'
+related:
+- optimization-textbook
+- constraints-vertices-video
+- constraints-vertices-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 31.30.1
+summary: Exercise on vertices and active constraints.
+tracks:
+- online-course

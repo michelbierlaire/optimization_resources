@@ -1,0 +1,37 @@
+topics:
+  - id: formulation
+    title: Formulation
+
+  - id: objective
+    title: Objective function
+
+  - id: linear-optimization
+    title: Linear optimization
+
+  - id: linear-constraints
+    title: Linear constraints
+    parent: linear-optimization
+
+  - id: simplex
+    title: Simplex algorithm
+    parent: linear-optimization
+
+  - id: duality
+    title: Duality
+
+  - id: networks
+    title: Networks
+
+  - id: transshipment
+    title: Transshipment
+    parent: networks
+
+  - id: shortest-paths
+    title: Shortest paths
+    parent: networks
+
+  - id: discrete-optimization
+    title: Discrete optimization
+
+  - id: nonlinear-optimization
+    title: Nonlinear optimization

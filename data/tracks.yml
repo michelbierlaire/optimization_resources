@@ -1,0 +1,8 @@
+tracks:
+  - id: online-course
+    title: Online course
+    description: Videos and supporting material prepared for the online course.
+
+  - id: epfl-course
+    title: EPFL course
+    description: Slides, exercises, and notebooks prepared for the EPFL lectures.

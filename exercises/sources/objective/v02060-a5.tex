@@ -1,0 +1,144 @@
+\begin{enumerate}
+
+\item  We have
+  \begin{align*}
+\lim_{h\to 0} \frac{\frac{x+h}{x+h-1}-\frac{x}{x-1}}{h}&= \lim_{h\to
+  0} \frac{\frac{x^2-x+hx-h-x^2-hx+x}{(x+h-1)(x-1)}}{h} \\&=
+\lim_{h\to 0} \frac{-1}{(x+h-1)(x-1)} \\&= \frac{-1}{(x-1)^2}.	
+  \end{align*}
+The limit exists for all $x$ except $x=1$.
+
+
+\item If $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is a differentiable
+function, the function $\nabla f(x): \mathbb{R}^n \rightarrow \mathbb{R}^n$ is called the gradient of $f$ and is defined as 
+\[
+  \nabla f(x_1,x_2,x_3)
+=
+\cvect{
+     \frac{\partial f}{\partial x_1} \\
+    \frac{\partial f}{\partial x_2}  \\
+    \frac{\partial f}{\partial x_3} 
+}.
+\]
+Therefore, the gradient of our function is
+\[
+ \nabla f(x_1,x_2,x_3)
+=
+\cvect{
+     e^{x_1}+2x_1x_3-x_2x_3 \\
+    -x_1x_3 \\
+    x_1^2-x_1x_2
+}.
+\]
+
+\item  Let $f: \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable
+ function. Consider $x \in \mathbb{R}^n$ and $d \in \mathbb{R}^n$. The
+ directional derivative of $f$ in $x$ in the direction $d$ is given by
+ \[
+\lim_{\alpha\to 0} \frac{f(x+ \alpha d)-f(x)}{\alpha}, 
+\]
+if the limit exists. In addition, when the gradient exists, the
+directional derivative is the scalar product between the gradient of
+$f$ and the direction $d$, that is,
+\[
+\nabla f(x)^Td.
+\]
+Therefore, the directional derivative is
+\begin{align*}
+(d_1 \, d_2 \,d_3)\nabla f(x_1,x_2,x_3)=
+\end{align*}
+\[d_1(e^{x_1}+2x_1x_3-x_2x_3)-d_2x_1x_3-d_3(x_1^2-x_1x_2). \]
+
+\item This is incorrect. Indeed, the gradient is
+$$\nabla f(x_1,x_2)= 
+\begin{pmatrix}
+2x_1\\
+2x_2
+\end{pmatrix}
+$$ 
+and the point $(0,0)$, we obtain as directional derivative:
+$$\text{$\nabla$}f(0,0)^Td=(0,0)\begin{pmatrix}
+1\\1
+\end{pmatrix}=0.$$
+
+
+\item Recall that the direction opposite the gradient is that in which the function has its steepest descent.
+$$\nabla f(x)
+=
+\begin{pmatrix}
+\frac{\partial f}{\partial x_1}\\
+\frac{\partial f}{\partial x_2}
+\end{pmatrix}
+=
+\begin{pmatrix}
+x_1\\
+4x_2
+\end{pmatrix}.$$
+
+In point $x=(1 \, 1)^T$
+\[
+\nabla f(x)
+=
+\begin{pmatrix}
+x_1\\
+4x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\
+4
+\end{pmatrix},
+\]
+
+The directional derivative in f in the direction opposite to the gradient is:
+
+\begin{align*}
+-\nabla f(x)^T \nabla f(x)= \begin{pmatrix}
+-1 & -4
+\end{pmatrix}
+\begin{pmatrix}
+1\\
+4
+\end{pmatrix}
+=
+-17\\
+\end{align*}
+
+\item First, we are going to calculate the gradient matrix:
+\[
+\nabla f(x)
+=
+\begin{pmatrix}
+   \frac{\partial f_1}{\partial x_1}      & \frac{\partial f_2}{\partial x_1} \\
+    \frac{\partial f_1}{\partial x_2}       & \frac{\partial f_2}{\partial x_2}
+\end{pmatrix}
+=
+\begin{pmatrix}
+   2x_1x_2      & -\sin(e^{x_1+x_2^2})e^{x_1+x_2^2} \\
+    x_1^2      & -2x_2\sin(e^{x_1+x_2^2})e^{x_1+x_2^2}
+    \end{pmatrix}.
+\]
+
+Knowing that transposing the gradient we obtain the Jacobian, we are going to calculate it
+\[
+   JF(x_1,x_2)=\nabla f(x)^T
+=
+\begin{pmatrix}
+   \frac{\partial f_1}{\partial x_1}      & \frac{\partial f_1}{\partial x_2} \\
+    \frac{\partial f_2}{\partial x_1}       & \frac{\partial f_2}{\partial x_2}
+\end{pmatrix}
+=
+\begin{pmatrix}
+   2x_1x_2      &   x_1^2 \\
+    -\sin(e^{x_1+x_2^2})e^{x_1+x_2^2}    & -2x_2\sin(e^{x_1+x_2^2})e^{x_1+x_2^2}
+\end{pmatrix}.
+\]
+
+
+
+\item The function $f(x,y)=400-3x^2y^2$ is differentiable in point $(1,-2)$, therefore the gradient is going to give us the direction in which the depth has its steepest ascent.
+$$\text{$\nabla$}f(x,y)=(-6xy^2,-6x^2y)$$
+$$\text{$\nabla$}f(1,-2)=(-24,12).$$
+The normalized direction in which the depth increases as quick as possible is then $(-2/\sqrt{5},1/\sqrt{5})$.
+\end{enumerate}
+

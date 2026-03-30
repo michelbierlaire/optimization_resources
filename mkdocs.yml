@@ -1,0 +1,58 @@
+site_name: Teaching Optimization
+site_description: Pedagogical portal for optimization material
+theme:
+  name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+nav:
+  - Home: index.md
+  - Topics:
+      - Overview: topics/index.md
+      - Formulation: topics/formulation.md
+      - Linear optimization: topics/linear-optimization.md
+      - Simplex algorithm: topics/simplex.md
+      - Duality: topics/duality.md
+      - Networks: topics/networks.md
+      - Transshipment: topics/transshipment.md
+      - Shortest paths: topics/shortest-paths.md
+      - Discrete optimization: topics/discrete-optimization.md
+      - Nonlinear optimization: topics/nonlinear-optimization.md
+  - Tracks:
+      - Overview: tracks/index.md
+      - Online course: tracks/online-course.md
+      - EPFL course: tracks/epfl-course.md
+  - Resources:
+      - All resources: resources/index.md
+  - Textbook: textbook/index.md
+  - Slides: slides/index.md
+  - Notebooks: notebooks/index.md
+  - Exercises: exercises/index.md
+  - Videos: videos/index.md
+markdown_extensions:
+  - tables
+  - admonition
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search

@@ -1,0 +1,26 @@
+id: constraints-polyhedron-video
+title: 'Linear constraints: polyhedron'
+type: video
+topics:
+- linear-constraints
+format: video
+path:
+url: https://youtu.be/UHs1OTpvx5I?si=Ps2nqipgekHdXWS-
+book_chapter: '3'
+book_section: '3.5.1'
+related:
+- optimization-textbook
+slides_ref: constraints-polyhedron-slides
+exercises_ref:
+- constraints-polyhedron-exercise-01
+- constraints-polyhedron-exercise-02
+notebook_ref: null
+duration: '8:52'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '30.10'
+summary: Recorded lecture introducing polyhedrons.
+tracks:
+- online-course

@@ -1,0 +1,83 @@
+<!-- This file was automatically generated on 2026-03-30 20:56:16. -->
+
+# Resources
+
+All catalogued resources.
+
+- [Active constraints — Exercise 1](items/constraints-active-exercise-01.md) — exercise
+- [Active constraints — Exercise 2](items/constraints-active-exercise-02.md) — exercise
+- [Basic directions — Exercise 1](items/constraints-basic-directions-exercise-01.md) — exercise
+- [Basic directions — Exercise 2](items/constraints-basic-directions-exercise-02.md) — exercise
+- [Basic directions — Exercise 3](items/constraints-basic-directions-exercise-03.md) — exercise
+- [Basic solutions — Exercise 1](items/constraints-basic-solutions-exercise-01.md) — exercise
+- [Basic solutions — Exercise 2](items/constraints-basic-solutions-exercise-02.md) — exercise
+- [Convexity — Exercise 1](items/objective-convexity-exercise-01.md) — exercise
+- [Convexity — Exercise 2](items/objective-convexity-exercise-02.md) — exercise
+- [Degeneracy — Exercise 1](items/constraints-degeneracy-exercise-01.md) — exercise
+- [Differentiability: the second order — Exercise 1](items/objective-second-order-exercise-01.md) — exercise
+- [Elimination of variables and constraints — Exercise 1](items/constraints-elimination-exercise-01.md) — exercise
+- [Elimination of variables and constraints — Exercise 2](items/constraints-elimination-exercise-02.md) — exercise
+- [Feasible directions — Exercise 1](items/constraints-feasible-directions-exercise-01.md) — exercise
+- [Feasible directions — Exercise 2](items/constraints-feasible-directions-exercise-02.md) — exercise
+- [Gradient — Exercise 1](items/objective-gradient-exercise-01.md) — exercise
+- [Gradient — Exercise 2](items/objective-gradient-exercise-02.md) — exercise
+- [Gradient — Exercise 3](items/objective-gradient-exercise-03.md) — exercise
+- [Gradient — Exercise 4](items/objective-gradient-exercise-04.md) — exercise
+- [Gradient — Exercise 5](items/objective-gradient-exercise-05.md) — exercise
+- [Linearity and nonlinearity — Exercise 1](items/objective-linearity-exercise-01.md) — exercise
+- [Modeling — Exercise 1](items/formulation-modeling-exercise-01.md) — exercise
+- [Modeling — Exercise 2](items/formulation-modeling-exercise-02.md) — exercise
+- [Modeling — Exercise 3](items/formulation-modeling-exercise-03.md) — exercise
+- [Polyhedron and linear constraints — Exercise 1](items/linear-constraints-exercise-01.md) — exercise
+- [Polyhedron — Exercise 1](items/constraints-polyhedron-exercise-01.md) — exercise
+- [Polyhedron — Exercise 2](items/constraints-polyhedron-exercise-02.md) — exercise
+- [Preconditioning — Exercise 1](items/objective-preconditioning-exercise-01.md) — exercise
+- [Problem transformations — Exercise 1](items/formulation-transformations-exercise-01.md) — exercise
+- [Problem transformations — Exercise 2](items/formulation-transformations-exercise-02.md) — exercise
+- [Properties — Exercise 1](items/formulation-properties-exercise-01.md) — exercise
+- [Properties — Exercise 2](items/formulation-properties-exercise-02.md) — exercise
+- [Properties — Exercise 3](items/formulation-properties-exercise-03.md) — exercise
+- [Standard form — Exercise 1](items/constraints-standard-exercise-01.md) — exercise
+- [Vertices and active constraints — Exercise 1](items/constraints-vertices-exercise-01.md) — exercise
+- [Vertices and active constraints — Exercise 2](items/constraints-vertices-exercise-02.md) — exercise
+- [Python basics — Lab 1](items/python-lab-01.md) — notebook
+- [Formulation: modeling — video slides](items/formulation-modeling-slides.md) — slides
+- [Formulation: problem definition — video slides](items/formulation-definition-slides.md) — slides
+- [Formulation: problem transformations — video slides](items/formulation-transformations-slides.md) — slides
+- [Formulation: properties — video slides](items/formulation-properties-slides.md) — slides
+- [Linear constraints: active constraints — video slides](items/constraints-active-slides.md) — slides
+- [Linear constraints: basic directions — video slides](items/constraints-basic-directions-slides.md) — slides
+- [Linear constraints: basic solutions — video slides](items/constraints-basic-solutions-slides.md) — slides
+- [Linear constraints: degeneracy — video slides](items/constraints-degeneracy-slides.md) — slides
+- [Linear constraints: elimination of variables — video slides](items/constraints-elimination-slides.md) — slides
+- [Linear constraints: feasible directions — video slides](items/constraints-feasible-directions-slides.md) — slides
+- [Linear constraints: polyhedron — video slides](items/constraints-polyhedron-slides.md) — slides
+- [Linear constraints: standard form — video slides](items/constraints-standard-slides.md) — slides
+- [Linear constraints: vertices and active constraints — video slides](items/constraints-vertices-slides.md) — slides
+- [Objective function: convexity — video slides](items/objective-convexity-slides.md) — slides
+- [Objective function: differentiability, the first order — video slides](items/objective-first-order-slides.md) — slides
+- [Objective function: differentiability, the second order — video slides](items/objective-second-order-slides.md) — slides
+- [Objective function: gradient and descent — video slides](items/objective-gradient-slides.md) — slides
+- [Objective function: linearity and nonlinearity — video slides](items/objective-linearity-slides.md) — slides
+- [Objective function: preconditioning — video slides](items/objective-preconditioning-slides.md) — slides
+- [Optimization textbook](items/optimization-textbook.md) — textbook
+- [Formulation: modeling](items/formulation-modeling-video.md) — video
+- [Formulation: problem definition](items/formulation-definition-video.md) — video
+- [Formulation: problem transformations](items/formulation-transformations-video.md) — video
+- [Formulation: properties](items/formulation-properties-video.md) — video
+- [Linear constraints: active constraints](items/constraints-active-video.md) — video
+- [Linear constraints: basic directions](items/constraints-basic-directions-video.md) — video
+- [Linear constraints: basic solutions](items/constraints-basic-solutions-video.md) — video
+- [Linear constraints: degeneracy](items/constraints-degeneracy-video.md) — video
+- [Linear constraints: elimination of variables](items/constraints-elimination-video.md) — video
+- [Linear constraints: feasible directions](items/constraints-feasible-directions-video.md) — video
+- [Linear constraints: polyhedron](items/constraints-polyhedron-video.md) — video
+- [Linear constraints: standard form](items/constraints-standard-video.md) — video
+- [Linear constraints: vertices and active constraints](items/constraints-vertices-video.md) — video
+- [Objective function: convexity](items/objective-convexity-video.md) — video
+- [Objective function: differentiability, the first order](items/objective-first-order-video.md) — video
+- [Objective function: differentiability, the second order](items/objective-second-order-video.md) — video
+- [Objective function: gradient and descent](items/objective-gradient-video.md) — video
+- [Objective function: linearity and nonlinearity](items/objective-linearity-video.md) — video
+- [Objective function: preconditioning](items/objective-preconditioning-video.md) — video
+

@@ -1,0 +1,22 @@
+id: formulation-transformations-exercise-01
+title: Problem transformations — Exercise 1
+type: exercise
+topics:
+- formulation
+format: pdf
+question_source: exercises/sources/formulation/v01040-q1.tex
+answer_source: exercises/sources/formulation/v01040-a1.tex
+book_chapter: '1'
+book_section: '1.2'
+related:
+- optimization-textbook
+- formulation-transformations-video
+- formulation-transformations-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 10.40.1
+summary: Exercise on transforming an optimization problem.
+tracks:
+- online-course

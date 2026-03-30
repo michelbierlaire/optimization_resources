@@ -1,0 +1,22 @@
+id: constraints-feasible-directions-exercise-02
+title: Feasible directions — Exercise 2
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/linear-constraints/v03070-q2.tex
+answer_source: exercises/sources/linear-constraints/v03070-a2.tex
+book_chapter: '3'
+book_section: '3.3'
+related:
+- optimization-textbook
+- constraints-feasible-directions-video
+- constraints-feasible-directions-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 30.70.2
+summary: Exercise on feasible directions.
+tracks:
+- online-course

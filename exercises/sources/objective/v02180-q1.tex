@@ -1,0 +1,35 @@
+
+Consider the following quadratic function:
+\begin{equation}
+f(x_1,x_2)=2x_1^2+9x_2^2.
+\end{equation}
+\begin{enumerate}
+\item Calculate the condition number of the Hessian of $f$  at point $(x_1,x_2)$. 
+\item Apply the change of variable $x'= M x$ where
+  \[
+  M= \begin{pmatrix}
+    2 & 0 \\ 0 & 3 \sqrt{2}
+\end{pmatrix},
+  \]
+  that is,
+  \begin{align*}
+    x'_1 &= 2 x_1, \\
+    x'_2 &= 3 \sqrt{2} x_2.
+  \end{align*}
+  Consider the function
+  \[
+\tilde{f}(x') = f(M^{-1}x').
+\]
+Calculate the condition number of the Hessian (using the 2-norm) of $\tilde{f}$ at point $(x'_1,x'_2)$. 
+\end{enumerate}
+\vspace{3cm}
+Remember that,
+if $A \in \mathbb{R}^{n\times n}$ is a non singular symmetric matrix, then the condition number of $A$ is
+\begin{equation}
+\kappa(A)=||A||\,||A^{-1}||.
+\end{equation}
+The norm 2 of a matrix is its largest singular value. Therefore, in this case,
+\begin{equation}
+\kappa_2(A)=||A||_2||A^{-1}||_2=\frac{\sigma_1}{\sigma_n},
+\end{equation}
+where $\sigma_1$ is the largest singular value of $A$ and $\sigma_n$ is the smallest. By extension, the condition number of a singular matrix (i.e., such that $\sigma_n=0$) is $+\infty$. If $A$ is symmetric positive semidefinite, the singular values of $A$ are its eigenvalues.

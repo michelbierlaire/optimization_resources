@@ -1,0 +1,27 @@
+id: constraints-basic-directions-slides
+title: 'Linear constraints: basic directions — video slides'
+type: slides
+topics:
+- objective
+format: pdf
+path: assets/slides/v03220_h.pdf
+url: null
+book_chapter: '3'
+book_section: '3.5.3'
+related:
+- optimization-textbook
+- constraints-basic-directions-video
+exercises_ref:
+- constraints-basic-directions-exercise-01
+- constraints-basic-directions-exercise-02
+- constraints-basic-directions-exercise-03
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '32.20'
+summary: Slides of the video on basic directions.
+tracks:
+- online-course

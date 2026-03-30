@@ -1,0 +1,28 @@
+ {\bf Answer: (b).}
+
+Answer (a) is true. In case of a degenerate solution, several basic solutions may correspond to the same vertex of the feasible region.
+Answer (c) is also true. Basic directions associated with non degenerate feasible basic solutions are always feasible directions. Refer to Theorem 3.44 (p.90) for the proof of this statement. Answer (b) is false. When we have a degenerate basic solution, it is not always true that there exists at least one feasible basic direction.
+An example is given by the linear optimization problem in standard
+form characterized by the following data:
+
+$$ A=
+\begin{pmatrix}
+1 & 1 & 1 & 0\\
+-1 & 1 & 0 & 1
+\end{pmatrix}, \quad
+b=
+\begin{pmatrix}
+0\\
+2
+\end{pmatrix}, \quad
+c=
+\begin{pmatrix}
+2\\
+1\\
+0\\
+0
+\end{pmatrix}.$$
+
+The degenerate feasible basic solution $x^T = (0, 0, 0, 2)$ does not
+have any feasible basic direction. This is actually the only feasible solution of the problem, and therefore also the optimal solution.
+

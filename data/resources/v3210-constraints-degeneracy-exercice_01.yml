@@ -1,0 +1,22 @@
+id: constraints-degeneracy-exercise-01
+title: Degeneracy — Exercise 1
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/linear-constraints/v03210-q1.tex
+answer_source: exercises/sources/linear-constraints/v03210-a1.tex
+book_chapter: '3'
+book_section: '3.5.2'
+related:
+- optimization-textbook
+- constraints-degeneracy-video
+- constraints-degeneracy-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 32.10.1
+summary: Exercise on degeneracy.
+tracks:
+- online-course

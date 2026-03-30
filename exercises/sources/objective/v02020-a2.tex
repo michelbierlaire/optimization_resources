@@ -1,0 +1,17 @@
+
+Note first that the set $A=[\ell_1,u_1] \times [\ell_2,u_2]$ is non
+empty and convex.
+Consider $x$ and $y$ in $A$ and $\lambda \in [0,1]$. By convexity of
+$A$, the point $z= (1-\lambda)x + \lambda y$ belongs to $A$.
+
+As $f$ is concave, we have
+\begin{align*}
+  g(z) & = f( z_1)\\
+  &  = f((1-\lambda)x_1 + \lambda y_1)\\
+  & \geq (1-\lambda) f(x_1) + \lambda f(y_1) \\
+  & = (1-\lambda) g(x_1,x_2) + \lambda g(y_1,y_2) \\
+  & = (1-\lambda) g(x) + \lambda g(y),
+\end{align*}
+that proves the concavity of $g$.
+
+

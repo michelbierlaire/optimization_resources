@@ -1,0 +1,25 @@
+id: constraints-standard-video
+title: 'Linear constraints: standard form'
+type: video
+topics:
+- linear-constraints
+format: video
+path:
+url: https://youtu.be/QOqZbhZifYg?si=ke1hZcyKY-id1soi
+book_chapter: '3'
+book_section: '3.5.1'
+related:
+- optimization-textbook
+exercises_ref:
+- constraints-standard-exercise-01
+slides_ref: constraints-standard-slides
+notebook_ref: null
+duration: '6:35'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '30.40'
+summary: Recorded lecture introducing polyhedron in standard form.
+tracks:
+- online-course

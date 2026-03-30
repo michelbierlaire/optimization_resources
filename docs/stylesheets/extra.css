@@ -1,0 +1,229 @@
+/* ---------- Global typography ---------- */
+
+:root {
+  --md-text-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --md-code-font: "JetBrains Mono", "Fira Code", monospace;
+  --resource-surface: rgba(0, 0, 0, 0.03);
+  --resource-border: rgba(0, 0, 0, 0.08);
+  --resource-border-strong: rgba(0, 0, 0, 0.14);
+  --resource-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+[data-md-color-scheme="slate"] {
+  --resource-surface: rgba(255, 255, 255, 0.04);
+  --resource-border: rgba(255, 255, 255, 0.12);
+  --resource-border-strong: rgba(255, 255, 255, 0.18);
+  --resource-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve readability */
+.md-typeset {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol {
+  max-width: 72ch;
+}
+
+/* ---------- Headings ---------- */
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid var(--resource-border);
+  padding-bottom: 0.3em;
+  margin-top: 2.2rem;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+}
+
+/* ---------- Links ---------- */
+
+.md-typeset a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.md-typeset a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Navigation ---------- */
+
+.md-nav__title {
+  font-weight: 700;
+}
+
+.md-nav__link--active {
+  font-weight: 700;
+}
+
+/* ---------- Code blocks ---------- */
+
+.md-typeset code {
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+.md-typeset pre {
+  border-radius: 0.65rem;
+  box-shadow: inset 0 0 0 1px var(--resource-border);
+}
+
+.md-typeset pre code {
+  border-radius: 0.65rem;
+}
+
+/* ---------- Tables ---------- */
+
+.md-typeset table {
+  border-radius: 0.65rem;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px var(--resource-border);
+}
+
+/* ---------- Admonitions ---------- */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.65rem;
+}
+
+/* ---------- Embedded resources ---------- */
+
+iframe {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--resource-border);
+  border-radius: 0.85rem;
+  box-shadow: var(--resource-shadow);
+  background: #fff;
+}
+
+[data-md-color-scheme="slate"] iframe {
+  background: #111827;
+}
+
+/* ---------- Lists following section headings ---------- */
+
+.md-typeset h2 + ul,
+.md-typeset h2 + ol {
+  margin-top: 0.75rem;
+}
+
+/* ---------- Resource action lists ---------- */
+
+.md-typeset h2 + ul li,
+.md-typeset h2 + ol li,
+.md-typeset ul li,
+.md-typeset ol li {
+  margin-bottom: 0.3rem;
+}
+
+/* ---------- Metadata block ---------- */
+
+.resource-metadata {
+  margin-top: 2rem;
+  padding: 0.15rem 0;
+  border-top: 1px solid var(--resource-border);
+}
+
+.resource-metadata summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+}
+
+.resource-metadata[open] {
+  padding-top: 0.75rem;
+}
+
+/* ---------- Bottom navigation block ---------- */
+
+/* ---------- Bottom navigation block ---------- */
+.md-typeset h2#navigation + ul,
+.md-typeset h2[id="navigation"] + ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: none;
+  padding: 0.8rem 0;
+  margin-top: 0.6rem;
+  list-style: none;
+}
+
+.md-typeset h2#navigation + ul li,
+.md-typeset h2[id="navigation"] + ul li {
+  margin: 0;
+}
+
+.md-typeset h2#navigation + ul li a,
+.md-typeset h2[id="navigation"] + ul li a {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  text-decoration: none;
+  color: var(--md-default-fg-color);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.md-typeset h2#navigation + ul li a:hover,
+.md-typeset h2[id="navigation"] + ul li a:hover {
+  background: var(--resource-surface);
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+
+.md-typeset h2#navigation,
+.md-typeset h2[id="navigation"] {
+  display: none;
+}
+
+/* ---------- Improve spacing ---------- */
+
+.md-content__inner {
+  max-width: 980px;
+}
+
+.md-main__inner {
+  margin-top: 0.8rem;
+}
+
+/* ---------- Responsive adjustments ---------- */
+
+@media screen and (max-width: 76.1875em) {
+  .md-content__inner {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset h2#navigation + ul,
+  .md-typeset h2[id="navigation"] + ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ---------- Subtle academic tone ---------- */
+
+body {
+  background-color: #ffffff;
+}

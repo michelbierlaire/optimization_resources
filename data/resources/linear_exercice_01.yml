@@ -1,0 +1,21 @@
+id: linear-constraints-exercise-01
+title: Polyhedron and linear constraints — Exercise 1
+type: exercise
+topics:
+- linear-optimization
+format: pdf
+question_source: exercises/sources/linear-optimization/02-linear-optimization_q01.tex
+answer_source: exercises/sources/linear-optimization/02-linear-optimization_a01.tex
+book_chapter: '3'
+book_section: 3.5.1
+related:
+- optimization-textbook
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 101
+summary: Exercise on identifying feasible regions and interpreting linear constraints
+  geometrically.
+tracks:
+- epfl-course

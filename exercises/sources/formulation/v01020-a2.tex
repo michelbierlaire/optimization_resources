@@ -1,0 +1,66 @@
+
+We consider the three steps of the modeling process.
+
+\begin{description}
+\item[Decision variables] The design of the cylinder depends on two
+  variables, both expressed in centimeters:
+  \begin{itemize}
+  \item the radius of the basis: $r$,
+   \item the height of the cylinder: $h$.
+  \end{itemize}
+
+  \begin{center}
+\mytikz{tikz01.png}{
+    \begin{tikzpicture}[thick]
+  \node (a) [cylinder, shape border rotate=90, draw, minimum height=30mm, minimum width=15mm] {};
+  \draw [<->] ([xshift=5pt]a.before bottom) -- ([xshift=5pt]a.after top) node [midway, right] {$h$};
+\coordinate (center) at ($(a.before top)!0.5!(a.after top)$);
+  \draw [<->] (a.before top) -- (center) node [midway] {$r$};
+\end{tikzpicture}
+}
+  \end{center}
+
+  
+\item[Objective function] Since the thickness of the aluminium is the same
+at any part of the can, the total surface of the cylinder has to be
+  minimized. The objective function must provide the total surface as
+  a function of the decision variables:
+  \[
+f:\R^2 \to \R: f(r,h).
+  \]
+  \begin{itemize}
+\item Each basis is a circle of radius $r$, so its surface is $\pi
+  r^2$.
+ \item The side of the can is a rectangle of area $2\pi r h$.
+  \end{itemize}
+  Therefore, the objective function to minimize is
+  \[
+f(r,h) = 2 \pi r^2 + 2 \pi r h.
+  \]
+\item[Constraints] The volume of the can must be 0.33 liters, that is
+  330 cm$^3$. The first constraint is therefore:
+  \[
+  \pi r^2 h = 330.
+  \]
+  We also need non negativity constraints:
+  \begin{align*}
+    r & \geq 0, \\
+    h & \geq 0.
+  \end{align*}
+\end{description}
+
+The optimization problem is therefore:
+
+\[
+\min_{r,h} 2 \pi r^2 + 2 \pi r h
+\]
+subject to
+  \begin{align*}
+  \pi r^2 h &= 330, \\
+    r & \geq 0, \\
+    h & \geq 0.
+  \end{align*}
+
+The optimal solution of this problem is $r = 3.746$ cm and $h = 7.491$ cm.
+
+

@@ -1,0 +1,23 @@
+id: objective-first-order-video
+title: 'Objective function: differentiability, the first order'
+type: video
+topics:
+- objective
+format: video
+path: null
+url: https://youtu.be/a4v2cKn8pvw?si=ls2e-23dNV5-BbwN
+book_chapter: '2'
+book_section: '2.2'
+related:
+- optimization-textbook
+slides_ref: objective-first-order-slides
+notebook_ref: null
+duration: '6:06'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '20.30'
+summary: Recorded lecture introducing first order differentiability.
+tracks:
+- online-course

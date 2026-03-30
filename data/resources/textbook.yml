@@ -1,0 +1,24 @@
+id: optimization-textbook
+title: Optimization textbook
+type: textbook
+topics:
+- linear-optimization
+format: pdf
+path: assets/textbook/OptimizationPrinciplesAlgorithms2018.pdf
+url: null
+book_chapter: null
+book_section: null
+related: null
+slides_ref: null
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 1
+summary: Main textbook for the optimization course, containing the theoretical foundations,
+  examples, and references for linear optimization.
+tracks:
+- online-course
+- epfl-course

@@ -1,0 +1,26 @@
+id: formulation-transformations-video
+title: 'Formulation: problem transformations'
+type: video
+topics:
+- formulation
+format: video
+path: null
+url: https://youtu.be/vGZUzZwJC9o?si=DnfaIKYaMRJhgUgk
+book_chapter: '1'
+book_section: '1.2'
+related:
+- optimization-textbook
+slides_ref: formulation-transformations-slides
+exercises_ref:
+- formulation-transformations-exercise-01
+- formulation-transformations-exercise-02
+notebook_ref: null
+duration: '11:37'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '10.30'
+summary: Recorded lecture describing how to transform an optimization problem.
+tracks:
+- online-course

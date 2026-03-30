@@ -1,0 +1,22 @@
+id: formulation-modeling-exercise-01
+title: Modeling — Exercise 1
+type: exercise
+topics:
+- formulation
+format: pdf
+question_source: exercises/sources/formulation/v01020-q1.tex
+answer_source: exercises/sources/formulation/v01020-a1.tex
+book_chapter: '1'
+book_section: '1.1'
+related:
+- optimization-textbook
+- formulation-modeling-video
+- formulation-modeling-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 10.20.1
+summary: Exercise on modeling an optimization problem.
+tracks:
+- online-course

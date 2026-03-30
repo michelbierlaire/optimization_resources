@@ -1,0 +1,109 @@
+
+ We apply a sequence of  simple transformations to
+  the optimization problem.
+
+\begin{enumerate}
+\item A maximization problem whose objective function is $f(x)$ is equivalent to a minimization problem whose objective function is $-f(x)$:
+$$\argmax_x f(x)=\argmin_x-f(x)$$
+and
+$$\max f(x)=-\min -f(x).$$
+By applying statement (a) to our problem we obtain:
+
+\[
+-\min x_1^2-\sin x_2
+\]
+subject to
+\begin{align*}
+6x_1 -x_2^2 & \geq 1,\\
+x_1^2 +x_2^2 & = 3,\\
+x_1 & \geq 2,\\
+x_2 & \in \mathbb{R}.
+\end{align*}
+
+\item Now we transform the constraints.
+  An equality constraint can be written as the combination of two inequalities.
+$$g(x)=0 \Longleftrightarrow  \left\{ \begin{array}{l} g(x) \leq 0 \\
+    g(x) \geq 0. \end{array} \right. $$
+
+The optimization problem becomes 
+\[
+-\min x_1^2-\sin x_2
+\]
+subject to
+\begin{align*}
+6x_1-x_2^2  & \geq 1\\
+x_1^2+x_2^2 & \leq 3\\
+x_1^2+x_2^2 & \geq 3\\
+x_1 & \geq 2\\
+x_2 & \geq 0.
+\end{align*}
+
+
+\item A constraint defined by a lower inequality can be multiplied by $-1$ to get an upper inequality:
+$$g(x) \leq 0 \Longleftrightarrow  -g(x)\geq 0.$$
+\
+$$-\min x_1^2-\sin x_2$$
+subject to
+\begin{align*}
+-6x_1 +x_2^2  & \leq -1\\
+x_1^2+x_2^2 & \leq 3\\
+-x_1^2-x_2^2 & \leq -3\\
+x_1 & \geq 2\\
+x_2 & \in \mathbb{R}.
+\end{align*}
+
+
+\item If a variable $x$ can take any real value, it can be replaced by two non negative artificial variables denoted by $x^+$ and $x^-$, such that
+$$
+x=  x^+-x^-.
+$$
+We can impose $x^+\geq 0$ and $x^- \geq 0$, without loss of
+generality. We apply this to the variable $x_2$ in our formulation.\\
+
+$$-\min x_1^2-\sin(x_2^+-x_2^-)$$
+subject to
+\begin{align*}
+-6x_1 +(x_2^+-x_2^-)^2  & \leq -1\\
+x_1^2 +(x_2^+-x_2^-)^2  & \leq 3\\
+-x_1^2 -(x_2^+-x_2^-)^2  & \leq -3\\
+x_1 & \geq 2\\
+x_2^+ & \geq 0\\
+x_2^- & \geq 0.
+\end{align*}
+
+\item In the presence of a constraint $x\geq a$, with $a \in \mathbb{R}$, a simple change of variable
+$$
+x=  \hat{x}+a$$
+transforms the constraint in
+$$\hat{x}\geq  0.$$
+We apply this last principle to variable $x_1$, and we obtain:
+$$
+-\min(\hat{x}_1+2)^2- \sin(x_2^+-x_2^-)
+$$
+subject to
+\begin{align*}
+-6(\hat{x}_1+2)+(x_2^+-x_2^-)^2  & \leq -1\\
+(\hat{x}_1+2)^2+(x_2^+-x_2^-)^2 & \leq 3\\
+-(\hat{x}_1+2)^2-(x_2^+-x_2^-)^2 &\leq -3\\
+\hat{x}_1 & \geq 0\\
+x_2^+ & \geq 0\\
+x_2^- & \geq 0.
+\end{align*}
+\end{enumerate}
+
+As requested, it is a minimization problem, all decision variables are non negative and all
+constraints are defined by lower inequalities. Any solution
+$(\hat{x}_1,x_2^+,x_2^-)$ of this
+problem corresponds to the following solution of the original problem:
+\[
+\begin{aligned}
+  x_1 &= \hat{x}_1 + 2 \\
+  x_2 &= x_2^+ - x_2^-.
+\end{aligned}
+\]
+
+
+
+
+
+

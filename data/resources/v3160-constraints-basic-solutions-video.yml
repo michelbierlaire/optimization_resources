@@ -1,0 +1,26 @@
+id: constraints-basic-solutions-video
+title: 'Linear constraints: basic solutions'
+type: video
+topics:
+- linear-constraints
+format: video
+path:
+url: https://youtu.be/1WLm5rE5Vh0?si=PeELapADVDspgu_5
+book_chapter: '3'
+book_section: '3.5.2'
+related:
+- optimization-textbook
+slides_ref: constraints-basic-solutions-slides
+exercises_ref:
+- constraints-basic-solutions-exercise-01
+- constraints-basic-solutions-exercise-02
+notebook_ref: null
+duration: '8:51'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '31.60'
+summary: Recorded lecture introducing basic solutions.
+tracks:
+- online-course

@@ -1,0 +1,25 @@
+id: objective-linearity-slides
+title: 'Objective function: linearity and nonlinearity — video slides'
+type: slides
+topics:
+- objective
+format: pdf
+path: assets/slides/v02150_h.pdf
+url: null
+book_chapter: '2'
+book_section: '2.4'
+related:
+- optimization-textbook
+- objective-linearity-video
+notebook_ref: null
+exercises_ref:
+- objective-linearity-exercise-01
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '21.50'
+summary: Slides of the video on linearity and nonlinearity.
+tracks:
+- online-course

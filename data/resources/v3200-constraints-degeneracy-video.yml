@@ -1,0 +1,25 @@
+id: constraints-degeneracy-video
+title: 'Linear constraints: degeneracy'
+type: video
+topics:
+- linear-constraints
+format: video
+path:
+url: https://youtu.be/UHlSaLj2mi4?si=poRAkXY7jKLiF3lu
+book_chapter: '3'
+book_section: '3.5.2'
+related:
+- optimization-textbook
+slides_ref: constraints-degeneracy-slides
+exercises_ref:
+- constraints-degeneracy-exercise-01
+notebook_ref: null
+duration: '13:32'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '32.00'
+summary: Recorded lecture on degeneracy.
+tracks:
+- online-course

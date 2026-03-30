@@ -1,0 +1,83 @@
+
+We proceed with the three steps of the modeling process.
+\begin{description}
+\item[Decision variables] The decision variables are the amounts in euros invested
+  for
+\begin{itemize}
+\item   state bonds: $x_{sb}$,
+\item real estate loans: $x_{re}$,
+\item car loans:  $x_{c\ell}$, and,
+ \item scholarship loans: $x_{s\ell}$.
+\end{itemize}
+\item[Objective function] As the company wants to maximize its profit,
+  the objective function must provide the profit as a function of the
+  decision variables:
+  \[
+f:\R^4 \to \R: f(x_{sb}, x_{re}, x_{c\ell},x_{s\ell}).
+  \]
+The profit of the investment fund for the following year is calculated
+based on  the interest rates using the following formula:
+\[
+f(x_{sb}, x_{re}, x_{c\ell},x_{s\ell}) = 0.04 x_{sb} + 0.06 x_{re} + 0.08 x_{cl} + 0.09 x_{s\ell}. 
+\]
+Therefore, we can write the problem as 
+\[
+	\max_{x_{sb}, x_{re}, x_{c\ell},x_{s\ell}} 0.04 x_{sb} + 0.06 x_{re} + 0.08 x_{cl} + 0.09 x_{s\ell}. 
+\]
+\item[Constraints]
+The total amount to invest is 2.5 M\euro.  This is modeled using the following constraint:
+\[ 	x_{sb} + x_{re} + x_{c\ell} + x_{s\ell}  = 2'500'000 \]
+
+Each restriction is modeled as follows:
+\begin{itemize}
+	\item the total amount invested in car and scholarship  loans
+          ($	x_{c\ell} + x_{s\ell}$) must not exceed twice the
+          amount invested in bonds ($2x_{sb}$):
+	\[ 	x_{c\ell} + x_{s\ell}  \leq 2x_{sb}. \]
+	\item the amount invested in car loans ($x_{c\ell}$) must be
+          larger or equal than the
+          amount invested in  scholarship loans ($x_{s\ell}$):
+	\[ 	x_{s\ell}  \leq x_{c\ell}. \]
+	\item the investment in car loans ($x_{c\ell}$) should not exceed the
+          investment in real estate loans ($x_{re}$) by more than $70\%$:
+	\[ 	x_{c\ell}  \leq 1.7x_{re}. \]
+\end{itemize}  
+Finally, we must impose all the decision variables to be non negative:
+\[
+	x_{sb}, x_{re}, x_{c\ell}, x_{s\ell} \geq 0.
+\]
+\end{description}
+
+
+
+Putting everything together, we obtain the following optimization problem:
+\[
+\max 0.04 x_{sb} + 0.06 x_{re} + 0.08 x_{c\ell} + 0.09 x_{s\ell} 
+\]
+subject to
+\begin{align*}
+	x_{sb} + x_{re} + x_{c\ell} + x_{s\ell}  &= 2'500'000, \\
+	x_{c\ell} + x_{s\ell}  &\leq 2x_{sb}, \\
+	x_{s\ell}  &\leq x_{c\ell}, \\
+	x_{c\ell} &\leq 1.7x_{re}, \\
+	x_{sb}, x_{re}, x_{c\ell}, x_{s\ell} &\geq 0.
+\end{align*}
+
+For your information, the optimal solution (rounded to 1/10 of euros) is:
+\begin{itemize}
+\item State bonds: 696'721.3 euros
+\item Real estate loans: 409'836.1 euros
+\item Car loans: 696'721.3 euros
+\item Scholarship loans: 696'721.3 euros
+\end{itemize}
+for a total profit of 170'902.6 euros
+
+The constraints are verified:
+\begin{itemize}
+\item Constraint 1: $696'721.3 + 409'836.1 + 696'721.3 + 696'721.3 = 2'500'000.0$,
+\item Constraint 2: $696'721.3 + 696'721.3 = 1'393'442.6  2 * 696'721.3 = 1'393'442.6$,
+\item Constraint 3: $696'721.3 <= 696'721.3$,
+\item Constraint 4: $696'721.3 <= 1.7 \cdot 409'836.1 = 696'721.3$.
+\end{itemize}
+
+

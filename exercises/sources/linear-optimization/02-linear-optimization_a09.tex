@@ -1,0 +1,172 @@
+The constraints can be written as $Ax=b$ with
+\[
+  A=\begin{pmatrix}
+  1 & 1 & 1 & 1 \\
+  1 & 0 & -1 & 0 \\
+  2 & 1 & 0 & 1 
+\end{pmatrix}, \qquad b = \begin{pmatrix}
+1\\ -1\\ 0
+  \end{pmatrix}.
+  \]
+  The system is compatible as
+  \[
+x = \cvect{0 \\ 0 \\ 1 \\ 0}
+  \]
+  is feasible.
+
+In principle, in the presence of three constraints, we should select 3
+variables out of the 4 to be basic variables. But for each of the 4
+possibilities, the corresponding basic matrix is not invertible,
+precluding from eliminating the constraints. The reason is that the
+constraint matrix is not of full rank.  The third constraint happens
+to be the sum of the two other constraints. It is therefore redundant
+and must be removed. We obtain the system with the following data:
+\[
+A=\begin{pmatrix}
+  1 & 1 & 1 & 1 \\
+  1 & 0 & -1 & 0
+\end{pmatrix}, \qquad b = \begin{pmatrix}
+1\\ -1
+\end{pmatrix}.
+\]
+As we have two constraints, we can eliminate two variables. There are
+6 ways to do it. But because $x_1$ cannot be in the basis, we need to
+select two variables out of three.  And there are three ways to do it.
+
+\begin{enumerate}
+\item $x_2$ and $x_3$ in the basis. The basic matrix is obtained  by extracting columns $2$
+and $3$ from $A$:
+\[
+B= \begin{pmatrix}
+  1 & 1 \\
+  0 & -1
+\end{pmatrix}
+\]
+which is  invertible and happens to be equal to its own inverse:
+\[
+B^{-1}= \begin{pmatrix}
+  1 & 1 \\
+  0 & -1
+\end{pmatrix}.
+\]
+In order to apply the generic formula
+ $$AP= \begin{pmatrix}
+B & N
+\end{pmatrix},$$
+we need to permute the
+columns of the matrix so that columns 2 and 3 become the two first
+columns of the permuted matrix. We use the following permutation
+matrix, 
+\[
+P = \begin{pmatrix}
+0 & 0 & 1 & 0  \\
+1 & 0 & 0 & 0  \\
+0 & 1 & 0 & 0  \\
+0 & 0 & 0 & 1  \\
+\end{pmatrix},
+\]
+so that $PP^T=I$ and 
+\[
+AP = \begin{pmatrix}
+  1 & 1 & 1 & 1  \\
+  0 & -1 & 1 & 0 
+\end{pmatrix}.
+\]
+The constraints can now be written
+as
+\[
+Ax = AP(P^Tx) = Bx_B + Nx_N = b,
+\]
+and we obtain
+\begin{align*}
+x_B = \begin{pmatrix}
+x_2\\ x_3
+\end{pmatrix} & = B^{-1}(b-Nx_n)\\
+& = \begin{pmatrix}
+1 & 1 \\ 0 & -1
+\end{pmatrix}
+\left(
+\rvect{1 \\ -1} -
+\begin{pmatrix}
+  1 & 1 \\ 1 & 0
+\end{pmatrix}
+\cvect{x_1\\x_4}
+\right) \\
+& = \cvect{-2 x_1 - x_4 \\ x_1 + 1}.
+\end{align*}
+The basic variables are $x_2$ and $x_3$, and the non basic variables
+are $x_1$ and $x_4$.
+\item $x_2$ and $x_4$ in the basis. The basic matrix is obtained by
+  extracting columns $2$ and $4$ from $A$:
+\[
+B= \begin{pmatrix}
+  1 & 1 \\
+  0 & 0
+\end{pmatrix}.
+\]
+This matrix is not invertible, and the elimination of constraints
+cannot be performed. 
+\item $x_3$ and $x_4$ in the basis. The basic matrix is obtained by
+  extracting columns $2$ and $4$ from $A$:
+\[
+B= \begin{pmatrix}
+  1 & 1 \\
+  -1 & 0
+\end{pmatrix}.
+\]
+It is invertible, and 
+\[
+B^{-1}= \begin{pmatrix}
+  0 & -1 \\
+  1 & 1
+\end{pmatrix}.
+\]
+In order to apply the generic formula
+ $$AP= \begin{pmatrix}
+B & N
+\end{pmatrix},$$
+we need to permute the
+columns of the matrix so that columns 3 and 4 become the two first
+columns of the permuted matrix. We use the following permutation
+matrix, 
+\[
+P = \begin{pmatrix}
+0 & 0 & 1 & 0  \\
+0 & 0 & 0 & 1  \\
+1 & 0 & 0 & 0  \\
+0 & 1 & 0 & 0  \\
+\end{pmatrix},
+\]
+so that $PP^T=I$ and 
+\[
+AP = \begin{pmatrix}
+  1 & 1 & 1 & 1  \\
+  -1 & 0 & 1 & 0 
+\end{pmatrix}.
+\]
+The constraints can now be written
+as
+\[
+Ax = AP(P^Tx) = Bx_B + Nx_N = b,
+\]
+and we obtain
+\begin{align*}
+x_B = \begin{pmatrix}
+x_3\\ x_4
+\end{pmatrix} & = B^{-1}(b-Nx_n)\\
+& = \begin{pmatrix}
+0 & -1 \\ 1 & 1
+\end{pmatrix}
+\left(
+\rvect{1 \\ -1} -
+\begin{pmatrix}
+  1 & 1 \\ 1 & 0
+\end{pmatrix}
+\cvect{x_1\\x_2}
+\right) \\
+& = \cvect{1 + x_1 \\-2 x_1 - x_2 }.
+\end{align*}
+The basic variables are $x_3$ and $x_4$, and the non basic variables
+are $x_1$ and $x_2$.
+
+\end{enumerate}

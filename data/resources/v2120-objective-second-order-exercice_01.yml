@@ -1,0 +1,22 @@
+id: objective-second-order-exercise-01
+title: 'Differentiability: the second order — Exercise 1'
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/objective/v02120-q1.tex
+answer_source: exercises/sources/objective/v02120-a1.tex
+book_chapter: '2'
+book_section: '2.3'
+related:
+- optimization-textbook
+- objective-second-order-video
+- objective-second-order-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 21.20.1
+summary: Exercise on the second derivatives.
+tracks:
+- online-course

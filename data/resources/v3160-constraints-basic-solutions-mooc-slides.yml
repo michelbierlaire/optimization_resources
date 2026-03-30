@@ -1,0 +1,26 @@
+id: constraints-basic-solutions-slides
+title: 'Linear constraints: basic solutions — video slides'
+type: slides
+topics:
+- objective
+format: pdf
+path: assets/slides/v03160_h.pdf
+url: null
+book_chapter: '3'
+book_section: '3.5.2'
+related:
+- optimization-textbook
+- constraints-basic-solutions-video
+exercises_ref:
+- constraints-basic-solutions-exercise-01
+- constraints-basic-solutions-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '31.60'
+summary: Slides of the video on basic solutions.
+tracks:
+- online-course

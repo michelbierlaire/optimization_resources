@@ -1,0 +1,43 @@
+
+The Jacobian matrix is the transposed of the gradient matrix. In the
+gradient matrix, each row corresponds to a variable, and each column
+to a function. For the Jacobian matrix, it is the opposite. Here, as
+we have 2 variables and 3 functions, we have
+\[
+\nabla f(x) \in \R^{2 \times 3}, \;\;J(x) \in \R^{3\times 2}.
+\]
+The gradient matrix is
+\[
+\nabla f(x)
+=
+\begin{pmatrix}
+   \frac{\partial f_1}{\partial x_1}      & \frac{\partial f_2}{\partial x_1}  & \frac{\partial f_3}{\partial x_1} \\*[1.2ex]
+    \frac{\partial f_1}{\partial x_2}       & \frac{\partial f_2}{\partial x_2}
+ & \frac{\partial f_3}{\partial x_2}\end{pmatrix}
+=
+\begin{pmatrix}
+   2x_1x_2      & -\sin(e^{x_1+x_2^2})e^{x_1+x_2^2} & 0\\
+    x_1^2      & -2x_2\sin(e^{x_1+x_2^2})e^{x_1+x_2^2} & 1
+    \end{pmatrix}.
+\]
+
+The Jacobian matrix is
+\[
+   J(x)=\nabla f(x)^T
+=
+\begin{pmatrix}
+   \frac{\partial f_1}{\partial x_1}      & \frac{\partial f_1}{\partial x_2} \\*[1.2ex]
+    \frac{\partial f_2}{\partial x_1}       & \frac{\partial
+      f_2}{\partial x_2} \\*[1.2ex]
+    \frac{\partial f_3}{\partial x_1}       & \frac{\partial
+      f_3}{\partial x_2} 
+\end{pmatrix}
+=
+\begin{pmatrix}
+   2x_1x_2      &   x_1^2 \\
+    -\sin(e^{x_1+x_2^2})e^{x_1+x_2^2}    &
+    -2x_2\sin(e^{x_1+x_2^2})e^{x_1+x_2^2} \\
+    0 & 1
+\end{pmatrix}.
+\]
+

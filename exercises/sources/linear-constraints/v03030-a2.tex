@@ -1,0 +1,49 @@
+
+\begin{enumerate}
+    %%%---2a---%%%
+    \item Yes, $x_1^* = 0$, $x_2^* = 3$ is a feasible solution. The verification is done by substitution:
+    \begin{align}
+     0 + 3 & = 3 \qquad \checkmark \nonumber  \\
+     0 & \geq 0 \qquad \checkmark \nonumber  \\
+     3 & \geq 0. \qquad \checkmark \nonumber 
+    \end{align}
+%
+    The first two constraints are active at $\{x_1^*, x_2^*\}$. In
+    particular, notice that equality constraints are always active
+    when verified. The  point is labeled $A$ in the figure below.
+    \vspace{1em}
+%    
+    %%%---2b---%%%
+    \item No, $x_1^* = 2$, $x_2^* = 2$ is not a feasible solution, since the equality constraint is not verified:
+    \begin{align}
+     2 + 2 & = 3 \qquad \xmark \nonumber  \\
+     2 & \geq 0 \qquad \checkmark \nonumber \\
+     2 & \geq 0. \qquad \checkmark \nonumber
+    \end{align}
+    \vspace{1em}
+    
+    The point is labeled $B$ in the figure below.
+    
+\end{enumerate}
+
+The feasible region for the problem is the segment represented in bold in the following graph.
+     
+     \begin{center}
+     \begin{tikzpicture}[domain=-0.6:4.6,range=-0.5:3.6]
+      
+      \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x_1$};
+      \draw[->] (0,-0.2) -- (0,3.7) node[above] {$x_2$};
+      
+      \draw[color=black] (-0.6,3.6) -- (3.4,-0.4);
+      \draw[color=black, ultra thick] (0,3) -- (3,0);
+      \node at (3.6,-0.6) {$x_1 + x_2 = 3$};
+      
+      \node [circle,fill=black,draw,scale=0.2] at (0,3) {A};
+      \node at (-0.2,2.8) {A};
+      \node [circle,fill=black,draw,scale=0.2] at (2,2) {B};
+      \node at (2.2,2.2) {B};
+    
+    \end{tikzpicture}
+    \end{center}
+
+

@@ -1,0 +1,106 @@
+
+ The optimization problem is
+\[
+\min f(x_1,x_2,x_3,x_4)=x_1^2+\sin(x_3-x_2)+x_4+1
+\]
+subject to
+\[
+\begin{aligned}
+  x_1+x_2+x_3 & =1, \\
+  x_1-x_2+x_4 &=1.
+\end{aligned}
+\]
+As there are two constraints, two variables have to be selected to be
+in the basis. The number of possibilities to select 2 variables out of
+4 is 6. We consider each of them below. 
+\begin{enumerate}
+\item One possible way to rewrite the constraints is to express $x_3$
+  and $x_4$ as a function of $x_1$ and $x_2$:
+  \[
+  \begin{aligned}
+    x_3 &=1-x_1-x_2,\\
+    x_4 &=1-x_1+x_2.
+  \end{aligned}
+  \]
+The optimization problem can be rewritten so as to depend only on two variables $x_1$ and $x_2$:
+\[
+\min_{x \in \R^2} f(x_1,x_2)=x_1^2+\sin(-x_1-2x_2+1)-x_1+x_2+2,
+\]
+without constraint. Note the presence of the linear terms in $x_1$ and
+$x_2$. This function is unbounded. 
+
+The basic variables are $x_3$ and $x_4$ and the non basic variables are $x_1$ and $x_2$.
+\item A second option is to express $x_1$ and $x_2$ as a function of
+  $x_3$ and $x_4$:
+  \[
+  \begin{aligned}
+    x_1 &=1-\frac{x_3}{2} - \frac{x_4}{2},\\
+    x_2 &=-\frac{x_3}{2} + \frac{x_4}{2}.
+  \end{aligned}
+    \]
+The optimization problem can be rewritten so as to depend only on two variables $x_1$ and $x_2$:
+\[
+\min f(x_3,x_4)=(1-\frac{x_3}{2} - \frac{x_4}{2})^2+\sin(\frac{3x_3}{2} - \frac{x_4}{2})+x_4+1,\]
+without constraint. This function, again, is unbounded.
+
+The basic variables are $x_1$ and $x_2$ and the non
+basic variables are $x_3$ and $x_4$.
+\item We can express $x_1$ and $x_3$ as a function of $x_2$ and $x_4$:
+  \begin{align*}
+  x_1 & =1 +x_2-x_4, \\
+  x_3 & = -2 x_2 + x_4.
+  \end{align*}
+  \[
+  \min f(x_2,x_4)=(1 +x_2-x_4)^2+\sin(-3 x_2 + x_4)+x_4+1.
+  \]
+  We obtain again an unbounded function.
+  
+  The basic
+variables are $x_1$ and $x_3$, and the non basic variables are $x_2$
+and $x_4$.
+
+\item We can express $x_1$ and $x_4$ as a function of $x_2$ and $x_3$:
+  \begin{align*}
+  x_1 & =1 -x_2-x_3, \\
+  x_4 & = 2 x_2 + x_3.
+  \end{align*}
+  We obtain
+  \[
+  \min f(x_2,x_3)=(1 -x_2-x_3)^2+\sin(x_3-x_2)+2 x_2 + x_3+1,
+  \]
+and the objective function is again  unbounded.
+
+The basic
+variables are $x_1$ and $x_4$, and the non basic variables are $x_2$
+and $x_3$.
+
+\item We can express $x_2$ and $x_3$ as a function of $x_1$ and $x_4$:
+  \begin{align*}
+  x_2 & =-1 +x_1+x_4, \\
+  x_3 & = 2 - 2x_1 - x_4.
+  \end{align*}
+  We obtain
+  \[
+  \min f(x_1,x_4)= x_1^2+\sin(3-3x_1 -2 x_4)+x_4+1
+  \]
+and the objective function is again  unbounded.
+
+The basic
+variables are $x_2$ and $x_3$, and the non basic variables are $x_1$
+and $x_4$.
+
+\item We can express $x_2$ and $x_4$ as a function of $x_1$ and $x_3$:
+  \begin{align*}
+  x_2 & =1 -x_1-x_3, \\
+  x_4 & = 2 - 2x_1 - x_3.
+  \end{align*}
+  We obtain
+  \[
+  \min f(x_1,x_3)= x_1^2+\sin(2x_3-1+x_1)- 2x_1 - x_3+3,
+  \]
+and the objective function is again  unbounded.
+
+The basic
+variables are $x_2$ and $x_4$, and the non basic variables are $x_1$
+and $x_3$.
+\end{enumerate}

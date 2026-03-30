@@ -1,0 +1,104 @@
+\usepackage{etex}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{mathtools}
+\usepackage{lscape}
+\usepackage{pifont}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{euler}
+\usepackage[inline]{enumitem}
+
+%\usepackage{beton}
+\usepackage{times}
+\usepackage{multirow}
+\usepackage{eurosym}
+\usepackage{colortbl}
+\newcommand{\xmark}{\text{\ding{55}}}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes, calc, arrows.meta, patterns, positioning,
+  matrix, shapes.multipart, trees}
+
+\usepackage{varioref}
+\usepackage{subcaption}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
+    \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\usepackage{pgfplots,pgfplotstable}
+\pgfplotsset{compat=1.18}
+%\usepgfplotslibrary{external} 
+%\tikzexternalize
+
+\newcommand{\cvect}[1]{\left( \begin{array}{c} #1 \end{array} \right) }
+\newcommand{\rvect}[1]{\left( \begin{array}{r} #1 \end{array} \right) }
+\newcommand{\argmax}{\operatorname{argmax}}
+\newcommand{\argmin}{\operatorname{argmin}}
+\newcommand{\req}[1]{(\ref{#1})}
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\includex}[4][]{
+  \subsection{#4}
+   \begin{flushright}
+    \footnotesize\texttt{#2\_q#3.tex} \emph{#1}
+  \end{flushright}
+  \input{#2/#2_q#3}
+  \subsection*{Solution}
+   \begin{flushright}
+    \footnotesize\texttt{#2\_a#3.tex} \emph{#1}
+  \end{flushright}
+   \input{#2/#2_a#3}
+   \clearpage
+}
+
+
+\newcommand\grayheader[1]{
+\begin{flushleft}
+\begin{tabular}{p{\textwidth}}
+\cellcolor[gray]{0.9} \textbf{#1}
+\end{tabular}
+\end{flushleft}
+}
+
+\newcommand{\includequestion}[3]{
+  \grayheader{#3}
+  \input{#1/#1_q#2}
+  \clearpage
+}
+
+\newcommand{\includecorrige}[3]{
+  \grayheader{#3}
+  \input{#1/#1_a#2}
+  \clearpage
+}
+
+\makeatletter
+\@ifpackageloaded{tex4ht}
+  {\let\iftexforht\iftrue}
+  {\let\iftexforht\iffalse}
+\makeatother
+
+\newcommand{\mytikz}[2]{%
+\iftexforht%
+\includegraphics{#1}
+\else%
+#2
+\fi
+}
+
+\newenvironment{question}[1]{\subsubsection*{Question #1}}{\clearpage }
+
+\newcommand{\baremeSingle}{}
+\newcommand{\bareme}[1]{}
+
+\newlist{sols}{enumerate}{1}
+\setlist[sols]{left=\parindent,label=Solution \arabic*:}
+\newif\ifshowanswer
+\newcommand{\bonne}[1]{\ifshowanswer \item CORRECT #1 \else \item
+#1 \fi}
+\newcommand{\mauvaise}[1]{\item #1}
+
+\newenvironment{reponses}{\begin{sols}}{\end{sols}}
+
+

@@ -1,0 +1,25 @@
+id: objective-preconditioning-video
+title: 'Objective function: preconditioning'
+type: video
+topics:
+- objective
+format: video
+path: null
+url: https://youtu.be/50QYOzCnpT8?si=ODBcrDdlGkvYYZWm
+book_chapter: '2'
+book_section: '2.5'
+related:
+- optimization-textbook
+exercises_ref:
+- objective-preconditioning-exercise-01
+slides_ref: objective-preconditioning-slides
+notebook_ref: null
+duration: '7:52'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '21.70'
+summary: Recorded lecture introducing preconditioning.
+tracks:
+- online-course

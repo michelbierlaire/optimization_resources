@@ -1,0 +1,29 @@
+id: objective-gradient-video
+title: 'Objective function: gradient and descent'
+type: video
+topics:
+- objective
+format: video
+path: null
+url: https://youtu.be/fJj0UCQBbHc?si=6oy9e1Y9h4i9NeZ6
+book_chapter: '2'
+book_section: '2.2'
+related:
+- optimization-textbook
+slides_ref: objective-gradient-slides
+exercises_ref:
+- objective-gradient-exercise-01
+- objective-gradient-exercise-02
+- objective-gradient-exercise-03
+- objective-gradient-exercise-04
+- objective-gradient-exercise-05
+notebook_ref: null
+duration: '8:40'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '20.40'
+summary: Recorded lecture introducing the gradient.
+tracks:
+- online-course

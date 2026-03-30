@@ -1,0 +1,47 @@
+
+  The function
+  \[
+  f(x_1,x_2)=400-3x_1^2x_2^2
+  \]is differentiable at
+$(1,-2)^T$. Therefore the gradient is the direction of steepest
+ascent. We have
+\[
+\nabla f(x_1,x_2)= \cvect{-6x_1 x_2^2 \\-6x_1^2 x_2},
+\]
+and
+\[
+\nabla f(1,-2)=\cvect{-24 \\12}.
+\]
+As $\|\nabla f(1,-2)\| = 12 \sqrt{5}$,
+the normalized direction in which the depth increases as fast as
+possible is then
+\[
+d = \cvect{-2/\sqrt{5},1/\sqrt{5}}.
+\]
+If she swims one meter along the direction, her new position is
+\[
+x^+ = \cvect{1 -2/\sqrt{5} \\ -2 + 1/\sqrt{5}},
+\]
+and the depth at this position is
+\[
+f(x^+) = 400 -3\frac{269-120\sqrt{5}}{25} \approx 399.92.
+\]
+If she swims a distance of 8 meters,
+ her new position is
+\[
+x^{++} = \cvect{1 -16/\sqrt{5} \\ -2 + 8/\sqrt{5}},
+\]
+and the depth is
+\[
+f(x^{++}) \approx 117.
+\]
+As the depth at the current position is
+\[
+f(x) = 388,
+\]
+it illustrates that following an ascent direction increases the value
+of the function, but up to a point. If the step along the direction is too
+long, the value of the function may actually decrease. In this
+example, the step should be lesser than 5.59 in order to obtain an
+increase of the value of the function. 
+

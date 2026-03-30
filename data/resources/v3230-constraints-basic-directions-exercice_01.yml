@@ -1,0 +1,22 @@
+id: constraints-basic-directions-exercise-01
+title: Basic directions — Exercise 1
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/linear-constraints/v03230-q1.tex
+answer_source: exercises/sources/linear-constraints/v03230-a1.tex
+book_chapter: '3'
+book_section: '3.5.3'
+related:
+- optimization-textbook
+- constraints-basic-directions-video
+- constraints-basic-directions-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 32.30.1
+summary: Exercise on basic directions.
+tracks:
+- online-course

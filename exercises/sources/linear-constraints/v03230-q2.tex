@@ -1,0 +1,106 @@
+
+Consider the following polyhedron represented in standard form:
+
+\begin{equation*}
+    P = \Bigg\{ x = \begin{pmatrix*}[r] x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix*} | Ax = b, x\geq0 \Bigg\},
+\end{equation*}
+with $A = \begin{pmatrix*}[r] 1 & 1 & 1 & 0 \\ 1 & -1 & 0 & 1 \end{pmatrix*}$ and $b = \begin{pmatrix*}[r] 1 \\ 1 \end{pmatrix*}$.
+\vspace{1em}
+
+Find the basic directions for the following feasible basic solutions,
+and mention if they are feasible:
+
+\begin{enumerate}
+%%---part a---
+\item
+Basic solution with $x_2$ and $x_4$ in the basis $(j_1 = 2, j_2 = 4)$:
+\begin{equation*}
+B = \begin{pmatrix*}[r]
+1 & 0\\
+-1 & 1
+\end{pmatrix*};
+B^{-1} = \begin{pmatrix*}[r]
+1 & 0\\
+1 & 1
+\end{pmatrix*};
+x_B = B^{-1}b = \begin{pmatrix*}[r]
+1 \\
+2
+\end{pmatrix*};
+x = \begin{pmatrix*}[r]
+0 \\
+1 \\
+0 \\
+2
+\end{pmatrix*}.
+\end{equation*}
+
+%%---part b---
+\item Basic solution with $x_1$ and $x_4$ in the basis $(j_1=1,j_2=4)$:
+\[
+B
+= 
+\begin{pmatrix*}[r]
+1 & 0\\
+1 &1
+\end{pmatrix*}
+;
+B^{-1}
+=
+\begin{pmatrix*}[r]
+1 & 0\\
+-1 & 1
+\end{pmatrix*}
+;
+x_B=B^{-1}b
+=
+\begin{pmatrix*}[r]
+1 \\
+0
+\end{pmatrix*}
+;
+x
+=
+\begin{pmatrix*}[r]
+1 \\
+0 \\
+0 \\
+0
+\end{pmatrix*}.
+\]
+
+%%---part c---
+\item Basic solution with $x_1$ and $x_2$ in the basis ($j_1=1$,$j_2=2$):
+\[
+B
+= 
+\begin{pmatrix*}[r]
+1 & 1\\
+1 &-1
+\end{pmatrix*}
+;
+B^{-1}
+=
+\begin{pmatrix*}[r]
+\frac{1}{2} & \frac{1}{2}\\
+\frac{1}{2} &-\frac{1}{2}
+\end{pmatrix*}
+;
+x_B=B^{-1}b
+=
+\begin{pmatrix*}[r]
+1 \\
+0
+\end{pmatrix*}
+;
+x
+=
+\begin{pmatrix*}[r]
+1 \\
+0 \\
+0 \\
+0
+\end{pmatrix*}.
+\]
+
+\end{enumerate}

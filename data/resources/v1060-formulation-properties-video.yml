@@ -1,0 +1,26 @@
+id: formulation-properties-video
+title: 'Formulation: properties'
+type: video
+topics:
+- formulation
+format: video
+path: null
+url: https://youtu.be/lxgTOqvKVz4?si=P4r6tD6D-G1ugvKR
+book_chapter: '1'
+book_section: '1.4'
+related:
+- optimization-textbook
+slides_ref: formulation-properties-slides
+exercises_ref:
+- formulation-properties-exercise-01
+- formulation-properties-exercise-02
+notebook_ref: null
+duration: 06:48
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '10.60'
+summary: Recorded lecture describing some properties of an optimization problem.
+tracks:
+- online-course

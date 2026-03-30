@@ -1,0 +1,65 @@
+\newcommand{\MyCorrectSmartChoice}[2][black]{\CorrectChoice \tikzmark{bl}#2\tikzmark{br}\DrawSmartBox[#1]}
+
+If $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is a differentiable
+function, the function $\nabla f(x): \mathbb{R}^n \rightarrow \mathbb{R}^n$ is called the gradient of $f$ and is defined as 
+\[
+  \nabla f(x_1,x_2,x_3)
+=
+\cvect{
+     \frac{\partial f}{\partial x_1} \\*[1.2ex]
+    \frac{\partial f}{\partial x_2}  \\*[1.2ex]
+    \frac{\partial f}{\partial x_3} 
+}.
+\]
+Therefore, the gradient of the function is
+\[
+ \nabla f(x_1,x_2,x_3)
+=
+\cvect{
+     e^{x_1}+2x_1x_3-x_2x_3 \\
+    -x_1x_3 \\
+    x_1^2-x_1x_2
+}.
+\]
+ Let $f: \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable
+ function. Consider $x \in \mathbb{R}^n$ and $d \in \mathbb{R}^n$. The
+ directional derivative of $f$ at $x$ in the direction $d$ is given by
+ \[
+\lim_{\alpha\to 0} \frac{f(x+ \alpha d)-f(x)}{\alpha}, 
+\]
+if the limit exists. Here, we have
+\begin{align*}
+f(x+ \alpha d)-f(x) =& e^{x_1+\alpha d_1} + (x_1+\alpha
+d_1)^2(x_3+\alpha d_3) \\ & -(x_1+\alpha d_1)(x_2+\alpha d_2)(x_3+\alpha
+d_3) \\&- (e^{x_1} + x_1^2x_3 -x_1x_2x_3) \\
+=& e^{x_1+\alpha d_1}- e^{x_1} + \alpha x_1^2 d_3 + \alpha^2 x_3
+d_1^2+ \alpha^3 d_1^2 d_3 + 2\alpha x_1 x_3 d_1 \\&+ 2 \alpha^2x_1 d_1
+d_3 -\alpha x_1 x_2 d_3 - \alpha x_1 x_3 d_2 - \alpha^2x_1 d_2 d_3 \\&-
+\alpha x_2 x_3 d_1 - \alpha^2 x_2 d_1 d_3 -\alpha^2 x_3 d_1 d_2 -
+\alpha^3 d_1 d_2 d_3.
+\end{align*}
+Therefore,
+ \begin{align*}
+\lim_{\alpha\to 0} \frac{f(x+ \alpha d)-f(x)}{\alpha} =& \lim_{\alpha\to 0}\frac{e^{x_1+\alpha d_1}- e^{x_1}}{\alpha} \\&+  x_1^2 d_3 + 2 x_1 x_3 d_1  - x_1 x_2 d_3 -  x_1 x_3 d_2 -
+x_2 x_3 d_1 \\
+=&d_1 e^{x_1}+  x_1^2 d_3 + 2 x_1 x_3 d_1  - x_1 x_2 d_3 -  x_1 x_3
+d_2 -x_2 x_3 d_1 \\
+=&d_1 (e^{x_1}+ 2 x_1 x_3 -x_2 x_3 )-  x_1 x_3
+d_2  +  (x_1^2  - x_1 x_2) d_3.
+ \end{align*}
+
+
+
+In addition, when the gradient exists, the
+directional derivative is the inner product between the gradient of
+$f$ and the direction $d$, that is,
+\[
+\nabla f(x)^Td.
+\]
+Using this formula, the directional derivative is
+\begin{align*}
+(d_1 \, d_2 \,d_3)\nabla f(x_1,x_2,x_3)=
+\end{align*}
+\[d_1(e^{x_1}+2x_1x_3-x_2x_3)-d_2x_1x_3+d_3(x_1^2-x_1x_2). \]
+You can verify that it is the same result as above.
+

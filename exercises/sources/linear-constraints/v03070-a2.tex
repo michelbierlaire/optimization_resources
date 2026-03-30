@@ -1,0 +1,39 @@
+
+    $x$ is an interior point of $X$, that is, there exists
+$\varepsilon > 0$ such that
+\[
+\|z-x\| \leq \varepsilon \Longrightarrow z \in X.
+\]
+It means that the (convex) ball of radius $\varepsilon$ and centered
+at $x$ is completely in $X$.
+
+Consider an arbitrary direction $d\neq 0$, and the point
+\[
+z=x+\varepsilon \frac{d}{\parallel d \parallel}.
+\]
+The point $z$ is at the intersection of the direction $d$ and the border
+of the ball.
+As
+\[
+\|z-x\| = \left\|\varepsilon \frac{d}{\parallel d \parallel}\right\| = \varepsilon,
+\]
+the definition of the interior point guarantees that  $z \in X$. By
+convexity of the ball, all points $x + \alpha d$ with
+\[
+0 \leq \alpha \leq \frac{\varepsilon}{\|d\|}
+\]
+also belong to the ball, and therefore, to $X$, proving that the
+direction $d$ is feasible.
+
+\begin{center}
+\begin{tikzpicture}[scale=2]
+  \draw (0,0) ellipse[x radius=3,y radius= 1.5];
+  \node[at={(1,1.6)}] {$X$} ;
+  \node[at={(1,0)},circle,fill,label=$x$] {} ;
+  \node[at={(2,0)},circle,fill,label=$z$] {} ;
+  \draw (1,0) circle[radius=1];
+\draw [Circle-] (1,0) -- node[left,red] {$\varepsilon$} (60:1);  
+  \draw[-latex] (1,0) -- (2.3,0)  node[above] {$d$};
+  \draw[-latex] (1,0) -- (2.3,0)  node[above] {$d$};
+\end{tikzpicture}
+\end{center}

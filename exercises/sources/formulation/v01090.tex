@@ -1,0 +1,131 @@
+
+\begin{question}{1}
+	\bareme{\baremeSingle}
+A bakery has spent all flour and is planning the flour purchases for the following 4 months, based
+on the orders and the historical flour cost trend. The estimated demand and price of the flour are
+presented for each month in the table below. In each month, the bakery can use the flour bought at the
+beginning of the current month and the remaining flour from the previous months. However, in order
+to reduce the amount of old flour used for the pastry, the bakery never buys more than the amount
+estimated for the current month and 30\% of the estimated amount for the following month.
+Formulate the optimization problem that minimizes the money spent by the bakery while respecting the
+problem constraints. Use the decision variables $x_i, i \in \{1,\quad 2, 3, 4\}$ to model the amount of flour to buy
+at the beginning of each month, expressed in tonnes. Mark the box located top-left of the formulation
+that corresponds to this problem.
+
+	\begin{table}[h!]
+	\centering
+	\begin{tabular}{ccccc}
+		Month & 1 & 2 & 3 & 4\\
+		\hline
+		Amount (t) & 20 & 40 & 60 & 50 \\
+		Price (CHF/t) & 300& 500 & 800 & 700
+	\end{tabular}
+	\end{table}
+
+			\begin{reponses}
+
+		\mauvaise{	\begin{align*}
+			&\min 300 x_1 + 500 x_2 +800 x_3 + 700 x_4\\
+			\text{s.t.} & \quad x_1 \geq 20\\
+			& x_2 \geq 40\\
+			& x_3 \geq 60\\
+			&x_4 \geq 50\\
+			&x_1, x_2, x_3, x_4 \geq 0
+			\end{align*}}
+		\mauvaise{	\begin{align*}
+			&\min 300 x_1 + 500 x_2 +800 x_3 + 700 x_4\\
+			\text{s.t.} & \quad x_1 \geq 20, \quad x_2 \geq 40\\
+			& x_3 \geq 60 , \quad x_4 \geq 50\\
+			&x_1 \leq 32, \quad  x_2 \leq 58\\
+			&x_3 \leq 75, \quad  x_4 \leq 50\\
+			&x_1, x_2, x_3, x_4 \geq 0
+			\end{align*}}
+		\bonne{	\begin{align*}
+			&\min 300 x_1 + 500 x_2 +800 x_3 + 700 x_4\\
+			\text{s.t.} & \quad x_1 \geq 20\\
+			&x_1 + x_2 \geq 60\\
+			&x_1 + x_2+ x_3 \geq 120\\
+			&x_1 + x_2+ x_3 +x_4 \geq 170\\
+			&x_1 \leq 32, \quad  x_2 \leq 58\\
+			&x_3 \leq 75, \quad  x_4 \leq 50\\
+			&x_1, x_2, x_3, x_4 \geq 0
+			\end{align*}
+			}
+		\mauvaise{\begin{align*}
+			&\min 300 x_1 + 500 x_2 +800 x_3 + 700 x_4\\
+			\text{s.t.} & \quad x_1 \geq 20\\
+			&x_1 + x_2 \geq 60\\
+			&x_1 + x_2+ x_3 \geq 120\\
+			&x_1 + x_2+ x_3 +x_4 \geq 170\\
+			&x_1, x_2, x_3, x_4 \geq 0
+			\end{align*}}
+                        \end{reponses}
+
+\end{question}
+
+\begin{question}{2}
+	\bareme{\baremeSingle}
+	Consider the following maximization problem.
+		\begin{align*}
+	\max \quad  -2x_1 			+ 5x_2 	+3 x_3 +x_4		\\
+\text{s.to } \qquad \qquad  2x_1 	+ 4 x_2 						& \geq 5 \\
+8 x_1 	+2 x_2  				   + 3x_4    & \leq 8 \\
+	2x_2 	   +4 x_3 	   & \leq -6 \\
+|x_1| 		& \leq 4 \\
+x_2 		&\geq -5\\
+x_4 		& \leq 0
+	\end{align*}
+
+Which linear model in standard form corresponds to it?
+	\begin{reponses}
+		\mauvaise{\begin{align*}
+			\min \quad 17+2x'_1 - 5x'_2-3x'_3 + x'_4&\\
+			\text{s.to. } \qquad \qquad 2x'_1 + 4 x'_2 + e_1& = 23 \\
+			8x'_1 + 2x_2'-3 x'_4 +e_2 & =8 \\
+			2 x'_2 +4 x'_3 + e_3 & = 4 \\
+			x'_1 + e_4 & = 4 \\
+			x'_i  \geq 0 \quad & i \in \{1...4\} \\
+			e_i  \geq 0 \quad & i \in \{1...4\} \\
+			\end{align*}}
+		\bonne{\begin{align*}
+	        \min \quad 17+2x'_1 - 5x'_2-3x'_3 + x'_4 + 3 x'_5&\\
+			\text{s.to. } \qquad \qquad -2x'_1 - 4 x'_2 + e_1& = -33 \\
+			8x'_1 + 2x_2'-3 x'_4 +e_2 & =50 \\
+			2 x'_2 +4 x'_3 -4 x'_5 + e_3 & = 4 \\
+			x'_1 + e_4 & = 8 \\
+			x'_i  \geq 0 \quad & i \in \{1...5\} \\
+			e_i \geq 0 \quad & i \in \{1...4\} \\
+			\end{align*}}
+		\mauvaise{\begin{align*}
+		   \min \quad -17-2x'_1 + 5x'_2+3x'_3 - x'_4 - 3 x'_5&\\
+			\text{s.to. } \qquad \qquad -2x'_1 - 4 x'_2 + e_1& = -33 \\
+			8x'_1 + 2x_2'-3 x'_4 +e_2 & =40 \\
+			2 x'_2 +4 x'_3 -4 x'_5 + e_3 & = 4 \\
+			x'_1 + e_4 & = 4 \\
+			x'_i  \geq 0 \quad & i \in \{1...5\} \\
+			e_i  \geq 0 \quad &  i \in \{1...4\} \\
+		\end{align*}}
+	\mauvaise{\begin{align*}
+   \min \quad -17-2x'_1 + 5x'_2+3x'_3 - x'_4 - 3 x'_5&\\
+			\text{s.to. } \qquad \qquad 2x'_1 + 4 x'_2 + e_1& = 23 \\
+			8x'_1 + 2x_2'-3 x'_4 +e_2 & =40 \\
+			2 x'_2 -4 x'_3 +4 x'_5 + e_3 & = 4 \\
+			x'_1 + e_4 & = 8 \\
+			x'_i  \geq 0 \quad &  i \in \{1...5\} \\
+			e_i  \geq 0 \quad &  i \in \{1...4\} \\
+	\end{align*}}
+
+	\end{reponses}
+\end{question}
+\begin{question}{3}
+	\bareme{\baremeSingle}
+	A slack variable is:
+	\begin{reponses}
+		\mauvaise{a variable that is used to transform an equality constraint into an inequality constraint.}
+		\bonne{a variable that is used to transform an inequality constraint into an equality constraint.}
+		\mauvaise{a variable that is used to transform a minimization problem into a maximization problem.}
+		\mauvaise{a variable that is used to transform a greater or equal inequality into a lesser or equal inequality.}
+	\end{reponses}
+\end{question}
+
+

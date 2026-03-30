@@ -1,0 +1,22 @@
+id: formulation-properties-exercise-03
+title: Properties — Exercise 3
+type: exercise
+topics:
+- formulation
+format: pdf
+question_source: exercises/sources/formulation/v01070-q3.tex
+answer_source: exercises/sources/formulation/v01070-a3.tex
+book_chapter: '1'
+book_section: '1.2'
+related:
+- optimization-textbook
+- formulation-properties-video
+- formulation-properties-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 10.70.3
+summary: Exercise on properties of optimization problems.
+tracks:
+- online-course

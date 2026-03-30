@@ -1,0 +1,26 @@
+id: constraints-active-slides
+title: 'Linear constraints: active constraints — video slides'
+type: slides
+topics:
+- objective
+format: pdf
+path: assets/slides/v03020_h.pdf
+url: null
+book_chapter: '3'
+book_section: '3.1'
+related:
+- optimization-textbook
+- constraints-active-video
+exercises_ref:
+- constraints-active-exercise-01
+- constraints-active-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '30.20'
+summary: Slides of the video on active constraints.
+tracks:
+- online-course

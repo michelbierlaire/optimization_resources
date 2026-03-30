@@ -1,0 +1,26 @@
+id: constraints-feasible-directions-slides
+title: 'Linear constraints: feasible directions — video slides'
+type: slides
+topics:
+- objective
+format: pdf
+path: assets/slides/v03060_h.pdf
+url: null
+book_chapter: '3'
+book_section: '3.3'
+related:
+- optimization-textbook
+- constraints-feasible-directions-video
+exercises_ref:
+- constraints-feasible-directions-exercise-01
+- constraints-feasible-directions-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '30.60'
+summary: Slides of the video on feasible directions.
+tracks:
+- online-course

@@ -1,0 +1,17 @@
+Consider the optimization problem
+\[
+\min x_1
+\]
+subject to
+\begin{align*}
+x_1+x_2+x_3 & =1,\\
+-x_1+2x_2+x_4 &=2,\\
+x_1,x_2,x_3,x_4 & \geq 0.
+\end{align*}
+Consider the basis where the  variables
+$x_1$ and $x_2$ are in the basis, and calculate all reduced costs for
+that basis. Remember that the reduced cost associated with a non basic variable $x_p$ is defined as
+\[
+\bar{c}_p = c_p - c_B^T B^{-1} A_p,
+\]
+where $c_B$ are the entries of the vector $c$ correpsonding to the basic variables, and $A_p$ is the $p$th column of $A$.

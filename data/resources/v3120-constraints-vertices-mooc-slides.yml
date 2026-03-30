@@ -1,0 +1,26 @@
+id: constraints-vertices-slides
+title: 'Linear constraints: vertices and active constraints — video slides'
+type: slides
+topics:
+- objective
+format: pdf
+path: assets/slides/v03120_h.pdf
+url: null
+book_chapter: '3'
+book_section: '3.5.2'
+related:
+- optimization-textbook
+- constraints-vertices-video
+exercises_ref:
+- constraints-vertices-exercise-01
+- constraints-vertices-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '31.20'
+summary: Slides of the video on vertices and active constraints.
+tracks:
+- online-course

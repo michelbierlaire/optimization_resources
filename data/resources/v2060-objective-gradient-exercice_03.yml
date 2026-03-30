@@ -1,0 +1,22 @@
+id: objective-gradient-exercise-03
+title: Gradient — Exercise 3
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/objective/v02060-q3.tex
+answer_source: exercises/sources/objective/v02060-a3.tex
+book_chapter: '2'
+book_section: '2.2'
+related:
+- optimization-textbook
+- objective-gradient-video
+- objective-gradient-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 20.60.3
+summary: Exercise on the gradient.
+tracks:
+- online-course

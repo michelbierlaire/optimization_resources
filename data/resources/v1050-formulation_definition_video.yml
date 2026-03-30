@@ -1,0 +1,23 @@
+id: formulation-definition-video
+title: 'Formulation: problem definition'
+type: video
+topics:
+- formulation
+format: video
+path: null
+url: https://youtu.be/tMnnf_soB5c?si=FsjOYZQZhUogUHX2
+book_chapter: '1'
+book_section: '1.4'
+related:
+- optimization-textbook
+slides_ref: formulation-definition-slides
+notebook_ref: null
+duration: 09:05
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '10.50'
+summary: Recorded lecture describing how to define an optimization problem.
+tracks:
+- online-course

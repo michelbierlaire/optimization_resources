@@ -1,0 +1,26 @@
+id: formulation-properties-slides
+title: 'Formulation: properties — video slides'
+type: slides
+topics:
+- formulation
+format: pdf
+path: assets/slides/v01060_h.pdf
+url: null
+book_chapter: '1'
+book_section: '1.4'
+related:
+- optimization-textbook
+- formulation-properties-video
+exercises_ref:
+- formulation-properties-exercise-01
+- formulation-properties-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '10.60'
+summary: Slides of the video on properties.
+tracks:
+- online-course

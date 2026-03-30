@@ -1,0 +1,25 @@
+id: objective-second-order-video
+title: 'Objective function: differentiability, the second order'
+type: video
+topics:
+- objective
+format: video
+path: null
+url: https://youtu.be/Hr-yGLu37qo?si=Pdl-RUZJDrYUDTy-
+book_chapter: '2'
+book_section: '2.3'
+related:
+- optimization-textbook
+slides_ref: objective-second-order-slides
+notebook_ref: null
+exercises_ref:
+- objective-second-order-exercise-01
+duration: '5:56'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '20.90'
+summary: Recorded lecture introducing second order differentiability.
+tracks:
+- online-course

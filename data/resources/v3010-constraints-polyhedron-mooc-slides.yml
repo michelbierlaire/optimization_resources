@@ -1,0 +1,26 @@
+id: constraints-polyhedron-slides
+title: 'Linear constraints: polyhedron — video slides'
+type: slides
+topics:
+- objective
+format: pdf
+path: assets/slides/v03010_h.pdf
+url: null
+book_chapter: '3'
+book_section: '3.5.1'
+related:
+- optimization-textbook
+- constraints-polyhedron-video
+exercises_ref:
+- constraints-polyhedron-exercise-01
+- constraints-polyhedron-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '30.10'
+summary: Slides of the video on polyhedrons.
+tracks:
+- online-course

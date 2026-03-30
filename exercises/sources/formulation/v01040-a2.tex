@@ -1,0 +1,93 @@
+
+ To solve this exercise, we remember that if a variable $x$ can take any real value, it can be replaced by two non negative artificial variables denoted by $x^+$ and $x^-$, such that $x = x^+-x^-$. We also recall that the absolute value of $x$ is defined as
+$$ |x| = \left\{ 
+\begin{array}{rl}
+ x & \mbox{if } x \geq 0, \\ 
+ -x & \mbox{if } x < 0.
+\end{array}
+\right.$$
+
+In our case, we have that
+$$ |x_1 - x_2| = \left\{ 
+\begin{array}{rl}
+ x_1 - x_2 & \mbox{if } x_1 \geq x_2, \\ 
+x_2 - x_1 & \mbox{if } x_1 <x_2.
+\end{array}
+\right.$$
+Since $x_1$ and $x_2$ are non negative real numbers, the difference $x_1 - x_2$ can take any real value.
+
+Let us study the absolute value by examining the two cases:
+\begin{itemize}
+\item If $x_1 - x_2 \geq 0$, we can define the non negative quantity
+\[
+y^+ = \left\{
+\begin{aligned}
+  x_1 - x_2, & \text{ if } x_1-x_2 > 0, \\
+  0,     & \text{ otherwise}.
+\end{aligned}
+\right.
+\]
+
+\item If $x_1 - x_2 < 0$, we can define the positive quantity
+\[
+y^- = \left\{
+\begin{aligned}
+  x_2 - x_1, & \text{ if } x_1-x_2 < 0, \\
+  0,     & \text{ otherwise}.
+\end{aligned}
+\right.
+\]
+\end{itemize}
+
+Consequently, the absolute value of the difference can then be written as
+$$ | x_1 - x_2 | = y^+ + y^-. $$
+
+Furthermore, if we impose that $y^+ \geq 0$ and $y^- \geq 0$, we have that our minimization problem can be written as
+$$\min_{x_1,x_2,y^+,y^-} (y^+ + y^-) $$
+subject to
+\begin{align*}
+y^+ & \geq x_1-x_2,\\
+y^- & \geq x_2-x_1, \\
+x_1 & \geq 0,\\
+x_2 & \geq 0,\\
+y^+ & \geq 0,\\
+y^- & \geq 0.
+\end{align*}
+
+Note that this formulation is not strictly equivalent to the original one for
+all feasible solutions. For instance, the feasible solution $x_1=0$,
+$x_2=0$, $y^+=1$, $y^-=1$ has objective value 2 in the transformed
+problem, and 0 in the original one.
+
+But it is equivalent at the optimal solution. Denote the optimal
+solution of the original problem $(x_1^*,x_2^*)$.
+\begin{itemize}
+\item If $x_1^*-x_2^* > 0$, the lowest possible value for $y^+$,
+  denoted by $(y^+)^*$, is
+  $x_1^*-x_2^*$ (because of the constraint $y^+  \geq x_1-x_2$), and
+  the lowest possible value for $y^-$, denoted by $(y^-)^*$, is $0$
+  (because of the constraint $y^- \geq 0$). Therefore,
+  the objective function of the transformed problem at the optimal
+  solution is
+  \[
+(y^+)^* + (y^-)^* = x_1^*-x_2^* + 0 = |x_1^*-x_2^*|.
+  \]
+\item If $x_1^*-x_2^* < 0$, for similar reasons, we have
+  $(y^+)^*=0$ and $(y^-)^*=x_2^*-x_1^*$. Therefore,
+  the objective function of the transformed problem at the optimal
+  solution is
+  \[
+(y^+)^* + (y^-)^* = 0 +x_2^*-x_1^* = |x_1^*-x_2^*|.
+\]
+\item If $x_1^*-x_2^* = 0$, we have
+  $(y^+)^*=0$ and $(y^-)^*=0$. Therefore,
+  the objective function of the transformed problem at the optimal
+  solution is
+  \[
+(y^+)^* + (y^-)^* = 0 + 0 = |x_1^*-x_2^*|.
+\]
+\end{itemize}
+
+
+
+

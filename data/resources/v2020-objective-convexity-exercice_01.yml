@@ -1,0 +1,22 @@
+id: objective-convexity-exercise-01
+title: Convexity — Exercise 1
+type: exercise
+topics:
+- objective
+format: pdf
+question_source: exercises/sources/objective/v02020-q1.tex
+answer_source: exercises/sources/objective/v02020-a1.tex
+book_chapter: '2'
+book_section: '2.1'
+related:
+- optimization-textbook
+- objective-convexity-video
+- objective-convexity-slides
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 20.20.1
+summary: Exercise on convexity.
+tracks:
+- online-course

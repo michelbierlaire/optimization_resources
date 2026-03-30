@@ -1,0 +1,27 @@
+id: formulation-modeling-video
+title: 'Formulation: modeling'
+type: video
+topics:
+- formulation
+format: video
+path: null
+url: https://youtu.be/DCGqdgGQIHw?si=0iQ4HTzkG_HpnoX1
+book_chapter: '1'
+book_section: '1.1'
+related:
+- optimization-textbook
+slides_ref: formulation-modeling-slides
+exercises_ref:
+- formulation-modeling-exercise-01
+- formulation-modeling-exercise-02
+- formulation-modeling-exercise-03
+notebook_ref: null
+duration: '9:47'
+date: 2026-03-28
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '10.10'
+summary: Recorded lecture introducing the main concepts of modeling.
+tracks:
+- online-course
