@@ -28,12 +28,19 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material
+          pip install mkdocs mkdocs-material pyyaml
+
+      - name: Verify generated directories exist
+        run: |
+          mkdir -p docs/resources/items docs/topics docs/tracks docs/textbook docs/slides docs/notebooks docs/exercises docs/videos
+
+      - name: Generate site content
+        run: |
+          python scripts/generate_site.py
 
       - name: Build site
         run: |
-          python scripts/generate_site.py
-          mkdocs build
+          mkdocs build --strict
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
