@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
+<!-- This file was automatically generated on 2026-03-30 22:18:25. -->
 
 # Exercise: Properties — Exercise 1
 
@@ -6,13 +6,13 @@
 
 - Online Course
 
-<iframe src="../../../assets/exercises/formulation/formulation-properties-exercise-01-question.pdf" title="Properties — Exercise 1" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../../assets/exercises/formulation/formulation-properties-exercise-01-question.pdf" title="Properties — Exercise 1" style="width: 100%; height: 80vh; border: none;"></iframe>
 
 Exercise on properties of optimization problems.
 
 ## Solution
 
-- [Open solution](../../../assets/exercises/formulation/formulation-properties-exercise-01-solution.pdf)
+- [Open solution](../../assets/exercises/formulation/formulation-properties-exercise-01-solution.pdf)
 
 ## Related resources
 

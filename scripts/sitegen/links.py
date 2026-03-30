@@ -21,7 +21,7 @@ def asset_link(path: str, from_section: str = "resources") -> str:
     )
 
     if from_section == "resources":
-        prefix = PurePosixPath("../../..")
+        prefix = PurePosixPath("../..")
     elif from_section in {
         "topics",
         "tracks",

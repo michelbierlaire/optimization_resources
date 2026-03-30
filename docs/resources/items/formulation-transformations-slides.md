@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
+<!-- This file was automatically generated on 2026-03-30 22:18:25. -->
 
 # Slides: Formulation: problem transformations — video slides
 
@@ -6,7 +6,7 @@
 
 - Online Course
 
-<iframe src="../../../assets/slides/v01030_h.pdf" title="Formulation: problem transformations — video slides" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../../assets/slides/v01030_h.pdf" title="Formulation: problem transformations — video slides" style="width: 100%; height: 80vh; border: none;"></iframe>
 
 Slides of the video Formulation: problem transformation.
 

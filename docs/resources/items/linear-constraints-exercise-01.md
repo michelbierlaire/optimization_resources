@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
+<!-- This file was automatically generated on 2026-03-30 22:18:25. -->
 
 # Exercise: Polyhedron and linear constraints — Exercise 1
 
@@ -6,13 +6,13 @@
 
 - EPFL Course
 
-<iframe src="../../../assets/exercises/linear-optimization/linear-constraints-exercise-01-question.pdf" title="Polyhedron and linear constraints — Exercise 1" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../../assets/exercises/linear-optimization/linear-constraints-exercise-01-question.pdf" title="Polyhedron and linear constraints — Exercise 1" style="width: 100%; height: 80vh; border: none;"></iframe>
 
 Exercise on identifying feasible regions and interpreting linear constraints geometrically.
 
 ## Solution
 
-- [Open solution](../../../assets/exercises/linear-optimization/linear-constraints-exercise-01-solution.pdf)
+- [Open solution](../../assets/exercises/linear-optimization/linear-constraints-exercise-01-solution.pdf)
 
 ## Related resources
 

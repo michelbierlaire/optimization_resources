@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
+<!-- This file was automatically generated on 2026-03-30 22:18:25. -->
 
 # Exercise: Problem transformations — Exercise 1
 
@@ -6,13 +6,13 @@
 
 - Online Course
 
-<iframe src="../../../assets/exercises/formulation/formulation-transformations-exercise-01-question.pdf" title="Problem transformations — Exercise 1" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../../assets/exercises/formulation/formulation-transformations-exercise-01-question.pdf" title="Problem transformations — Exercise 1" style="width: 100%; height: 80vh; border: none;"></iframe>
 
 Exercise on transforming an optimization problem.
 
 ## Solution
 
-- [Open solution](../../../assets/exercises/formulation/formulation-transformations-exercise-01-solution.pdf)
+- [Open solution](../../assets/exercises/formulation/formulation-transformations-exercise-01-solution.pdf)
 
 ## Related resources
 

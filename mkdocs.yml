@@ -57,3 +57,4 @@ extra_css:
   - stylesheets/extra.css
 plugins:
   - search
+use_directory_urls: false

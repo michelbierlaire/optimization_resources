@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:10:56. -->
+<!-- This file was automatically generated on 2026-03-30 22:18:25. -->
 
 # Exercise: Convexity — Exercise 2
 
@@ -6,13 +6,13 @@
 
 - Online Course
 
-<iframe src="../../../assets/exercises/objective/objective-convexity-exercise-02-question.pdf" title="Convexity — Exercise 2" style="width: 100%; height: 80vh; border: none;"></iframe>
+<iframe src="../../assets/exercises/objective/objective-convexity-exercise-02-question.pdf" title="Convexity — Exercise 2" style="width: 100%; height: 80vh; border: none;"></iframe>
 
 Exercise on convexity.
 
 ## Solution
 
-- [Open solution](../../../assets/exercises/objective/objective-convexity-exercise-02-solution.pdf)
+- [Open solution](../../assets/exercises/objective/objective-convexity-exercise-02-solution.pdf)
 
 ## Related resources
 
