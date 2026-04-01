@@ -1,0 +1,70 @@
+
+
+\begin{enumerate}
+\item 
+  The gradient is
+\[
+  \nabla f(x)= \begin{pmatrix*} 100 x_1
+    \\ -3x_2^2 \end{pmatrix*}, \; \nabla f(x^*)= \cvect{0 \\ 0}.
+  \]
+  Therefore, the first order necessary condition is verified.
+
+  The second derivative matrix is
+  \[
+  \nabla^2 f(x)= \begin{pmatrix*} 100 & 0\\ 0 &
+    -6x_2 \end{pmatrix*}, \; \nabla^2 f(x^*)= \begin{pmatrix*} 100 & 0\\ 0 &
+    0 \end{pmatrix*}.
+  \]
+It is positive semidefinite. Indeed, the eigenvalues are read on the
+diagonal, as it is a diagonal matrix. And they are non
+negative. Therefore,  the second order necessary condition
+is verified.
+
+\item Note that the value of the objective function at $x^*$ is
+  \[
+f(x^*) = 0.
+  \]
+  Consider the direction
+  \[
+  d_1=\cvect{0 \\ 1}
+  \]
+  and the point $x_1$ obtained by following this direction from $x^*$
+  with a step
+  $\alpha$:
+  \[
+x_1 = x^* + \alpha d_1 = \cvect{0 \\ 0} + \alpha \cvect{0 \\ 1} =
+\cvect{0 \\ \alpha}.
+\]
+The value of the objective function at $x_1$ is
+\[
+f(x_1) = -\alpha^3.
+\]
+Therefore, for any $\alpha > 0$, we have
+\[
+f(x_1) < f(x^*), 
+\]
+and $x^*$ cannot be a local minimum. 
+
+  Consider now the direction
+  \[
+  d_2=\cvect{0 \\ -1}
+  \]
+  and the point $x_2$ obtained by following this direction from $x^*$
+  with a step
+  $\alpha$:
+  \[
+x_2 = x^* + \alpha d_2 = \cvect{0 \\ 0} + \alpha \cvect{0 \\ -1} =
+\cvect{0 \\ -\alpha}.
+\]
+The value of the objective function at $x_2$ is
+\[
+f(x_2) = \alpha^3.
+\]
+Therefore, for any $\alpha > 0$, we have
+\[
+f(x_2) > f(x^*), 
+\]
+and $x^*$ cannot be a local maximum. 
+
+\end{enumerate}
+

@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Topics
 
@@ -8,11 +8,6 @@ Browse the content by topic.
 - [Objective function](objective.md)
 - [Linear optimization](linear-optimization.md)
 - [Linear constraints](linear-constraints.md)
-- [Simplex algorithm](simplex.md)
 - [Duality](duality.md)
-- [Networks](networks.md)
-- [Transshipment](transshipment.md)
-- [Shortest paths](shortest-paths.md)
-- [Discrete optimization](discrete-optimization.md)
-- [Nonlinear optimization](nonlinear-optimization.md)
+- [Optimality conditions](optimality.md)
 

@@ -1,0 +1,22 @@
+id: optimality-necessary-exercise-02
+title: Necessary optimality conditions — Exercise 2
+type: exercise
+topics:
+- optimality
+format: pdf
+question_source: exercises/sources/optimality/v05020-q2.tex
+answer_source: exercises/sources/optimality/v05020-a2.tex
+book_chapter: '5'
+book_section: '5.1'
+related:
+- optimization-textbook
+- optimality-necessary-video
+- optimality-necessary-slides
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 50.20.2
+summary: Exercise on necessary optimality conditions.
+tracks:
+- online-course

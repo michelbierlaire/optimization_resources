@@ -18,6 +18,8 @@ PUBLISHED_DIR = PROJECT_ROOT / "docs" / "assets" / "exercises"
 
 QUESTION_TEMPLATE = TEMPLATES_DIR / "exercise_question.tex"
 SOLUTION_TEMPLATE = TEMPLATES_DIR / "exercise_solution.tex"
+#LATEX = "pdflatex"
+LATEX = "lualatex"
 
 CONTENT_PLACEHOLDER = "<<CONTENT>>"
 
@@ -159,10 +161,10 @@ def run_command(command: list[str], cwd: Path) -> None:
 
 
 def compile_pdf(tex_path: Path) -> Path:
-    """Compile a standalone LaTeX file to PDF using pdflatex."""
-    if shutil.which("pdflatex") is None:
+    """Compile a standalone LaTeX file to PDF using the configured LaTeX engine."""
+    if shutil.which(LATEX) is None:
         raise ExerciseBuildError(
-            "pdflatex was not found on PATH. Install a LaTeX distribution first."
+            f"{LATEX} was not found on PATH. Install a LaTeX distribution first."
         )
 
     cwd = tex_path.parent
@@ -172,7 +174,8 @@ def compile_pdf(tex_path: Path) -> Path:
     for _ in range(2):
         run_command(
             [
-                "pdflatex",
+                LATEX,
+                "--shell-escape",
                 "-interaction=nonstopmode",
                 "-halt-on-error",
                 filename,

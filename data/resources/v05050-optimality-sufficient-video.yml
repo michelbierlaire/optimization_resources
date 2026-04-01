@@ -1,0 +1,26 @@
+id: optimality-sufficient-video
+title: 'Optimality conditions: unconstrained problems - Sufficient optimality conditions'
+type: video
+topics:
+- optimality
+format: video
+path:
+url: https://youtu.be/06mQQ_RcQH4?si=USnpcusXb1mafobJ
+book_chapter: '5'
+book_section: '5.2'
+related:
+- optimization-textbook
+slides_ref: optimality-sufficient-slides
+exercises_ref:
+- optimality-sufficient-exercise-01
+- optimality-sufficient-exercise-02
+notebook_ref: null
+duration: '05:32'
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '50.50'
+summary: Recorded lecture on sufficient optimality conditions.
+tracks:
+- online-course

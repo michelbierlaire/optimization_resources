@@ -1,0 +1,25 @@
+id: duality-relaxation-video
+title: 'Duality: constraint relaxation'
+type: video
+topics:
+- duality
+format: video
+path:
+url: https://youtu.be/nClTjGznkTo?si=xURsTX4IJtADCcQt
+book_chapter: '4'
+book_section: '4.1'
+related:
+- optimization-textbook
+exercises_ref:
+- duality-relaxation-exercise-01
+slides_ref: duality-relaxation-slides
+notebook_ref: null
+duration: '14:15'
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '40.10'
+summary: Recorded lecture on constraint relaxation.
+tracks:
+- online-course

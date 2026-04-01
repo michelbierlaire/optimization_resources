@@ -1,0 +1,26 @@
+id: duality-linear-slides
+title: 'Duality: duality in linear optimization — video slides'
+type: slides
+topics:
+- duality
+format: pdf
+path: assets/slides/v04050_h.pdf
+url: null
+book_chapter: '4'
+book_section: '4.2'
+related:
+- optimization-textbook
+- duality-linear-video
+exercises_ref:
+- duality-linear-exercise-01
+- duality-linear-exercise-02
+notebook_ref: null
+duration: null
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '40.50'
+summary: Slides of the video on duality in linear optimization.
+tracks:
+- online-course

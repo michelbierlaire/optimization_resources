@@ -1,0 +1,107 @@
+
+ There are five constraints (different from the non negativity
+ constraints), so that there are five dual variables. As all
+ constraints are $\leq$, the corresponding dual variables are non negative, according to the
+ summary table.
+ \begin{align*}
+ -5x_1 + 4x_2 &\leq 16, & \gamma_1 \leq 0, \\
+x_1 + 3x_2 &\leq 31, &\gamma_2 \leq 0,\\
+x_1 + 2x_2 &\leq 24, &\gamma_3 \leq 0,\\
+3x_1 +5x_2&\leq  68, &\gamma_4 \leq 0,\\
+x_1 + x_2&\leq 122, & \gamma_5 \leq 0.\\
+ \end{align*}
+As the two variables of the primal are non negative, the constraints
+of the dual are $\leq$, according to the summary table. Therefore,  the dual problem is:
+\begin{equation}
+  \label{eq:dual2}
+\max  16\gamma_1 + 31\gamma_2 + 24\gamma_3 + 68\gamma_4 + 122\gamma_5
+\end{equation}
+subject to
+\begin{equation}
+  \label{eq:dual2c}
+\begin{aligned}
+-5\gamma_1 + \gamma_2 + \gamma_3 + 3\gamma_4 + \gamma_5 &\leq -4, \\
+4\gamma_1 + 3\gamma_2 + 2\gamma_3 + 5\gamma_4 + \gamma_5 &\leq -7, \\
+\gamma_1,\gamma_2,\gamma_3,\gamma_4,\gamma_5 &\leq 0. \\
+\end{aligned}
+\end{equation}
+
+In order to calculate the Lagrangian, we 
+ write the problem as $$\min -4x_1-7x_2$$ subject to 
+\begin{alignat*}{5}
+g_1(x) &= -16 & -5x_1 & +4x_2 & \leq 0 \quad (\mu_1)\\
+g_2(x) &= -31 & +x_1 & +3x_2  & \leq 0 \quad (\mu_2)\\
+g_3(x) &= -24 & +x_1 &+2x_2 & \leq 0 \quad (\mu_3)\\
+g_4(x) &= -68 & +3x_1 & +5x_2 & \leq 0 \quad (\mu_4)\\
+g_5(x) &= -122 & +x_1 & +x_2 & \leq 0 \quad (\mu_5)\\
+g_6(x) &= & -x_1 &  & \leq 0 \quad (\mu_6)\\
+g_7(x) &= & & -x_2  & \leq 0 \quad (\mu_7).
+\end{alignat*}
+
+The Lagrangian function of this problem is 
+\begin{align*}
+L(x_1, x_2, \mu_1, \mu_2, \mu_3, \mu_4, \mu_5, \mu_6, \mu_7)& =-4x_1-7x_2 + \mu_1(-16 -5x_1 +4x_2)\\ & \qquad +\mu_2(-31 +x_1 +3x_2 ) + \mu_3(-24 +x_1 +2x_2) \\& \qquad  +\mu_4(-68 +3x_1 +5x_2 ) + \mu_5(-122 +x_1 +x_2 )\\ & \qquad   - \mu_6x_1 -\mu_7x_2\\
+&= x_1(-4 -5\mu_1+\mu_2+\mu_3+3\mu_4+\mu_5-\mu_6)\\ & \qquad + x_2(-7 +4\mu_1+3\mu_2+2\mu_3+5\mu_4+\mu_5-\mu_7)\\ & \qquad -16\mu_1 -31\mu_2 -24\mu_3 -68\mu_4-122\mu_5.
+\end{align*}
+
+In order for the dual function to be bounded, the coefficients of
+$x_1$ and $x_2$ have to be zero:
+\begin{align}
+  \mu_6 &= -4 -5\mu_1+\mu_2+\mu_3+3\mu_4+\mu_5,  \label{eq:mu6}\\
+  \mu_7 &= -7 +4\mu_1+3\mu_2+2\mu_3+5\mu_4+\mu_5, \label{eq:mu7}
+\end{align}
+and the dual function is
+\[
+q(\mu_1, \mu_2, \mu_3, \mu_4, \mu_5, \mu_6, \mu_7) = -16\mu_1 -31\mu_2 -24\mu_3 -68\mu_4-122\mu_5.
+\]
+Moreover,  we must impose $ \mu_1, \mu_2, \mu_3,
+\mu_4, \mu_5, \mu_6, \mu_7 \geq 0$. Thus,
+As $\mu_6$ and $\mu_7$ do not appear in the dual function, they can be
+eliminated.
+\begin{itemize}
+\item Combining \req{eq:mu6} and $\mu_6 \geq 0$, we obtain $-4
+  -5\mu_1+\mu_2+\mu_3+3\mu_4+\mu_5 \geq 0$.
+\item Combining \req{eq:mu7} and $\mu_7 \geq 0$, we obtain $-7
+  +4\mu_1+3\mu_2+2\mu_3+5\mu_4+\mu_5 \geq 0$.
+\end{itemize}
+Therefore, the constraints on the dual variables are
+\begin{align*}
+-5\mu_1+\mu_2+\mu_3+3\mu_4+\mu_5 &\geq 4, \\
+4\mu_1+3\mu_2+2\mu_3+5\mu_4+\mu_5 &\geq 7, \\
+\mu_1 &\geq 0, \\
+\mu_2 &\geq 0, \\
+\mu_3 &\geq 0, \\
+\mu_4 &\geq 0, \\
+\mu_5 &\geq 0. \\
+\end{align*}
+The dual problem is written as
+\[
+\max_{\mu \in \R^5} -16\mu_1 -31\mu_2 -24\mu_3 -68\mu_4-122\mu_5
+\]
+subject to 
+\begin{align*}
+-5\mu_1+\mu_2+\mu_3+3\mu_4+\mu_5 &\geq 4, \\
+4\mu_1+3\mu_2+2\mu_3+5\mu_4+\mu_5 &\geq 7, \\
+\mu_1 &\geq 0, \\
+\mu_2 &\geq 0, \\
+\mu_3 &\geq 0, \\
+\mu_4 &\geq 0, \\
+\mu_5 &\geq 0. \\
+\end{align*}
+If we define $\gamma_i = -\mu_i$, $i=1,\ldots,5$, we obtain
+\[
+\max_{\mu \in \R^5} 16\gamma_1 +31\gamma_2 +24\gamma_3 +68\gamma_4+122\gamma_5
+\]
+subject to 
+\begin{align*}
+5\gamma_1-\gamma_2-\gamma_3-3\gamma_4-\gamma_5 &\geq 4, \\
+-4\gamma_1-3\gamma_2-2\gamma_3-5\gamma_4-\gamma_5 &\geq 7, \\
+-\gamma_1 &\geq 0, \\
+-\gamma_2 &\geq 0, \\
+-\gamma_3 &\geq 0, \\
+-\gamma_4 &\geq 0, \\
+-\gamma_5 &\geq 0, \\
+\end{align*}
+which corresponds to the optimization problem
+\req{eq:dual2}--\req{eq:dual2c} obtained using the summary tables.
+

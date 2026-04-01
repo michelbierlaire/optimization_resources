@@ -1,0 +1,50 @@
+
+First, we show that the point
+\[
+x^*=\cvect{-\frac{1}{4} \\ \frac{1}{6}}.
+\]
+is a local minimum of the function $f$.
+The gradient of the function is $$\nabla f(x_1,x_2)=\begin{pmatrix*}
+4x_1+1 \\ 6 x_2 -1 \end{pmatrix*},$$ which is zero at
+$x^*$.
+
+\begin{center}
+  \begin{tikzpicture}
+      \begin{axis}[view={0}{90},domain=-2:2]
+     \addplot3[contour gnuplot={labels=false,number=40,handler/.style=smooth},samples=101]
+      {2*x^2+3*y^2+x-y+3};
+     \node[label={[left,xshift=1mm]$x^*$},minimum size=1pt] at (axis cs: -0.25,0.16666){$\bullet$} ;
+      \end{axis}
+   \end{tikzpicture}
+\end{center}
+
+
+
+The second derivative  matrix is $$\nabla^2
+f(x_1,x_2)= \begin{pmatrix*} 4 & 0 \\ 0 & 6 \end{pmatrix*},$$ which is
+positive definite at $x^*$. Therefore, the point
+\[
+x^*=\cvect{-\frac{1}{4} \\ \frac{1}{6}}
+\]
+satisfies the sufficient optimality conditions and is a local minimum.
+
+The second derivative matrix is positive definite for all
+$x\in \mathbb{R}^2$, then $f$ is strictly convex. Therefore, $x^*$ is
+a unique global minimum of the function. 
+
+%%%---removed---%%%
+%We know that the function $f(x) = x^2$ is convex. Then, $2x_1^2+3x_2^2$ is convex since it is a linear combination with positive coefficients of two convex functions.\\
+%It remains to show that $g(x_1,x_2) = x_1 - x_2 + 3$ is convex too. If we consider $(x_1,x_2)$ and $(y_1,y_2)$, two points of $\mathbb{R}^2$, and $0 \leq \alpha \leq 1$, we obtain:
+%
+%\begin{align*}
+%g(\alpha(x_1,x_2) + (1-\alpha)(y_1,y_2)) & = \alpha x_1 + (1-\alpha)y_1 - \alpha x_2 - (1-\alpha) y_2 +3\\
+%& = \alpha (x_1-x_2+3) + (1-\alpha)(y_1-y_2+3) -3\\ & < \alpha (x_1-x_2+3) + (1-\alpha)(y_1-y_2+3)\\ & = \alpha g(x_1,x_2) + (1-\alpha)g(y_1,y_2).
+%\end{align*}
+%
+%Then, $g$ is strictly convex. Therefore $f$ is convex and $x^*=(-\frac{1}{4},\frac{1}{6})$ is a global minimum of $f$. \\
+%Since both $x \rightarrow x^2$ and $g$ are strictly convex, $f$ is. 
+%%%---removed---%%%
+
+Thus, $x^*=(-\frac{1}{4},\frac{1}{6})$ is the only global minimum of $f$.
+
+

@@ -1,0 +1,26 @@
+id: optimality-quadratic-video
+title: 'Optimality conditions: unconstrained problems - Quadratic functions'
+type: video
+topics:
+- optimality
+format: video
+path:
+url: https://youtu.be/wpg6uB_JEBY?si=YGAnkKL3zVEHAMiD
+book_chapter: '5'
+book_section: '5.2'
+related:
+- optimization-textbook
+slides_ref: optimality-quadratic-slides
+exercises_ref:
+- optimality-quadratic-exercise-01
+- optimality-quadratic-exercise-02
+notebook_ref: null
+duration: '11:20'
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '50.90'
+summary: Recorded lecture on optimality conditions for quadratic functions.
+tracks:
+- online-course

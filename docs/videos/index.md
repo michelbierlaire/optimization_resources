@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Videos
 
@@ -79,4 +79,36 @@ Recorded lecture on degeneracy.
 ## [Linear constraints: basic directions](../resources/items/constraints-basic-directions-video.md)
 
 Recorded lecture on basic directions.
+
+## [Duality: constraint relaxation](../resources/items/duality-relaxation-video.md)
+
+Recorded lecture on constraint relaxation.
+
+## [Duality: Lagrangian and dual problem](../resources/items/duality-lagrangian-video.md)
+
+Recorded lecture on Lagrangian and dual problem.
+
+## [Duality: duality in linear optimization](../resources/items/duality-linear-video.md)
+
+Recorded lecture on duality in linear optimization.
+
+## [Optimality conditions: unconstrained problems - Necessary optimality conditions](../resources/items/optimality-necessary-video.md)
+
+Recorded lecture on necessary optimality conditions.
+
+## [Optimality conditions: unconstrained problems - Sufficient optimality conditions](../resources/items/optimality-sufficient-video.md)
+
+Recorded lecture on sufficient optimality conditions.
+
+## [Optimality conditions: unconstrained problems - Quadratic functions](../resources/items/optimality-quadratic-video.md)
+
+Recorded lecture on optimality conditions for quadratic functions.
+
+## [Optimality conditions: linear optimization - Reduced costs](../resources/items/optimality-reduced-costs-video.md)
+
+Recorded lecture on reduced costs.
+
+## [Optimality conditions: linear optimization - Strong duality and complementarity slackness](../resources/items/optimality-complementarity-slackness-video.md)
+
+Recorded lecture on strong duality and complementarity slackness.
 

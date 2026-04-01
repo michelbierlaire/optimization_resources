@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Exercises
 
@@ -147,4 +147,64 @@ Exercise on basic directions.
 ## [Basic directions — Exercise 3](../resources/items/constraints-basic-directions-exercise-03.md)
 
 Exercise on basic directions.
+
+## [Constraint relaxation — Exercise 1](../resources/items/duality-relaxation-exercise-01.md)
+
+Exercise on constraint relaxation.
+
+## [Lagrangian and dual problem — Exercise 1](../resources/items/duality-lagrangian-exercise-01.md)
+
+Exercise on Lagrangian and dual problem.
+
+## [Lagrangian and dual problem — Exercise 2](../resources/items/duality-lagrangian-exercise-02.md)
+
+Exercise on Lagrangian and dual problem.
+
+## [Lagrangian and dual problem — Exercise 3](../resources/items/duality-lagrangian-exercise-03.md)
+
+Exercise on Lagrangian and dual problem.
+
+## [Duality in linear optimization — Exercise 1](../resources/items/duality-linear-exercise-01.md)
+
+Exercise on duality in linear optimization.
+
+## [Duality in linear optimization — Exercise 2](../resources/items/duality-linear-exercise-02.md)
+
+Exercise on duality in linear optimization.
+
+## [Necessary optimality conditions — Exercise 1](../resources/items/optimality-necessary-exercise-01.md)
+
+Exercise on necessary optimality conditions.
+
+## [Necessary optimality conditions — Exercise 2](../resources/items/optimality-necessary-exercise-02.md)
+
+Exercise on necessary optimality conditions.
+
+## [Sufficient optimality conditions — Exercise 1](../resources/items/optimality-sufficient-exercise-01.md)
+
+Exercise on sufficient optimality conditions.
+
+## [Sufficient optimality conditions — Exercise 2](../resources/items/optimality-sufficient-exercise-02.md)
+
+Exercise on sufficient optimality conditions.
+
+## [Optimality conditions for quadratic functions — Exercise 1](../resources/items/optimality-quadratic-exercise-01.md)
+
+Exercise on optimality conditions for quadratic functions.
+
+## [Optimality conditions for quadratic functions — Exercise 2](../resources/items/optimality-quadratic-exercise-02.md)
+
+Exercise on optimality conditions for quadratic functions.
+
+## [Reduced costs — Exercise 1](../resources/items/optimality-reduced-costs-exercise-01.md)
+
+Exercise on reduced costs.
+
+## [Strong duality and complementarity slackness — Exercise 1](../resources/items/optimality-complementarity-slackness-exercise-01.md)
+
+Exercise on strong duality and complementarity slackness.
+
+## [Strong duality and complementarity slackness — Exercise 2](../resources/items/optimality-complementarity-slackness-exercise-02.md)
+
+Exercise on strong duality and complementarity slackness.
 

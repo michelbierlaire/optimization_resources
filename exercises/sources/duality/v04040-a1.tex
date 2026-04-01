@@ -1,0 +1,93 @@
+
+
+%We find that the solution of the primal is $x^*=(1,0)^T$ (which is the only vertex) with an optimal value of $4$. Thus, the primal is feasible and therefore the dual too. Then, we derive the dual problem.
+
+The primal problem is
+$$\min_{x \in \mathbb{R}^2} 4x_1+2x_2$$ 
+subject to 
+\begin{align*}
+x_1-x_2 & = 1,\\
+x_1 & \geq 0,\\
+x_2 & \geq 0.
+\end{align*}
+Rewriting the equality constraint as $x_1=1+x_2$, the problem can be
+written as
+\[
+\min_{x \in \mathbb{R}^2} 4 + 6x_2
+\]
+subject to 
+\begin{align*}
+x_1 & \geq 0,\\
+x_2 & \geq 0.
+\end{align*}
+The optimal solution is $x^*_2=0$ and $x^*_1 = 1+x_2^*=1$. The optimal
+value is 4. Consequently, we expect the dual problem to have an
+optimal solution as well. 
+
+  To write the Lagrangian, we first write the problem as follows:
+$$\min_{x \in \mathbb{R}^2} 4x_1+2x_2$$ 
+subject to 
+\begin{alignat*}{5}
+& h_1(x) && = 1 && -x_1 && +x_2 && =0 \quad (\lambda),\\
+& g_1(x) &&= && -x_1 && && \leq 0 \quad (\mu_1),\\
+& g_2(x) &&= && && -x_2 && \leq 0 \quad (\mu_2),
+\end{alignat*}
+where $\lambda$, $\mu_1$ and $\mu_2$ are the penalty parameters
+associated with each constraint.
+
+The Lagrangian function is 
+\begin{align*}
+L(x_1,x_2,\lambda,\mu_1,\mu_2) & = 4x_1+2x_2 + \lambda(1-x_1+x_2) - \mu_1 x_1 - \mu_2 x_2\\
+& = (4-\lambda-\mu_1)x_1 + (2+\lambda-\mu_2)x_2 + \lambda.
+\end{align*}
+
+The dual function is
+\[
+q(\lambda,\mu_1,\mu_2) = \min_{x_1,x_2} L(x_1,x_2,\lambda,\mu_1,\mu_2).
+\]
+In order for the dual function to be bounded, the coefficients of
+$x_1$ and $x_2$ have to be zero, since we removed all the constraints
+on $x_1$ and $x_2$. Therefore, we have to impose the
+following constraints on the penalty parameters:
+\begin{align}
+  \mu_1&=4-\lambda, \label{eq:1}\\
+  \mu_2&=2+\lambda. \label{eq:2}
+\end{align}
+In that case, the dual function becomes 
+\[
+q(\lambda,\mu_1,\mu_2) = \min_{x_1,x_2} \lambda = \lambda.
+\]
+Moreover, the parameters associated with the inequality constraints
+must be non negative. That is, $\mu_1 \geq 0$ and $\mu_2 \geq
+0$. The dual problem is therefore
+\[
+\max_{\lambda,\mu_1,\mu_2} \lambda
+\]
+subject to
+\begin{align*}
+  \mu_1&=4-\lambda, \\
+  \mu_2&=2+\lambda, \\
+  \mu_1 & \geq 0, \\
+  \mu_2 & \geq 0. \\
+\end{align*}
+As the parameters $\mu_1$ and $\mu_2$ do not appear in the objective
+function, we 
+can rewrite
+\req{eq:1} and \req{eq:2} as
+\begin{align*}
+  4-\lambda & \geq 0, \\ 
+  2+\lambda & \geq 0,
+\end{align*}
+and eliminate the $\mu$'s, so that the dual problem becomes
+\[
+\max_{\lambda} \lambda
+\]
+subject to
+\begin{align*}
+  4-\lambda & \geq 0, \\
+  2+\lambda & \geq 0. \\
+\end{align*}
+The optimal solution is $\lambda^* = 4$. Note that
+$\mu^*_1=4-\lambda^*=0$ and $\mu^*_2 = 2 + \lambda^*=6$. The optimal
+value is 4. It is the same value as the primal problem.
+

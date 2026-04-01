@@ -1,0 +1,27 @@
+id: duality-lagrangian-slides
+title: 'Duality: Lagrangian and dual problem — video slides'
+type: slides
+topics:
+- duality
+format: pdf
+path: assets/slides/v04030_h.pdf
+url: null
+book_chapter: '4'
+book_section: '4.1'
+related:
+- optimization-textbook
+- duality-lagrangian-video
+exercises_ref:
+- duality-lagrangian-exercise-01
+- duality-lagrangian-exercise-02
+- duality-lagrangian-exercise-03
+notebook_ref: null
+duration: null
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '40.30'
+summary: Slides of the video on Lagrangian and dual problem.
+tracks:
+- online-course

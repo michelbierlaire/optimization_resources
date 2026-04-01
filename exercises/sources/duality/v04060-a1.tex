@@ -1,0 +1,111 @@
+
+
+There are three constraints (different from the non negativity constraints), so that
+there are three dual variables. Their sign is defined by the summary table.
+\begin{align*}
+  \multicolumn{2}{r}{\text{Constraint of the primal}} & \text{Dual variable} \\
+  \hline
+ 2x_1 + x_2 &\geq 10, & \gamma_1 \geq 0, \\
+x_1 + 4x_3 &= 16, & \gamma_2 \in \R,\\
+x_2 - x_3 &\leq 5, & \gamma_3 \leq 0.\\
+\end{align*}
+There is a dual constraint for each primal variable.
+As $x_1 \geq 0$, we have
+\[
+2\gamma_1 + \gamma_2 + 0 \gamma_3 \leq 1,
+\]
+where 2, 1 and 0 are the coefficients of $x_1$ in the primal
+constraints, and the 1 at the right hand side is the coefficient of
+$x_1$ in the objective function. The sign of the constraint is
+determined by the summary table. As $x_1$ must be non negative in the
+primal, the corresponding constraint in the dual is $\leq$.
+Similarly, as $x_2 \in \R$, we have
+\[
+\gamma_1 +\gamma_3 = -4,
+\]
+and as $x_3 \leq 0$, we have
+\[
+4 \gamma_2 - \gamma_3 \geq 2.
+\]
+
+  
+Therefore, the dual problem is: 
+\begin{equation}
+  \label{eq:dual1}
+\max   10\gamma_1 + 16\gamma_2 + 5\gamma_3 
+\end{equation}
+subject to
+\begin{equation}
+  \label{eq:dualc1}
+\begin{aligned}
+2\gamma_1 + \gamma_2 &\leq 1, \\
+\gamma_1 + \gamma_3 & =-4, \\
+4\gamma_2 - \gamma_3 &\geq 2, \\
+\gamma_1 & \geq 0, \\
+\gamma_2 & \in \mathbb{R}, \\
+\gamma_3 & \leq 0. \\
+\end{aligned}
+\end{equation}
+In order to calculate the Lagrangian, we write the problem as $$\min x_1-4x_2+2x_3$$ subject to 
+\begin{alignat*}{6}
+h_1(x) & = 16 & - x_1 & & -4x_3 &= 0, \quad (\lambda)\\
+g_1(x) &= 10 & -2x_1 & -x_2 & & \leq 0, \quad (\mu_1)\\
+g_2(x) &= -5 & & +x_2 &-x_3 & \leq 0, \quad (\mu_2)\\
+g_3(x) &= & -x_1 & & & \leq 0, \quad (\mu_3)\\
+g_4(x) &= & & & x_3 & \leq 0. \quad (\mu_4)
+\end{alignat*}
+The Lagrangian function of this problem is 
+\begin{align*}
+L(x_1,x_2,x_3,\lambda, \mu_1, \mu_2, \mu_3, \mu_4)& = x_1-4x_2+2x_3 + \lambda(16-x_1-4x_3)\\ & \qquad +\mu_1(10-2x_1-x_2) + \mu_2(-5+x_2-x_3) \\& \qquad \qquad -\mu_3 x_1 + \mu_4 x_3\\
+&= x_1(1-\lambda-2\mu_1-\mu_3) + x_2(-4-\mu_1+\mu_2)\\ & \qquad + x_3(2-4\lambda-\mu_2+\mu_4) + 16\lambda +10\mu_1 -5\mu_2.
+\end{align*}
+
+In order for the dual function to be bounded, the coefficients of
+$x_1,x_2,x_3$ have to be zero. Therefore,
+\begin{align}
+  \mu_3& =1-\lambda-2\mu_1, \label{eq:mu3}\\
+  \mu_2&= 4 +\mu_1, \\
+  \mu_4 &= -2+4\lambda+\mu_2, \label{eq:mu4}
+\end{align}
+and the dual function is
+\[
+q(\lambda, \mu_1, \mu_2, \mu_3, \mu_4) =  16\lambda +10\mu_1 -5\mu_2.
+\]
+Moreover, we must impose $\mu_1, \mu_2, \mu_3,\mu_4 \geq 0$.
+As $\mu_3$ and $\mu_4$ do not appear in the dual function, they can
+be eliminated.
+\begin{itemize}
+\item Combining \req{eq:mu3} and $\mu_3 \geq 0$, we obtain $\lambda \leq 1-2\mu_1$.
+\item Combining \req{eq:mu4} and $\mu_4 \geq 0$, we obtain $\lambda \geq \frac{1}{2}-\frac{1}{4}\mu_2$.
+\end{itemize}
+Therefore, the constraints on the dual variables are
+\begin{align*}
+  \lambda &\leq 1-2\mu_1, \\
+  \lambda &\geq \frac{1}{2}-\frac{1}{4}\mu_2, \\
+  \mu_2&= 4 +\mu_1, \\
+  \mu_1 & \geq 0, \\
+  \mu_2 & \geq 0.
+\end{align*}
+Therefore, the dual problem is written as $$ \max 16\lambda +10\mu_1 -5\mu_2$$ subject to
+\begin{align*}
+\lambda+2\mu_1 & \leq 1,\\
+\lambda + \frac{1}{4}\mu_2 & \geq  \frac{1}{2},\\
+-\mu_1+\mu_2 & = 4,\\
+\mu_1 & \geq 0, \\
+\mu_2 & \geq 0.
+\end{align*}
+If we define $$\gamma_1=\mu_1, \quad \gamma_2=\lambda, \quad \gamma_3=-\mu_2,$$ we obtain
+\[
+\max   10\gamma_1 + 16\gamma_2 + 5\gamma_3 
+\]
+subject to
+\begin{align*}
+\gamma_2+2\gamma_1 & \leq 1,\\
+\gamma_2 - \frac{1}{4}\gamma_3 & \geq  \frac{1}{2},\\
+-\gamma_1-\gamma_3 & = 4,\\
+\gamma_1 & \geq 0, \\
+-\gamma_3 & \geq 0,
+\end{align*}
+which corresponds to the optimization problem
+\req{eq:dual1}--\req{eq:dualc1} obtained using the summary tables.
+

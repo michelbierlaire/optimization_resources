@@ -1,0 +1,22 @@
+id: duality-linear-exercise-02
+title: Duality in linear optimization — Exercise 2
+type: exercise
+topics:
+- duality
+format: pdf
+question_source: exercises/sources/duality/v04060-q2.tex
+answer_source: exercises/sources/duality/v04060-a2.tex
+book_chapter: '4'
+book_section: '4.2'
+related:
+- optimization-textbook
+- duality-linear-video
+- duality-linear-slides
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 40.60.2
+summary: Exercise on duality in linear optimization.
+tracks:
+- online-course

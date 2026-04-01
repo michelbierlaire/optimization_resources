@@ -1,0 +1,173 @@
+
+The optimality conditions for quadratic functions are related to the
+positive definiteness of the (constant) second derivative matrix.
+The derivatives of the objective function are
+\[
+\nabla f(x) = {Qx + g}, \; \nabla^2 f(x) = Q.
+\]
+The positive definiteness of $Q$ can be identified from its
+eigenvalues, that are the roots of the characteristic
+polynomial. Therefore, we solve the equation
+\begin{align*}
+\det(\lambda I - Q) = \det \begin{pmatrix}
+1- \lambda & \alpha\\ \alpha & 1-\lambda
+\end{pmatrix} & = (1-\lambda)^2 - \alpha^2\\
+& = \lambda^2 - 2\lambda + (1-\alpha^2)\\
+& = (1-\alpha - \lambda)(1+\alpha - \lambda).
+\end{align*}
+We obtain the eigenvalues:
+\begin{align*}
+\lambda_1 & = 1-\alpha\\
+\lambda_2 & = 1+\alpha.\\
+\end{align*}
+The corresponding (normalized) eigenvectors are
+\begin{align*}
+u_1 &= \cvect{\frac{\sqrt{2}}{2} \\ -\frac{\sqrt{2}}{2}} & \text{ as } Qu_1 = \lambda_1 u_1,\\
+u_2 &= \cvect{\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}} & \text{ as } Qu_2 = \lambda_2 u_2.
+\end{align*}
+
+We first investigate the optimality conditions.
+\begin{description}
+\item[Necessary conditions]  When $Q$ is not positive
+  semidefinite, that is, when at least one eigenvalue is non
+  positive, there is no optimal solution. This is the case if $\alpha > 1$ (so that $\lambda_1 <
+  0$), or $\alpha  < -1$ (so that $\lambda_2 < 0$).
+\item[Sufficient conditions] When $Q$ is positive definite, the
+  problem has a unique global minimum. This is the case if $-1 <
+  \alpha < 1$, so that $\lambda_1 > 0$ and $\lambda_2 > 0$.
+\end{description}
+Now, what happens when $Q$ is positive  semidefinite (so that the
+necessary conditions are verified) but not positive definite (so that
+the sufficient conditions are not verified)?
+
+ This is the case if $\alpha = 1$, so that
+  $\lambda_1=0$ and $\lambda_2=2$, or if $\alpha = -1$, so that
+  $\lambda_1=2$ and $\lambda_2=0$.
+
+ Geometrically, we can decompose the space into two subspaces. In the
+ subspace spanned by the eigenvectors of the positive eigenvalues, the
+ function is strictly convex. In this subspace, there is a unique minimum. In the subspace spanned by the
+ eigenvectors of the zero eigenvalues, the function is linear, as
+ there is no curvature. Therefore, it is bounded only if it is
+ constant. And, in that case, there is an infinite number of minima. 
+
+ Algebraically, we use the Schur decomposition of $Q$:
+\begin{align*}
+Q & = U \Lambda U^T\\
+& = \begin{pmatrix}
+\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}\\ -\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+\end{pmatrix} \begin{pmatrix}
+1-\alpha & 0\\ 0& 1+\alpha
+\end{pmatrix} \begin{pmatrix}
+\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2}\\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+\end{pmatrix},
+\end{align*}
+where $U$ is an orthogonal matrix composed of the eigenvectors of $Q$
+organized in columns.
+
+Let's use the matrix $U$ to decompose $x$ and $g$:
+\[
+U^Tx = x' = \cvect{x'_1 \\ x'_2 } \text{ and } U^Tg = g' = \cvect{g'_1
+\\ g'_2},
+\]
+that is
+\[
+x' = \frac{\sqrt{2}}{2}\cvect{x_1-x_2 \\ x_1+x_2}\text{ and } g' = \frac{\sqrt{2}}{2}\cvect{g_1-g_2 \\ g_1+g_2}.
+\]
+
+
+We use the Schur decomposition, and the fact that the U matrix is
+orthogonal, so that $UU^T=I$, to rewrite the objective function as follows:
+\begin{align*}
+  f(x) &= \frac{1}{2} x^T Q x + g^T x + c \\
+  &= \frac{1}{2} x^T U \Lambda U^Tx + g^TUU^Tx + c.
+\end{align*}
+Using the decomposition of the vectors, we obtain the function in the
+new variables
+\begin{align*}
+  \tilde{f}(x') &= \frac{1}{2} {x'}^T \Lambda x' + {g'}^Tx' + c \\
+        &=\frac{1}{2} \lambda_1(x'_1)^2 + \frac{1}{2}
+  \lambda_2(x'_2)^2 + g'_1 x'_1 + g'_2 x'_2.
+\end{align*}
+The gradient of this function is
+\[
+\nabla \tilde{f}(x') = \cvect{\lambda_1 x_1' + g'_1 \\ \lambda_2 x'_2 + g'_2}.
+\]
+We see that, for the gradient to be zero (which is a necessary
+condition for optimality), we need
+\begin{align*}
+  x'_i &= \frac{-g'_i}{\lambda_i} & \text{ if } \lambda_i \neq 0, \\
+  g'_i &= 0 & \text{ if } \lambda_i = 0. \\
+\end{align*}
+
+Now, we consider the two values of $\alpha$
+identified above.
+
+\begin{itemize}
+\item If $\alpha=1$, then $\lambda_1=0$ and $\lambda_2 = 2$, the
+  gradient is zero when
+  \[
+g'_1 = \frac{\sqrt{2}}{2}(g_1-g_2) = 0 \text{ and } x'_2 = \frac{\sqrt{2}}{2}(x_1+x_2)=\frac{-g'_2}{2}.
+  \]
+It means that the function must be such that $g_1=g_2$. If so, any
+solution such that
+\[
+x_1 = -g_1 - x_2
+\]
+is a global minimum. It can easily be verified that the gradient of the function
+\[
+f(x) = Qx+g = \cvect{x_1+\alpha x_2 + g_1 \\ \alpha x_1 + x_2 + g_2}
+\]
+is indeed zero when $\alpha=1$, $x_1 = -g_1 - x_2$ and $g_1=g_2$, for
+any value of $x_2$.
+
+If $g_1 \neq g_2$, the problem is unbounded and
+has no optimal solution.
+
+\item If $\alpha=-1$, then $\lambda_1=2$ and $\lambda_2 = 0$, and we need
+  \[
+ x'_1 = \frac{\sqrt{2}}{2}(x_1-x_2)=\frac{-g'_1}{2}\text{ and } g'_2 = \frac{\sqrt{2}}{2}(g_1+g_2) = 0.
+  \]
+It means that the function must be such that $g_1=-g_2$. If so, any
+solution such that
+\[
+x_1 = -g_1+x_2
+\]
+is a global minimum.
+It can easily be verified that the gradient of the function
+\[
+f(x) = Qx+g = \cvect{x_1+\alpha x_2 + g_1 \\ \alpha x_1 + x_2 + g_2}
+\]
+is indeed zero when $\alpha=-1$, $x_1 = -g_1 + x_2$ and $g_1=-g_2$, for
+any value of $x_2$.
+
+If $g_1\neq-g_2$, the problem is unbounded and has no
+optimal solution. 
+\end{itemize}
+
+We can now answer the questions. 
+
+\begin{enumerate}
+\item \emph{For which values of $\alpha$ $f$ does not have a local
+minimum?}
+  \begin{itemize}
+    \item If $\alpha > 1$, so that $\lambda_1 <
+      0$ (from the necessary conditions),
+    \item if $\alpha  < -1$, so that $\lambda_2 < 0$ (from the
+      necessary conditions),
+    \item if $\alpha = 1$ when $g_1\neq g_2$ (from the discussion above), 
+    \item if $\alpha = -1$ when $g_1\neq -g_2$ (from the discussion above).
+  \end{itemize}
+
+\item \emph{For which values of $\alpha$ $f$ has a unique global
+  minimum?}  If $-1 < \alpha < 1$, so that $\lambda_1
+  > 0$ and $\lambda_2 > 0$ (from the sufficient conditions).
+
+\item \emph{What are the conditions on $g$ and $\alpha$ so that the
+problem has an infinite number of global minima?}
+  From the discussion above,
+  \begin{itemize}
+  \item if $\alpha=1$ when $g_1=g_2$, 
+  \item if $\alpha=-1$ when $g_1=-g_2$.
+  \end{itemize}
+\end{enumerate}

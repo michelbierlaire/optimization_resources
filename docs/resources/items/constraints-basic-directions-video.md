@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Video: Linear constraints: basic directions
 
@@ -30,6 +30,7 @@ Recorded lecture on basic directions.
 ## Navigation
 
 - Previous video: [Linear constraints: degeneracy](constraints-degeneracy-video.md)
+- Next video: [Duality: constraint relaxation](duality-relaxation-video.md)
 
 <details class="resource-metadata">
 <summary title="Show raw metadata">ⓘ Metadata</summary>

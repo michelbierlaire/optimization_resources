@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Linear optimization
 
@@ -31,5 +31,5 @@ Introductory Python lab notebook. The question version contains incomplete code 
 - **Tracks:** Online course, EPFL course
 - **Date:** 2026-03-28
 
-Main textbook for the optimization course, containing the theoretical foundations, examples, and references for linear optimization.
+Bierlaire (2015) Optimization: Principles and Algorithms, EPFL Press
 

@@ -1,0 +1,62 @@
+
+ To relax the constraint $x_1+x_2=2$, we first write it as $2-x_1-x_2
+ = 0$. Indeed, the quantity $2-x_1-x_2$ quantifies the amount of
+ violation of the constraint. If it is zero, the constraint is not
+ violated. If it is different from zero, it is.  We introduce a penalty that is proportional to the violation of the constraint, with a proportionality factor $\lambda$. The new optimization problem is
+
+ \[
+ \min_{x \in \mathbb{R}^2} x_1+4x_2 + \lambda(2-x_1-x_2)
+ \]
+ subject to 
+\begin{align*}
+x_1 & \geq 0,\\
+x_2 & \geq 0.
+\end{align*}
+
+ We examine the different cases corresponding to the different values of $\lambda$.
+
+\begin{itemize}
+\item If $\lambda=0$, the problem is
+ \[
+ \min_{x \in \mathbb{R}^2} x_1+4x_2
+ \]
+ subject to 
+\begin{align*}
+x_1 & \geq 0,\\
+x_2 & \geq 0.
+\end{align*}
+Its optimal solution is  $x^*=(0,0)^T$ with a value of $0$. This
+solution violates the constraint of the original problem, and the
+optimal value is lower. 
+
+\item If $\lambda=1$, the problem is
+ \[
+ \min_{x \in \mathbb{R}^2} 2+3x_2 
+ \]
+ subject to 
+\begin{align*}
+x_1 & \geq 0,\\
+x_2 & \geq 0.
+\end{align*}
+Any feasible $x$ such that $x_2=0$ is an optimal solution to the
+problem with a value of $2$, which is the same optimal value as the
+original problem, with the constraint. Because of the penalty,
+there is no incentive to violate the constraint, as it does not allow
+to improve the solution of the original problem. 
+
+\item If $\lambda=2$, the problem is
+ \[
+ \min_{x \in \mathbb{R}^2} 4-x_1+ 2x_2
+ \]
+ subject to 
+\begin{align*}
+x_1 & \geq 0,\\
+x_2 & \geq 0.
+\end{align*}
+The problem is not bounded, as the value of the objective function
+goes to $-\infty$ when $x_1$ goes to $+\infty$.The value of the
+penalty parameter is not appropriate, as it transforms a well-defined
+problem into an unbounded problem. 
+
+\end{itemize}
+

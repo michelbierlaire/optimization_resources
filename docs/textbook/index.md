@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Optimization textbook
 
@@ -9,7 +9,7 @@
 
 ## Summary
 
-Main textbook for the optimization course, containing the theoretical foundations, examples, and references for linear optimization.
+Bierlaire (2015) Optimization: Principles and Algorithms, EPFL Press
 
 ## Access
 
@@ -35,8 +35,7 @@ date: 2026-03-28
 author: Michel Bierlaire
 version: '1.0'
 language: en
-summary: Main textbook for the optimization course, containing the theoretical foundations,
-  examples, and references for linear optimization.
+summary: 'Bierlaire (2015) Optimization: Principles and Algorithms, EPFL Press'
 ```
 </details>
 

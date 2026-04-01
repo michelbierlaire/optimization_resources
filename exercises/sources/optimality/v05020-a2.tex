@@ -1,0 +1,31 @@
+
+The gradient of $f$ is
+\[
+\nabla f(x) = \cvect{\frac{\partial f}{\partial x_1} \\ \vdots
+  \\ \frac{\partial f}{\partial x_n}} = \cvect{c_1 \\ \vdots \\ c_n} = c,
+\]
+for any $x \in \R ^n$.
+As it is a constant vector, the second derivative matrix is zero, for
+any $x \in \R^n$:
+\[
+\nabla^2 f(x) = 0.
+\]
+We first note that the value of $b$ is irrelevant to determine the
+necessary optimality conditions. Adding a constant to an objective
+function does not change the optima. 
+If $c=0$, that is, if
+\[
+c_1 = \ldots = c_n = 0,
+\]
+then the necessary optimality conditions are verified for all
+$x\in\R^n$.
+If $c \neq 0$, that is, if there is at least one $i$ such that $c_i
+\neq 0$, then the first order necessary optimality conditions are not
+verified . The second order necessary conditions are always verified,
+as the null matrix is positive semidefinite.
+
+Note that, if $c=0$, the linear function is constant, with value
+$b$. And any $x\in \R^n$ is a (global) optimum. If not, the function
+is not constant. As there is no constraint, it is not bounded and
+there is no optimum.  
+

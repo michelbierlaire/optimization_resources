@@ -1,0 +1,64 @@
+
+To write $f$ in quadratic form
+\[
+f(x) = \frac{1}{2} x^T Q x + g^T x + c,
+\]
+we calculate its derivatives:
+\[
+\nabla f(x) = \cvect{x_1-x_2+3 \\ -x_1+x_2} \text{ and } \nabla^2 f(x)
+= \begin{pmatrix*}
+  1 & -1 \\ -1 & 1
+\end{pmatrix*}.
+\]
+Therefore,
+\[
+Q=\begin{pmatrix*}
+  1 & -1 \\ -1 & 1
+\end{pmatrix*}, \; g=\cvect{3 \\ 0}, \; c= -5.
+\]
+
+
+The positive definiteness of $Q$ can be identified from its
+eigenvalues, that are the roots of the characteristic
+polynomial. Therefore, we solve the equation
+\begin{align*}
+\det(\lambda I - Q) = \det \begin{pmatrix}
+1- \lambda & -1\\ -1 & 1-\lambda
+\end{pmatrix} & = (1-\lambda)^2 - 1\\
+& = 1-2\lambda+\lambda^2 -1 \\
+&= \lambda(\lambda-2).
+\end{align*}
+
+Therefore, the eigenvalues of $Q$ are $\lambda_1=2$ and $\lambda_2=0$. We deduce that $Q$ is positive semidefinite. Thus, either the problem is not bounded or there is an infinite number of global minima.
+
+In order to find in which case we are, we consider the Schur decomposition of $Q$. To do so, we first have to determine the eigenvectors associated with each eigenvalue.
+
+\begin{itemize}
+\item For $\lambda_1$ we have $$\begin{pmatrix*}[r]
+  -1&-1\\-1&-1\end{pmatrix*} \begin{pmatrix*}[r] x_1
+    \\ x_2\end{pmatrix*} = \begin{pmatrix*}[r] 0\\0\end{pmatrix*},$$
+      which implies that the normalized eigenvector is
+      \[
+      x_{\lambda_1}=\frac{\sqrt{2}}{2}\begin{pmatrix*}[r] 1\\-1\end{pmatrix*}.
+      \]
+\item For $\lambda_2$ we have $$\begin{pmatrix*}[r]
+  1&-1\\-1&1\end{pmatrix*} \begin{pmatrix*}[r] x_1
+    \\ x_2\end{pmatrix*} = \begin{pmatrix*}[r] 0\\0\end{pmatrix*},$$
+      which implies that the normalized eigenvector is
+      \[
+      x_{\lambda_2}=\frac{\sqrt{2}}{2}\begin{pmatrix*}[r]
+        1\\1\end{pmatrix*}.
+        \]
+\end{itemize}
+
+Thus, we can write $$Q= U \Lambda U^T = \begin{pmatrix*}[r] \frac{\sqrt{2}}{2}&\frac{\sqrt{2}}{2}\\-\frac{\sqrt{2}}{2}&\frac{\sqrt{2}}{2}\end{pmatrix*} 
+\begin{pmatrix*}[r] 2&0\\0&0\end{pmatrix*} \begin{pmatrix*}[r] \frac{\sqrt{2}}{2}&\frac{\sqrt{2}}{2}\\-\frac{\sqrt{2}}{2}&\frac{\sqrt{2}}{2}\end{pmatrix*}^T.$$
+
+  We have
+  \[
+  U^Tg= \frac{\sqrt{2}}{2} \begin{pmatrix*}[r]
+    3\\3 \end{pmatrix*}.
+  \]
+As the second entry of this vector, corresponding to the zero eigenvalue, is not
+zero, we can conclude that the problem is unbounded.
+

@@ -1,0 +1,102 @@
+
+The primal problem is
+\[
+\min_{x \in \mathbb{R}^2} 4x_1+2x_2
+\]
+subject to 
+\begin{align*}
+x_1+x_2 & \geq 2,\\
+-x_1-x_2 & \geq 1,\\
+x_1 & \geq 0,\\
+x_2 & \geq 0.
+\end{align*}
+The quantity $x_1+x_2$ must be both larger or equal to 2, and lesser
+or equal to -1. This is not possible, and the problem is
+infeasible. Consequently, we expect the dual problem to be either
+infeasible or unbounded.
+
+  To write the Lagrangian, we first write the problem as follows:
+$$\min_{x \in \mathbb{R}^2} 4x_1+2x_2$$ 
+subject to 
+\begin{alignat*}{5}
+& g_1(x) && = 2 && -x_1 && -x_2 && \leq 0 \quad (\mu_1),\\
+& g_2(x) &&= 1 && +x_1 && +x_2 && \leq 0 \quad (\mu_2),\\
+& g_3(x) &&= && -x_1 && && \leq 0 \quad (\mu_3),\\
+& g_4(x) &&= && && -x_2 && \leq 0 \quad (\mu_4),
+\end{alignat*}
+where $\mu_1$, $\mu_2$, $\mu_3$ and $\mu_3$ are the penalty parameters
+associated with each constraint.
+
+The Lagrangian function is 
+\begin{align*}
+L(x_1,x_2,\mu_1,\mu_2,\mu_3,\mu_4) & = 4x_1+2x_2 + \mu_1(2-x_1-x_2) \\
+& \qquad + \mu_2(1 +x_1+x_2) - \mu_3 x_1 - \mu_4 x_2\\
+& = (4-\mu_1+\mu_2-\mu_3)x_1\\ & \qquad + (2-\mu_1+\mu_2-\mu_4)x_2 + 2\mu_1 + \mu_2.
+\end{align*}
+
+The dual function is
+\[
+q(\mu_1,\mu_2,\mu_3,\mu_4) = \min_{x_1,x_2} L(x_1,x_2,\mu_1,\mu_2,\mu_3,\mu_4).
+\]
+
+In order for the dual function to be bounded, the coefficients of
+$x_1$ and $x_2$ have to be zero.  Therefore, we have to impose the
+following constraints on the penalty parameters:
+\begin{align}
+  \mu_3&=4-\mu_1+\mu_2, \label{eq:5} \\
+  \mu_4&=2-\mu_1+\mu_2. \label{eq:6}
+\end{align}
+In that case, the dual function becomes 
+\[
+q(\mu_1,\mu_2,\mu_3,\mu_4) = 2\mu_1 + \mu_2.
+\]
+Moreover, the parameters associated with the inequality constraints
+must be non negative. That is, $\mu_1 \geq 0$, $\mu_2 \geq
+0$, $\mu_3 \geq 0$, $\mu_4 \geq 0$. The dual problem is therefore
+\[
+\max_{\mu_1,\mu_2,\mu_3,\mu_4}2\mu_1 + \mu_2
+\]
+subject to
+\begin{align*}
+  \mu_3&=4-\mu_1+\mu_2,\\
+  \mu_4&=2-\mu_1+\mu_2, \\
+  \mu_1 & \geq 0, \\
+  \mu_2 & \geq 0, \\
+  \mu_3 & \geq 0, \\
+  \mu_4 & \geq 0.
+\end{align*}
+
+As the parameters $\mu_3$ and $\mu_4$ do not appear in the objective
+function, we 
+can rewrite
+\req{eq:5} and \req{eq:6} as
+\begin{align*}
+  4-\mu_1+\mu_2 & \geq 0,\\
+  2-\mu_1+\mu_2 & \geq 0, \\
+\end{align*}
+and eliminate $\mu_3$ and $\mu_4$, so that the dual problem becomes
+\[
+\max_{\mu_1,\mu_2}2\mu_1 + \mu_2
+\]
+subject to
+\begin{align*}
+  4-\mu_1+\mu_2 & \geq 0,\\
+  2-\mu_1+\mu_2 & \geq 0, \\
+  \mu_1 & \geq 0, \\
+  \mu_2 & \geq 0.
+\end{align*}
+The problem happens to be unbounded. To see it, first fix the value of $\mu_1$ to
+0. We obtain
+\[
+\max_{\mu_2} \mu_2
+\]
+subject to
+\begin{align*}
+  \mu_2 & \geq -4,\\
+  \mu_2 & \geq -2, \\
+  \mu_2 & \geq 0.
+\end{align*}
+As $\mu_2$ is not constrained from above, its value and, therefore,
+the value of the objective function, can always be made larger than any
+arbitrary value. 
+

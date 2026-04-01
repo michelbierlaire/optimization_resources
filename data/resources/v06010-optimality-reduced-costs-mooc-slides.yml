@@ -1,0 +1,25 @@
+id: optimality-reduced-costs-slides
+title: 'Optimality conditions: linear optimization - Reduced costs — video slides'
+type: slides
+topics:
+- optimality
+format: pdf
+path: assets/slides/v06010_h.pdf
+url: null
+book_chapter: '6'
+book_section: '6.5'
+related:
+- optimization-textbook
+- optimality-reduced-costs-video
+exercises_ref:
+- optimality-reduced-costs-exercise-01
+notebook_ref: null
+duration: null
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '60.10'
+summary: Slides of the video on reduced costs.
+tracks:
+- online-course

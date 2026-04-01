@@ -1,0 +1,26 @@
+id: duality-linear-video
+title: 'Duality: duality in linear optimization'
+type: video
+topics:
+- duality
+format: video
+path:
+url: https://youtu.be/R3Z1fRXXxyg?si=D2OMEq3BPxz-s6jR
+book_chapter: '4'
+book_section: '4.2'
+related:
+- optimization-textbook
+slides_ref: duality-linear-slides
+exercises_ref:
+- duality-linear-exercise-01
+- duality-linear-exercise-02
+notebook_ref: null
+duration: '12:23'
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '40.50'
+summary: Recorded lecture on duality in linear optimization.
+tracks:
+- online-course

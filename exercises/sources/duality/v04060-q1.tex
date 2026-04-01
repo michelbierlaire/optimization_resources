@@ -1,0 +1,47 @@
+
+If the primal is a minimization problem, and the dual is written as a
+maximization problem, then the following rules apply. 
+\begin{itemize}
+\item For each constraint of the primal there is a dual variable. The
+  sign of the dual variable depends on the sign of the primal constraint, according to the following table:
+\begin{center}
+\begin{tabular}{c | c}
+Constraint of the primal & Dual variable \\
+\hline
+$=$ & free\\
+$\leq$ & $\leq 0$\\
+$\geq$ & $\geq 0$
+\end{tabular}
+\end{center}
+\item For each primal variable there is a dual constraint. The sign of
+  the constraint depends on the sign of the primal variable, according to the table below.
+\begin{center}
+
+\begin{tabular}{c | c}
+Primal variable & Dual constraint \\
+\hline
+$\geq 0$ & $\leq$\\
+$\leq 0$ & $\geq$\\
+free & $=$
+\end{tabular}
+\end{center}
+
+\end{itemize}
+
+
+Write the dual of the following linear optimization problem in two
+ways: first use the summary tables above, and then use the Lagrangian
+method in order to see the correctness of those summary tables.
+\[
+\min   x_1 - 4x_2 + 2x_3 
+\]
+subject to
+\begin{align*}
+ 2x_1 + x_2 &\geq 10, \\
+x_1 + 4x_3 &= 16, \\
+x_2 - x_3 &\leq 5, \\
+x_1 &\geq 0, \\
+x_2 &\in \mathbb{R}, \\
+x_3 &\leq 0.
+\end{align*}
+

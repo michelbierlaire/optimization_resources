@@ -1,0 +1,26 @@
+id: optimality-complementarity-slackness-video
+title: 'Optimality conditions: linear optimization - Strong duality and complementarity slackness'
+type: video
+topics:
+- optimality
+format: video
+path:
+url: https://youtu.be/zN_epPdWCGg?si=sq3WedeJQN1OHEuQ
+book_chapter: '6'
+book_section: '6.5'
+related:
+- optimization-textbook
+slides_ref: optimality-complementarity-slackness-slides
+exercises_ref:
+- optimality-complementarity-slackness-exercise-01
+- optimality-complementarity-slackness-exercise-02
+notebook_ref: null
+duration: '09:27'
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '60.50'
+summary: Recorded lecture on strong duality and complementarity slackness.
+tracks:
+- online-course

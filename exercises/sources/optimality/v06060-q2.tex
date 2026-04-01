@@ -1,0 +1,35 @@
+
+Consider the following linear problem:
+\[
+\min_{x \in \mathbb{R}^3} 2x_1+7x_2+3x_3
+\]
+subject to
+\begin{align*}
+-2x_1-x_2+x_3 &\geq 1 \qquad  (y_1)\\
+x_1+2x_2 &\geq 2 \qquad  (y_2)\\
+ x_1,x_2,x_3 &\geq 0 .
+\end{align*}
+and its dual
+\[
+\max_{y \in \mathbb{R}^2} \quad y_1 + 2y_2
+\]
+subject to
+\begin{align*}
+-2y_1+y_2 &\leq 2 \qquad  (x_1),\\
+-y_1+2y_2 &\leq 7  \qquad  (x_2),\\
+y_1 &\leq 3  \qquad  (x_3),\\
+y_1,y_2&\geq 0.
+\end{align*}	
+
+
+\begin{enumerate}
+\item  Solve the dual problem with the graphical method.
+\item State the \textit{complementarity slackness} conditions for both primal and dual problems. Using these, determine the optimal solution to the primal problem. 
+\item Verify the result that  claims that the optimal solution to the dual problem satisfies
+\[
+B^Ty^* = c_B,
+\]
+where $B$ is the basis matrix of the primal problem.
+\end{enumerate}
+
+

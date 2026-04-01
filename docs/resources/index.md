@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Resources
 
@@ -11,10 +11,13 @@ All catalogued resources.
 - [Basic directions — Exercise 3](items/constraints-basic-directions-exercise-03.md) — exercise
 - [Basic solutions — Exercise 1](items/constraints-basic-solutions-exercise-01.md) — exercise
 - [Basic solutions — Exercise 2](items/constraints-basic-solutions-exercise-02.md) — exercise
+- [Constraint relaxation — Exercise 1](items/duality-relaxation-exercise-01.md) — exercise
 - [Convexity — Exercise 1](items/objective-convexity-exercise-01.md) — exercise
 - [Convexity — Exercise 2](items/objective-convexity-exercise-02.md) — exercise
 - [Degeneracy — Exercise 1](items/constraints-degeneracy-exercise-01.md) — exercise
 - [Differentiability: the second order — Exercise 1](items/objective-second-order-exercise-01.md) — exercise
+- [Duality in linear optimization — Exercise 1](items/duality-linear-exercise-01.md) — exercise
+- [Duality in linear optimization — Exercise 2](items/duality-linear-exercise-02.md) — exercise
 - [Elimination of variables and constraints — Exercise 1](items/constraints-elimination-exercise-01.md) — exercise
 - [Elimination of variables and constraints — Exercise 2](items/constraints-elimination-exercise-02.md) — exercise
 - [Feasible directions — Exercise 1](items/constraints-feasible-directions-exercise-01.md) — exercise
@@ -24,10 +27,17 @@ All catalogued resources.
 - [Gradient — Exercise 3](items/objective-gradient-exercise-03.md) — exercise
 - [Gradient — Exercise 4](items/objective-gradient-exercise-04.md) — exercise
 - [Gradient — Exercise 5](items/objective-gradient-exercise-05.md) — exercise
+- [Lagrangian and dual problem — Exercise 1](items/duality-lagrangian-exercise-01.md) — exercise
+- [Lagrangian and dual problem — Exercise 2](items/duality-lagrangian-exercise-02.md) — exercise
+- [Lagrangian and dual problem — Exercise 3](items/duality-lagrangian-exercise-03.md) — exercise
 - [Linearity and nonlinearity — Exercise 1](items/objective-linearity-exercise-01.md) — exercise
 - [Modeling — Exercise 1](items/formulation-modeling-exercise-01.md) — exercise
 - [Modeling — Exercise 2](items/formulation-modeling-exercise-02.md) — exercise
 - [Modeling — Exercise 3](items/formulation-modeling-exercise-03.md) — exercise
+- [Necessary optimality conditions — Exercise 1](items/optimality-necessary-exercise-01.md) — exercise
+- [Necessary optimality conditions — Exercise 2](items/optimality-necessary-exercise-02.md) — exercise
+- [Optimality conditions for quadratic functions — Exercise 1](items/optimality-quadratic-exercise-01.md) — exercise
+- [Optimality conditions for quadratic functions — Exercise 2](items/optimality-quadratic-exercise-02.md) — exercise
 - [Polyhedron and linear constraints — Exercise 1](items/linear-constraints-exercise-01.md) — exercise
 - [Polyhedron — Exercise 1](items/constraints-polyhedron-exercise-01.md) — exercise
 - [Polyhedron — Exercise 2](items/constraints-polyhedron-exercise-02.md) — exercise
@@ -37,10 +47,18 @@ All catalogued resources.
 - [Properties — Exercise 1](items/formulation-properties-exercise-01.md) — exercise
 - [Properties — Exercise 2](items/formulation-properties-exercise-02.md) — exercise
 - [Properties — Exercise 3](items/formulation-properties-exercise-03.md) — exercise
+- [Reduced costs — Exercise 1](items/optimality-reduced-costs-exercise-01.md) — exercise
 - [Standard form — Exercise 1](items/constraints-standard-exercise-01.md) — exercise
+- [Strong duality and complementarity slackness — Exercise 1](items/optimality-complementarity-slackness-exercise-01.md) — exercise
+- [Strong duality and complementarity slackness — Exercise 2](items/optimality-complementarity-slackness-exercise-02.md) — exercise
+- [Sufficient optimality conditions — Exercise 1](items/optimality-sufficient-exercise-01.md) — exercise
+- [Sufficient optimality conditions — Exercise 2](items/optimality-sufficient-exercise-02.md) — exercise
 - [Vertices and active constraints — Exercise 1](items/constraints-vertices-exercise-01.md) — exercise
 - [Vertices and active constraints — Exercise 2](items/constraints-vertices-exercise-02.md) — exercise
 - [Python basics — Lab 1](items/python-lab-01.md) — notebook
+- [Duality: Lagrangian and dual problem — video slides](items/duality-lagrangian-slides.md) — slides
+- [Duality: constraint relaxation — video slides](items/duality-relaxation-slides.md) — slides
+- [Duality: duality in linear optimization — video slides](items/duality-linear-slides.md) — slides
 - [Formulation: modeling — video slides](items/formulation-modeling-slides.md) — slides
 - [Formulation: problem definition — video slides](items/formulation-definition-slides.md) — slides
 - [Formulation: problem transformations — video slides](items/formulation-transformations-slides.md) — slides
@@ -60,7 +78,15 @@ All catalogued resources.
 - [Objective function: gradient and descent — video slides](items/objective-gradient-slides.md) — slides
 - [Objective function: linearity and nonlinearity — video slides](items/objective-linearity-slides.md) — slides
 - [Objective function: preconditioning — video slides](items/objective-preconditioning-slides.md) — slides
+- [Optimality conditions: linear optimization - Reduced costs — video slides](items/optimality-reduced-costs-slides.md) — slides
+- [Optimality conditions: linear optimization - Strong duality and complementarity slackness — video slides](items/optimality-complementarity-slackness-slides.md) — slides
+- [Optimality conditions: unconstrained problems - Necessary optimality conditions — video slides](items/optimality-necessary-slides.md) — slides
+- [Optimality conditions: unconstrained problems - Quadratic functions — video slides](items/optimality-quadratic-slides.md) — slides
+- [Optimality conditions: unconstrained problems - Sufficient optimality conditions — video slides](items/optimality-sufficient-slides.md) — slides
 - [Optimization textbook](items/optimization-textbook.md) — textbook
+- [Duality: Lagrangian and dual problem](items/duality-lagrangian-video.md) — video
+- [Duality: constraint relaxation](items/duality-relaxation-video.md) — video
+- [Duality: duality in linear optimization](items/duality-linear-video.md) — video
 - [Formulation: modeling](items/formulation-modeling-video.md) — video
 - [Formulation: problem definition](items/formulation-definition-video.md) — video
 - [Formulation: problem transformations](items/formulation-transformations-video.md) — video
@@ -80,4 +106,9 @@ All catalogued resources.
 - [Objective function: gradient and descent](items/objective-gradient-video.md) — video
 - [Objective function: linearity and nonlinearity](items/objective-linearity-video.md) — video
 - [Objective function: preconditioning](items/objective-preconditioning-video.md) — video
+- [Optimality conditions: linear optimization - Reduced costs](items/optimality-reduced-costs-video.md) — video
+- [Optimality conditions: linear optimization - Strong duality and complementarity slackness](items/optimality-complementarity-slackness-video.md) — video
+- [Optimality conditions: unconstrained problems - Necessary optimality conditions](items/optimality-necessary-video.md) — video
+- [Optimality conditions: unconstrained problems - Quadratic functions](items/optimality-quadratic-video.md) — video
+- [Optimality conditions: unconstrained problems - Sufficient optimality conditions](items/optimality-sufficient-video.md) — video
 

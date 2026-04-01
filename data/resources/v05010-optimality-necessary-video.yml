@@ -1,0 +1,26 @@
+id: optimality-necessary-video
+title: 'Optimality conditions: unconstrained problems - Necessary optimality conditions'
+type: video
+topics:
+- optimality
+format: video
+path:
+url: https://youtu.be/vXVNuB3w1Kk?si=-niYcEo1RKzzVhJE
+book_chapter: '5'
+book_section: '5.1'
+related:
+- optimization-textbook
+slides_ref: optimality-necessary-slides
+exercises_ref:
+- optimality-necessary-exercise-01
+- optimality-necessary-exercise-02
+notebook_ref: null
+duration: '03:04'
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '50.10'
+summary: Recorded lecture on necessary optimality conditions.
+tracks:
+- online-course

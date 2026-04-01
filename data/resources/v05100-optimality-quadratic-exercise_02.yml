@@ -1,0 +1,22 @@
+id: optimality-quadratic-exercise-02
+title: Optimality conditions for quadratic functions — Exercise 2
+type: exercise
+topics:
+- optimality
+format: pdf
+question_source: exercises/sources/optimality/v05100-q2.tex
+answer_source: exercises/sources/optimality/v05100-a2.tex
+book_chapter: '5'
+book_section: '5.2'
+related:
+- optimization-textbook
+- optimality-quadratic-video
+- optimality-quadratic-slides
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 51.00.2
+summary: Exercise on optimality conditions for quadratic functions.
+tracks:
+- online-course

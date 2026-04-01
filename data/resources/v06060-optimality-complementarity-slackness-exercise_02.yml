@@ -1,0 +1,22 @@
+id: optimality-complementarity-slackness-exercise-02
+title: Strong duality and complementarity slackness — Exercise 2
+type: exercise
+topics:
+- optimality
+format: pdf
+question_source: exercises/sources/optimality/v06060-q2.tex
+answer_source: exercises/sources/optimality/v06060-a2.tex
+book_chapter: '6'
+book_section: '6.5'
+related:
+- optimization-textbook
+- optimality-complementarity-slackness-video
+- optimality-complementarity-slackness-slides
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 60.60.2
+summary: Exercise on strong duality and complementarity slackness.
+tracks:
+- online-course

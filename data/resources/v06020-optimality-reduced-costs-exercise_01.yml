@@ -1,0 +1,22 @@
+id: optimality-reduced-costs-exercise-01
+title: Reduced costs — Exercise 1
+type: exercise
+topics:
+- optimality
+format: pdf
+question_source: exercises/sources/optimality/v06020-q1.tex
+answer_source: exercises/sources/optimality/v06020-a1.tex
+book_chapter: '6'
+book_section: '6.5'
+related:
+- optimization-textbook
+- optimality-reduced-costs-video
+- optimality-reduced-costs-slides
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 60.20.1
+summary: Exercise on reduced costs.
+tracks:
+- online-course

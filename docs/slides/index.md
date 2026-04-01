@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Slides
 
@@ -79,4 +79,36 @@ Slides of the video on degeneracy.
 ## [Linear constraints: basic directions — video slides](../resources/items/constraints-basic-directions-slides.md)
 
 Slides of the video on basic directions.
+
+## [Duality: constraint relaxation — video slides](../resources/items/duality-relaxation-slides.md)
+
+Slides of the video on constraint relaxation.
+
+## [Duality: Lagrangian and dual problem — video slides](../resources/items/duality-lagrangian-slides.md)
+
+Slides of the video on Lagrangian and dual problem.
+
+## [Duality: duality in linear optimization — video slides](../resources/items/duality-linear-slides.md)
+
+Slides of the video on duality in linear optimization.
+
+## [Optimality conditions: unconstrained problems - Necessary optimality conditions — video slides](../resources/items/optimality-necessary-slides.md)
+
+Slides of the video on necessary optimality conditions.
+
+## [Optimality conditions: unconstrained problems - Sufficient optimality conditions — video slides](../resources/items/optimality-sufficient-slides.md)
+
+Slides of the video on sufficient optimality conditions.
+
+## [Optimality conditions: unconstrained problems - Quadratic functions — video slides](../resources/items/optimality-quadratic-slides.md)
+
+Slides of the video on optimality conditions for quadratic functions.
+
+## [Optimality conditions: linear optimization - Reduced costs — video slides](../resources/items/optimality-reduced-costs-slides.md)
+
+Slides of the video on reduced costs.
+
+## [Optimality conditions: linear optimization - Strong duality and complementarity slackness — video slides](../resources/items/optimality-complementarity-slackness-slides.md)
+
+Slides of the video on strong duality and complementarity slackness.
 

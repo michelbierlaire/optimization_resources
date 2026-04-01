@@ -1,0 +1,22 @@
+id: optimality-sufficient-exercise-01
+title: Sufficient optimality conditions — Exercise 1
+type: exercise
+topics:
+- optimality
+format: pdf
+question_source: exercises/sources/optimality/v05060-q1.tex
+answer_source: exercises/sources/optimality/v05060-a1.tex
+book_chapter: '5'
+book_section: '5.2'
+related:
+- optimization-textbook
+- optimality-sufficient-video
+- optimality-sufficient-slides
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 50.60.1
+summary: Exercise on sufficient optimality conditions.
+tracks:
+- online-course

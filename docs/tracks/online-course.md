@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Online course
 
@@ -286,6 +286,126 @@ Exercise on basic directions.
 
 Exercise on basic directions.
 
+### [Constraint relaxation — Exercise 1](../resources/items/duality-relaxation-exercise-01.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Exercise on constraint relaxation.
+
+### [Lagrangian and dual problem — Exercise 1](../resources/items/duality-lagrangian-exercise-01.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Exercise on Lagrangian and dual problem.
+
+### [Lagrangian and dual problem — Exercise 2](../resources/items/duality-lagrangian-exercise-02.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Exercise on Lagrangian and dual problem.
+
+### [Lagrangian and dual problem — Exercise 3](../resources/items/duality-lagrangian-exercise-03.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Exercise on Lagrangian and dual problem.
+
+### [Duality in linear optimization — Exercise 1](../resources/items/duality-linear-exercise-01.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Exercise on duality in linear optimization.
+
+### [Duality in linear optimization — Exercise 2](../resources/items/duality-linear-exercise-02.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Exercise on duality in linear optimization.
+
+### [Necessary optimality conditions — Exercise 1](../resources/items/optimality-necessary-exercise-01.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Exercise on necessary optimality conditions.
+
+### [Necessary optimality conditions — Exercise 2](../resources/items/optimality-necessary-exercise-02.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Exercise on necessary optimality conditions.
+
+### [Sufficient optimality conditions — Exercise 1](../resources/items/optimality-sufficient-exercise-01.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Exercise on sufficient optimality conditions.
+
+### [Sufficient optimality conditions — Exercise 2](../resources/items/optimality-sufficient-exercise-02.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Exercise on sufficient optimality conditions.
+
+### [Optimality conditions for quadratic functions — Exercise 1](../resources/items/optimality-quadratic-exercise-01.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Exercise on optimality conditions for quadratic functions.
+
+### [Optimality conditions for quadratic functions — Exercise 2](../resources/items/optimality-quadratic-exercise-02.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Exercise on optimality conditions for quadratic functions.
+
+### [Reduced costs — Exercise 1](../resources/items/optimality-reduced-costs-exercise-01.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 6
+- **Date:** 2026-03-31
+
+Exercise on reduced costs.
+
+### [Strong duality and complementarity slackness — Exercise 1](../resources/items/optimality-complementarity-slackness-exercise-01.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 6
+- **Date:** 2026-03-31
+
+Exercise on strong duality and complementarity slackness.
+
+### [Strong duality and complementarity slackness — Exercise 2](../resources/items/optimality-complementarity-slackness-exercise-02.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 6
+- **Date:** 2026-03-31
+
+Exercise on strong duality and complementarity slackness.
+
 ## Slides
 
 ### [Formulation: modeling — video slides](../resources/items/formulation-modeling-slides.md)
@@ -440,6 +560,70 @@ Slides of the video on degeneracy.
 
 Slides of the video on basic directions.
 
+### [Duality: constraint relaxation — video slides](../resources/items/duality-relaxation-slides.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Slides of the video on constraint relaxation.
+
+### [Duality: Lagrangian and dual problem — video slides](../resources/items/duality-lagrangian-slides.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Slides of the video on Lagrangian and dual problem.
+
+### [Duality: duality in linear optimization — video slides](../resources/items/duality-linear-slides.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Date:** 2026-03-31
+
+Slides of the video on duality in linear optimization.
+
+### [Optimality conditions: unconstrained problems - Necessary optimality conditions — video slides](../resources/items/optimality-necessary-slides.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Slides of the video on necessary optimality conditions.
+
+### [Optimality conditions: unconstrained problems - Sufficient optimality conditions — video slides](../resources/items/optimality-sufficient-slides.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Slides of the video on sufficient optimality conditions.
+
+### [Optimality conditions: unconstrained problems - Quadratic functions — video slides](../resources/items/optimality-quadratic-slides.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Date:** 2026-03-31
+
+Slides of the video on optimality conditions for quadratic functions.
+
+### [Optimality conditions: linear optimization - Reduced costs — video slides](../resources/items/optimality-reduced-costs-slides.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 6
+- **Date:** 2026-03-31
+
+Slides of the video on reduced costs.
+
+### [Optimality conditions: linear optimization - Strong duality and complementarity slackness — video slides](../resources/items/optimality-complementarity-slackness-slides.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 6
+- **Date:** 2026-03-31
+
+Slides of the video on strong duality and complementarity slackness.
+
 ## Textbook
 
 ### [Optimization textbook](../resources/items/optimization-textbook.md)
@@ -447,7 +631,7 @@ Slides of the video on basic directions.
 - **Topics:** Linear optimization
 - **Date:** 2026-03-28
 
-Main textbook for the optimization course, containing the theoretical foundations, examples, and references for linear optimization.
+Bierlaire (2015) Optimization: Principles and Algorithms, EPFL Press
 
 ## Video
 
@@ -621,4 +805,76 @@ Recorded lecture on degeneracy.
 - **Date:** 2026-03-28
 
 Recorded lecture on basic directions.
+
+### [Duality: constraint relaxation](../resources/items/duality-relaxation-video.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Duration:** 14:15
+- **Date:** 2026-03-31
+
+Recorded lecture on constraint relaxation.
+
+### [Duality: Lagrangian and dual problem](../resources/items/duality-lagrangian-video.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Duration:** 13:49
+- **Date:** 2026-03-31
+
+Recorded lecture on Lagrangian and dual problem.
+
+### [Duality: duality in linear optimization](../resources/items/duality-linear-video.md)
+
+- **Topics:** Duality
+- **Book chapter:** 4
+- **Duration:** 12:23
+- **Date:** 2026-03-31
+
+Recorded lecture on duality in linear optimization.
+
+### [Optimality conditions: unconstrained problems - Necessary optimality conditions](../resources/items/optimality-necessary-video.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Duration:** 03:04
+- **Date:** 2026-03-31
+
+Recorded lecture on necessary optimality conditions.
+
+### [Optimality conditions: unconstrained problems - Sufficient optimality conditions](../resources/items/optimality-sufficient-video.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Duration:** 05:32
+- **Date:** 2026-03-31
+
+Recorded lecture on sufficient optimality conditions.
+
+### [Optimality conditions: unconstrained problems - Quadratic functions](../resources/items/optimality-quadratic-video.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 5
+- **Duration:** 11:20
+- **Date:** 2026-03-31
+
+Recorded lecture on optimality conditions for quadratic functions.
+
+### [Optimality conditions: linear optimization - Reduced costs](../resources/items/optimality-reduced-costs-video.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 6
+- **Duration:** 11:52
+- **Date:** 2026-03-31
+
+Recorded lecture on reduced costs.
+
+### [Optimality conditions: linear optimization - Strong duality and complementarity slackness](../resources/items/optimality-complementarity-slackness-video.md)
+
+- **Topics:** Optimality conditions
+- **Book chapter:** 6
+- **Duration:** 09:27
+- **Date:** 2026-03-31
+
+Recorded lecture on strong duality and complementarity slackness.
 

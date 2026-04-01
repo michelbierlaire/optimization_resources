@@ -1,0 +1,23 @@
+id: duality-lagrangian-exercise-03
+title: Lagrangian and dual problem — Exercise 3
+type: exercise
+topics:
+- duality
+format: pdf
+question_source: exercises/sources/duality/v04040-q3.tex
+answer_source: exercises/sources/duality/v04040-a3.tex
+book_chapter: '4'
+book_section: '4.1'
+related:
+- optimization-textbook
+- duality-lagrangian-video
+- duality-lagrangian-slides
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: 40.40.3
+summary: Exercise on Lagrangian and dual problem.
+tracks:
+- online-course
+

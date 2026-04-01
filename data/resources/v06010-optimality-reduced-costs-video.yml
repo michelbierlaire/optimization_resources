@@ -1,0 +1,25 @@
+id: optimality-reduced-costs-video
+title: 'Optimality conditions: linear optimization - Reduced costs'
+type: video
+topics:
+- optimality
+format: video
+path:
+url: https://youtu.be/UJEnS4brKyI?si=DEDHC_zt-k_jHfxr
+book_chapter: '6'
+book_section: '6.5'
+related:
+- optimization-textbook
+slides_ref: optimality-reduced-costs-slides
+exercises_ref:
+- optimality-reduced-costs-exercise-01
+notebook_ref: null
+duration: '11:52'
+date: 2026-03-31
+author: Michel Bierlaire
+version: '1.0'
+language: en
+order: '60.10'
+summary: Recorded lecture on reduced costs.
+tracks:
+- online-course

@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Slides: Linear constraints: basic directions — video slides
 
@@ -25,6 +25,7 @@ Slides of the video on basic directions.
 ## Navigation
 
 - Previous slides: [Linear constraints: degeneracy — video slides](constraints-degeneracy-slides.md)
+- Next slides: [Duality: constraint relaxation — video slides](duality-relaxation-slides.md)
 
 <details class="resource-metadata">
 <summary title="Show raw metadata">ⓘ Metadata</summary>

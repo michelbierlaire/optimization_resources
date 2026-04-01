@@ -1,4 +1,4 @@
-<!-- This file was automatically generated on 2026-03-30 22:22:45. -->
+<!-- This file was automatically generated on 2026-03-31 18:49:22. -->
 
 # Exercise: Basic directions — Exercise 3
 
@@ -24,6 +24,7 @@ Exercise on basic directions.
 ## Navigation
 
 - Previous exercise: [Basic directions — Exercise 2](constraints-basic-directions-exercise-02.md)
+- Next exercise: [Constraint relaxation — Exercise 1](duality-relaxation-exercise-01.md)
 
 <details class="resource-metadata">
 <summary title="Show raw metadata">ⓘ Metadata</summary>
